@@ -146,7 +146,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="bg-brand text-white font-medium text-xs px-[20px] py-[10px] rounded-full hover:scale-105 transition-transform"
+            className="bg-brand text-white font-medium text-xs px-[20px] py-[10px] rounded-full hover:scale-105 transition-transform whitespace-nowrap"
           >
             {t("nav.contactUs")}
           </Link>
