@@ -119,7 +119,7 @@ const ServicesOverview = () => {
   return (
     <section className="bg-background">
       <div className="bg-surface-muted">
-        <div className="container-wide pt-20 pb-12 md:pt-28 md:pb-16">
+        <div className="container-wide pt-20 pb-28 md:pt-28 md:pb-36">
         {/* Section header — kicker, headline, supporting intro */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
@@ -295,11 +295,11 @@ const ServicesOverview = () => {
       {/* Dome bottom — same downward arch as How It Works, gray surface-muted color */}
       <div aria-hidden style={{ lineHeight: 0 }}>
         <svg
-          viewBox="0 0 1440 320"
+          viewBox="0 0 1440 200"
           preserveAspectRatio="none"
-          className="block w-full h-[clamp(80px,18vw,320px)]"
+          className="block w-full h-[clamp(60px,11vw,200px)]"
         >
-          <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(var(--surface-muted))" />
+          <path d="M0,0 Q720,260 1440,0 Z" fill="hsl(var(--surface-muted))" />
         </svg>
       </div>
     </section>
