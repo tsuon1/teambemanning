@@ -34,8 +34,8 @@ const Footer = () => {
 
         <div className="border-t border-background/15 pt-12 grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12">
           <div>
-            <Link to={link("home")} className="inline-block mb-4">
-              <img src={sercoLogo} alt="SERCO Bemanning" className="h-10" />
+            <Link to={link("home")} className="inline-block mb-4 -ml-2">
+              <img src={sercoLogo} alt="TEAMBEMANNING" className="h-20 md:h-24 w-auto" />
             </Link>
             <p className="text-sm leading-relaxed text-background/50 normal-case">{t("footer.tagline")}</p>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
             <h4 className="font-bold text-sm mb-4 tracking-wide">{t("footer.companyTitle")}</h4>
             <ul className="space-y-2.5 text-sm text-background/50">
               <li><Link to={link("about")} className="hover:text-background transition-colors">{t("footer.aboutUs")}</Link></li>
-              <li><Link to={link("whySerco")} className="hover:text-background transition-colors">{t("footer.whySerco")}</Link></li>
+              <li><Link to={link("whySerco")} className="hover:text-background transition-colors">{t("footer.whyTeambemanning")}</Link></li>
               <li><Link to={link("howItWorks")} className="hover:text-background transition-colors">{t("footer.howItWorks")}</Link></li>
               <li><Link to={link("careers")} className="hover:text-background transition-colors">{t("footer.workWithUs")}</Link></li>
             </ul>
@@ -60,9 +60,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-sm mb-4 tracking-wide">{t("footer.contactTitle")}</h4>
             <ul className="space-y-2.5 text-sm text-background/50">
-              <li><a href="tel:+4687585607" className="hover:text-background transition-colors">08-758 56 07</a></li>
-              <li><a href="mailto:info@personaluthyrning.net" className="hover:text-background transition-colors">info@personaluthyrning.net</a></li>
-              <li>Sjöängsvägen 6, 192 72 Sollentuna</li>
+              <li><a href="tel:+4637013325" className="hover:text-background transition-colors">0370 - 133 25</a></li>
+              <li><a href="mailto:info@teambemanning.se" className="hover:text-background transition-colors break-all">info@teambemanning.se</a></li>
+              <li>Västbovägen 47, 331 53 Värnamo</li>
             </ul>
           </div>
         </div>
