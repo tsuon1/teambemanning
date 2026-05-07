@@ -117,7 +117,7 @@ const ServicesOverview = () => {
   }, [isPaused, services.length]);
 
   return (
-    <section className="bg-foreground">
+    <section className="bg-surface-muted">
       <div className="container-wide pt-20 pb-12 md:pt-28 md:pb-16">
         {/* Section header — kicker, headline, supporting intro */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
