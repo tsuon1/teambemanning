@@ -221,11 +221,11 @@ const HowItWorks = () => {
         style={{ top: 0, lineHeight: 0 }}
       >
         <svg
-          viewBox="0 0 1440 160"
+          viewBox="0 0 1440 320"
           preserveAspectRatio="none"
-          className="block w-full h-[clamp(60px,9vw,160px)]"
+          className="block w-full h-[clamp(60px,18vw,320px)]"
         >
-          <path d="M0,160 Q720,0 1440,160 Z" fill="hsl(var(--secondary))" />
+          <path d="M0,320 Q720,-40 1440,320 Z" fill="hsl(var(--secondary))" />
         </svg>
       </div>
 
