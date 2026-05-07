@@ -18,16 +18,12 @@ const partners = [
   { name: "Värnamo of Sweden", logo: logoVarnamo },
 ];
 
+const VISIBLE_DESKTOP = 5;
 const INTERVAL = 5000;
 
 const LogoSlider = () => {
   const { t } = useTranslation();
   const [startIndex, setStartIndex] = useState(0);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const goNext = useCallback(() => {
     setStartIndex((prev) => (prev + 1) % partners.length);
@@ -37,15 +33,15 @@ const LogoSlider = () => {
     setStartIndex((prev) => (prev - 1 + partners.length) % partners.length);
   }, []);
 
-  // Auto-advance only on mobile, only after mount.
+  // Auto-advance on all viewports
   useEffect(() => {
-    if (!mounted) return;
-    const mq = window.matchMedia("(max-width: 599px)");
-    if (!mq.matches) return;
     const timer = setInterval(goNext, INTERVAL);
     return () => clearInterval(timer);
-  }, [goNext, mounted, startIndex]);
+  }, [goNext, startIndex]);
 
+  const visibleDesktop = Array.from({ length: VISIBLE_DESKTOP }, (_, i) =>
+    partners[(startIndex + i) % partners.length]
+  );
   const current = partners[startIndex];
 
   return (
@@ -55,20 +51,36 @@ const LogoSlider = () => {
           {t("logoSlider.trustedBy")}
         </p>
 
-        {/* Desktop / tablet: show all logos in a grid (default, SSR-visible) */}
-        <div className="hidden min-[600px]:grid grid-cols-3 lg:grid-cols-6 items-center gap-y-6">
-          {partners.map(({ name, logo }) => (
-            <div key={name} className="flex items-center justify-center px-4">
-              <img
-                src={logo}
-                alt={name}
-                className="h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-              />
-            </div>
-          ))}
+        {/* Desktop / tablet: 5 logos with arrows */}
+        <div className="hidden min-[600px]:flex items-center justify-center gap-2">
+          <button
+            onClick={goPrev}
+            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
+            aria-label="Previous"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <div className="flex-1 grid grid-cols-5 items-center">
+            {visibleDesktop.map(({ name, logo }, i) => (
+              <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+                <img
+                  src={logo}
+                  alt={name}
+                  className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+                />
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={goNext}
+            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
+            aria-label="Next"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
         </div>
 
-        {/* Mobile: single logo + arrows (CSS-only fade between active logo) */}
+        {/* Mobile: single logo + arrows */}
         <div className="min-[600px]:hidden flex items-center justify-center">
           <button
             onClick={goPrev}
