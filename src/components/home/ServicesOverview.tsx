@@ -239,13 +239,13 @@ const ServicesOverview = () => {
                 }}
               >
                 {/* Illustration area — white background lets the line art breathe */}
-                <div className="relative aspect-square overflow-hidden flex items-center justify-center bg-background p-6 md:p-8">
+                <div className="relative aspect-square overflow-hidden bg-background">
                   <img
                     src={service.image}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
-                    className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />
                 </div>
 
