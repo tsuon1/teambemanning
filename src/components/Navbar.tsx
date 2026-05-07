@@ -140,7 +140,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="border border-background text-background font-medium text-sm px-6 py-2.5 rounded-full hover:bg-brand hover:text-foreground hover:border-brand transition-colors"
+            className="border border-background text-background font-medium text-sm px-6 py-2.5 rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
           >
             {t("nav.contactUs")}
           </Link>
