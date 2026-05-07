@@ -231,7 +231,7 @@ const ServicesOverview = () => {
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden bg-transparent transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
+                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
@@ -250,14 +250,14 @@ const ServicesOverview = () => {
                 </div>
 
                 {/* Text block below illustration */}
-                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10">
+                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
                   <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
                   <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
                     {desc}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-1 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-auto pt-2 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
                     <span className="relative">
                       {t("services.readMore").replace(/\s*→\s*$/, "")}
                       <span
