@@ -25,8 +25,8 @@ const Footer = () => {
             <p className="text-background/60 normal-case">{t("footer.newsletterDesc")}</p>
           </div>
           <form className="flex gap-3 items-center" onSubmit={(e) => { e.preventDefault(); setEmail(""); }}>
-            <input type="email" placeholder={t("footer.emailPlaceholder")} value={email} onChange={(e) => setEmail(e.target.value)} className="flex-1 px-4 py-3 bg-background/10 text-background rounded-full border border-background/20 outline-none text-sm placeholder:text-background/40" required />
-            <button type="submit" className="px-5 py-3 bg-background text-foreground font-medium text-sm rounded-full hover:bg-background/90 transition-colors flex items-center gap-1.5">
+            <input type="email" placeholder={t("footer.emailPlaceholder")} value={email} onChange={(e) => setEmail(e.target.value)} className="flex-1 px-4 py-3 bg-background/10 text-background rounded-[5px] border border-background/20 outline-none text-sm placeholder:text-background/40" required />
+            <button type="submit" className="px-5 py-3 bg-background text-foreground font-medium text-sm rounded-[5px] hover:bg-background/90 transition-colors flex items-center gap-1.5">
               {t("footer.send")} <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </form>

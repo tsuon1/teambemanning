@@ -147,7 +147,7 @@ const FeaturedResources = () => {
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/nyheter" className="inline-flex items-center border border-foreground text-foreground font-medium text-sm px-7 py-2.5 rounded-full hover:bg-foreground hover:text-background transition-colors">
+          <Link to="/nyheter" className="inline-flex items-center border border-foreground text-foreground font-medium text-sm px-7 py-2.5 rounded-[5px] hover:bg-foreground hover:text-background transition-colors">
             {t("featured.visitNews")}
           </Link>
         </div>
