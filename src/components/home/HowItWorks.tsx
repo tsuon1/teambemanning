@@ -260,14 +260,14 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* Dome bottom — mirrored, arches upward into the next (white) section */}
-        <div aria-hidden style={{ lineHeight: 0 }}>
+        {/* Dome bottom — mirror of top dome, white arches upward into secondary */}
+        <div aria-hidden style={{ lineHeight: 0, transform: "scaleY(-1)" }}>
           <svg
             viewBox="0 0 1440 320"
             preserveAspectRatio="none"
             className="block w-full h-[clamp(80px,18vw,320px)]"
           >
-            <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(var(--background))" />
+            <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(var(--background))" />
           </svg>
         </div>
       </div>
