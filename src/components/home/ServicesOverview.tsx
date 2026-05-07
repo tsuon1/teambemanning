@@ -220,22 +220,28 @@ const ServicesOverview = () => {
         {/* Desktop / tablet grid:
             - sm (≥640px):  2×2 grid
             - xl (≥1280px): 4 across */}
-        <div ref={gridRef} className="hidden sm:grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6">
+        <div ref={gridRef} className="hidden sm:grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6 xl:items-start">
           {services.map((service, idx) => {
             const href = ROUTES[service.pageKey][lang];
             const title = t(`services.${service.transKey}.title`);
             const desc = t(`services.${service.transKey}.desc`);
+
+            // Arc offsets (xl only): outer cards sit lower, inner cards higher,
+            // creating a subtle smooth half-circle / upward curve.
+            const arcOffsetsPx = [56, 0, 0, 56];
+            const arcOffset = arcOffsetsPx[idx] ?? 0;
 
             return (
               <Link
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
+                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md xl:[transform:translateY(var(--arc-offset))] xl:hover:[transform:translateY(calc(var(--arc-offset)_-_4px))] ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
                   transitionDelay: gridVisible ? `${idx * 120}ms` : "0ms",
+                  ['--arc-offset' as string]: `${arcOffset}px`,
                 }}
               >
                 {/* Illustration area — white background lets the line art breathe */}
