@@ -29,6 +29,7 @@ export default {
         foreground: "hsl(var(--foreground))",
         surface: "hsl(var(--surface))",
         "surface-muted": "hsl(var(--surface-muted))",
+        "surface-alt": "hsl(var(--surface-alt))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
