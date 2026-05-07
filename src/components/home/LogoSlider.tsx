@@ -56,7 +56,7 @@ const LogoSlider = () => {
         </p>
 
         {/* Desktop / tablet: show all logos in a grid (default, SSR-visible) */}
-        <div className="hidden min-[600px]:grid grid-cols-3 items-center">
+        <div className="hidden min-[600px]:grid grid-cols-3 lg:grid-cols-6 items-center gap-y-6">
           {partners.map(({ name, logo }) => (
             <div key={name} className="flex items-center justify-center px-4">
               <img
