@@ -215,7 +215,7 @@ const HowItWorks = () => {
         <svg
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
-          className="block w-full h-[clamp(80px,22vw,440px)]"
+          className="block w-full h-[clamp(40px,8vw,120px)] lg:h-[clamp(120px,22vw,440px)]"
         >
           <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(var(--secondary))" />
         </svg>
