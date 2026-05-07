@@ -20,6 +20,7 @@ const HeroSection = () => {
         fetchPriority="high"
         decoding="sync"
         className="absolute inset-0 w-full h-full object-cover object-[75%_center] hero-img-fade"
+        style={{ filter: 'invert(1) hue-rotate(180deg) brightness(0.85) contrast(1.05)' }}
       />
       {/* Gradient overlay — fades from solid grey on left to transparent on right so headline stays readable */}
       <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/85 to-secondary/20" />
