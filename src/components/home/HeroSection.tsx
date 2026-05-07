@@ -12,26 +12,7 @@ const HeroSection = () => {
   const kickerRest = kickerWords.slice(1).join(" ");
 
   return (
-    <section className="relative min-h-[75vh] md:min-h-screen overflow-hidden">
-      <link rel="preload" as="image" href={heroImage} />
-      {/* Hero image — plain <img>, fully visible in SSR. Subtle CSS fade-in only. */}
-      <img
-        src={heroImage}
-        alt=""
-        fetchPriority="high"
-        decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[78%_80%] md:object-[75%_80%] hero-img-fade"
-        style={{ filter: 'sepia(0.15) saturate(1.2) brightness(1.05)' }}
-      />
-      <div
-        className="absolute inset-0 backdrop-blur-[3px]"
-        style={{
-          maskImage: 'linear-gradient(to right, black 0%, transparent 50%)',
-          WebkitMaskImage: 'linear-gradient(to right, black 0%, transparent 50%)',
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/40 hidden md:block" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/10 md:hidden" />
+    <section className="relative min-h-[75vh] md:min-h-screen overflow-hidden bg-secondary">
 
       <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
