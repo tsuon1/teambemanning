@@ -289,6 +289,17 @@ const ServicesOverview = () => {
           })}
         </div>
       </div>
+
+      {/* Dome bottom — surface-muted dome arching down into the white section */}
+      <div aria-hidden style={{ lineHeight: 0 }}>
+        <svg
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          className="block w-full h-[clamp(80px,18vw,320px)]"
+        >
+          <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(var(--surface-muted))" />
+        </svg>
+      </div>
     </section>
   );
 };
