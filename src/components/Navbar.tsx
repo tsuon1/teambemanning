@@ -65,17 +65,18 @@ const Navbar = () => {
     resolveRoute(location.pathname)?.lang ?? detectLangFromPath(location.pathname);
   const link = (key: keyof typeof ROUTES) => ROUTES[key][lang];
 
+  const home = link("home");
   const services = [
-    { name: t("nav.transport"), href: link("transport") },
-    { name: t("nav.logistics"), href: link("logistics") },
-    { name: t("nav.industry"),  href: link("industry") },
-    { name: t("nav.cleaning"),  href: link("cleaning") },
+    { name: t("nav.transport"), href: home },
+    { name: t("nav.logistics"), href: home },
+    { name: t("nav.industry"),  href: home },
+    { name: t("nav.cleaning"),  href: home },
   ];
 
   const aboutLinks = [
-    { name: t("nav.about"),    href: link("about") },
-    { name: t("nav.partners"), href: link("partners") },
-    { name: t("nav.news"),     href: link("news") },
+    { name: t("nav.about"),    href: home },
+    { name: t("nav.partners"), href: home },
+    { name: t("nav.news"),     href: home },
   ];
 
   return (
