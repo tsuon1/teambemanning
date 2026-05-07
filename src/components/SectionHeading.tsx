@@ -20,7 +20,7 @@ const SectionHeading = ({ kicker, title, description, align = "center", accentTi
       )}
       <h2
         className={`font-black leading-tight tracking-tight uppercase ${
-          accentTitle ? "text-accent" : "text-foreground"
+          accentTitle ? "text-accent" : "text-muted-foreground"
         }`}
         style={{ fontSize: 'var(--h2-size)' }}
       >
