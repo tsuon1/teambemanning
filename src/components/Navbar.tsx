@@ -140,7 +140,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="border border-background text-background font-medium text-sm px-6 py-[14px] rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
+            className="border border-background text-background font-medium text-sm px-[26px] py-[14px] rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
           >
             {t("nav.contactUs")}
           </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="border border-background text-background font-medium text-xs px-4 py-[10px] rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
+            className="border border-background text-background font-medium text-xs px-[18px] py-[10px] rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
           >
             {t("nav.contactUs")}
           </Link>
