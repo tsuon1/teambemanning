@@ -112,7 +112,7 @@ const Navbar = () => {
               location.pathname === link("whySerco") ? "text-brand" : "text-background/80 hover:text-brand"
             }`}
           >
-            {t("nav.whySerco")}
+            {t("nav.whyTeambemanning")}
           </Link>
 
           <Link
@@ -210,7 +210,7 @@ const Navbar = () => {
                 {t("nav.howItWorks")}
               </Link>
               <Link to={link("whySerco")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
-                {t("nav.whySerco")}
+                {t("nav.whyTeambemanning")}
               </Link>
               <Link to={link("careers")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.workWithUs")}
