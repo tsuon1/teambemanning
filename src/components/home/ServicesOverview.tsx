@@ -262,7 +262,7 @@ const ServicesOverview = () => {
                       {t("services.readMore").replace(/\s*→\s*$/, "")}
                       <span
                         aria-hidden="true"
-                        className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-brand transition-all duration-500 group-hover:w-full"
+                        className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-brand transition-all duration-500"
                       />
                     </span>
                     <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
