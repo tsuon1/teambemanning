@@ -19,7 +19,7 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[95%_85%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[95%_30%] hero-img-fade"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
