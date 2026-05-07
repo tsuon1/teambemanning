@@ -65,17 +65,18 @@ const Navbar = () => {
     resolveRoute(location.pathname)?.lang ?? detectLangFromPath(location.pathname);
   const link = (key: keyof typeof ROUTES) => ROUTES[key][lang];
 
+  const home = link("home");
   const services = [
-    { name: t("nav.transport"), href: link("transport") },
-    { name: t("nav.logistics"), href: link("logistics") },
-    { name: t("nav.industry"),  href: link("industry") },
-    { name: t("nav.cleaning"),  href: link("cleaning") },
+    { name: t("nav.transport"), href: home },
+    { name: t("nav.logistics"), href: home },
+    { name: t("nav.industry"),  href: home },
+    { name: t("nav.cleaning"),  href: home },
   ];
 
   const aboutLinks = [
-    { name: t("nav.about"),    href: link("about") },
-    { name: t("nav.partners"), href: link("partners") },
-    { name: t("nav.news"),     href: link("news") },
+    { name: t("nav.about"),    href: home },
+    { name: t("nav.partners"), href: home },
+    { name: t("nav.news"),     href: home },
   ];
 
   return (
@@ -98,28 +99,22 @@ const Navbar = () => {
           />
 
           <Link
-            to={link("howItWorks")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("howItWorks") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.howItWorks")}
           </Link>
 
           <Link
-            to={link("whySerco")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("whySerco") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.whyTeambemanning")}
           </Link>
 
           <Link
-            to={link("careers")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("careers") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.workWithUs")}
           </Link>
@@ -206,13 +201,13 @@ const Navbar = () => {
 
               <div className="border-t border-border my-3" />
 
-              <Link to={link("howItWorks")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.howItWorks")}
               </Link>
-              <Link to={link("whySerco")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.whyTeambemanning")}
               </Link>
-              <Link to={link("careers")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.workWithUs")}
               </Link>
 
