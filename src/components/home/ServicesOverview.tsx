@@ -9,10 +9,10 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRef, useState, useEffect } from "react";
-import transportImg from "@/assets/service-transport.jpg";
-import logistikImg from "@/assets/service-logistik.jpg";
-import industriImg from "@/assets/service-industri.jpg";
-import lokalvardImg from "@/assets/service-lokalvard.jpg";
+import transportImg from "@/assets/service-transport.png";
+import logistikImg from "@/assets/service-logistik.png";
+import industriImg from "@/assets/service-industri.png";
+import lokalvardImg from "@/assets/service-lokalvard.png";
 import {
   ROUTES,
   PageKey,
