@@ -1,0 +1,38 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+# Netlify automatically serves /foo/bar/index.html for requests to /foo/bar
+# when the file exists, so prerendered routes (e.g. /tjanster/transport) are
+# served correctly. This catch-all only fires for paths that don't match a
+# prerendered file, letting React Router handle truly client-only routes.
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.html"
+[headers.values]
+Cache-Control = "public, max-age=0, must-revalidate"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;"

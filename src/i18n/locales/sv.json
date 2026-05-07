@@ -1,0 +1,765 @@
+{
+  "nav": {
+    "services": "TJÄNSTER",
+    "howItWorks": "HUR DET GÅR TILL",
+    "whySerco": "VARFÖR SERCO",
+    "workWithUs": "JOBBA HOS OSS",
+    "aboutUs": "OM OSS",
+    "contactUs": "KONTAKTA OSS",
+    "about": "Om oss",
+    "partners": "Partners",
+    "news": "Nyheter",
+    "transport": "Transport",
+    "logistics": "Logistik",
+    "industry": "Industri",
+    "cleaning": "Städ & Lokalvård"
+  },
+  "hero": {
+    "kicker": "HITTA RÄTT",
+    "title": "KOMPETENS\nFÖR VARJE BEHOV",
+    "desc": "Vi hjälper företag inom transport, logistik, industri och lokalvård att snabbt hitta rätt kompetens.",
+    "cta": "Kontakta oss",
+    "link": "Hur det går till?"
+  },
+  "logoSlider": {
+    "trustedBy": "Betrodda av"
+  },
+  "services": {
+    "kicker": "VÅRA TJÄNSTER",
+    "title": "VÄLJ DITT OMRÅDE",
+    "readMore": "Läs mer →",
+    "transport": {
+      "title": "Transport",
+      "desc": "Chaufförer, bud och distributionspersonal med rätt körkort och erfarenhet."
+    },
+    "logistics": {
+      "title": "Logistik",
+      "desc": "Lagerarbetare, truckförare och terminalpersonal som håller flödena igång."
+    },
+    "industry": {
+      "title": "Industri",
+      "desc": "Produktionsmedarbetare och operatörer med praktisk kompetens och säkerhetstänk."
+    },
+    "cleaning": {
+      "title": "Lokalvård",
+      "desc": "Professionell städpersonal som håller era lokaler i toppskick."
+    },
+    "intro": "Vi hjälper företag inom fyra kärnområden. Välj det område som passar ert behov."
+  },
+  "valueProp": {
+    "title": "Vi förser företag med rätt kompetens — snabbt, flexibelt och kvalitetssäkrat."
+  },
+  "howItWorks": {
+    "title": "HUR DET GÅR TILL",
+    "readMore": "LÄS MER →",
+    "step1": {
+      "kicker": "STEG 01",
+      "title": "Behovsanalys",
+      "desc": "Vi börjar med att förstå er verksamhet, era krav och vilken kompetens ni behöver — oavsett volym eller tidsram. Genom en grundlig kartläggning säkerställer vi att rätt profil matchas från start."
+    },
+    "step2": {
+      "kicker": "STEG 02",
+      "title": "Urval & matchning",
+      "desc": "Vi matchar kandidater från vår kvalitetssäkrade pool baserat på erfarenhet, kompetens och personlighet. Varje kandidat genomgår intervju, referenstagning och kompetensverifiering."
+    },
+    "step3": {
+      "kicker": "STEG 03",
+      "title": "Introduktion & start",
+      "desc": "Vi säkerställer att varje medarbetare har rätt förutsättningar från dag ett — med onboarding, säkerhetsutbildning och tydliga instruktioner anpassade efter er verksamhet."
+    },
+    "step4": {
+      "kicker": "STEG 04",
+      "title": "Uppföljning & kvalitet",
+      "desc": "Löpande kvalitetskontroll och dialog med er som kund för att säkerställa långsiktig leverans. Vi följer upp både med er och med medarbetaren för att garantera resultat."
+    }
+  },
+  "testimonials": {
+    "kicker": "RECENSIONER",
+    "title": "VAD VÅRA KUNDER SÄGER",
+    "t1": {
+      "quote": "SERCO levererade exakt den kompetens vi behövde — snabbt och professionellt. Vi kunde skala upp vår produktion utan att kompromissa med kvaliteten.",
+      "name": "Tobias Löfgren",
+      "role": "",
+      "company": "Löfgrens Transport"
+    },
+    "t2": {
+      "quote": "Flexibiliteten och uppföljningen har varit fantastisk. Vi har äntligen en bemanningspartner som verkligen förstår vår verksamhet och våra behov.",
+      "name": "Janne Bryner",
+      "role": "",
+      "company": "Trångsund Åkeri"
+    },
+    "t3": {
+      "quote": "Från första kontakten till att personalen var på plats tog det mindre än 48 timmar. Imponerande service och pålitliga medarbetare varje gång.",
+      "name": "Sayed Alti",
+      "role": "Verksamhetschef",
+      "company": "DHL"
+    }
+  },
+  "kpi": {
+    "kicker": "RESULTAT",
+    "title": "Kundvärde & resultat",
+    "k1": {
+      "value": "+89%",
+      "title": "Nöjda kunder",
+      "desc": "Kvalitet som skapar lojala uppdragsgivare"
+    },
+    "k2": {
+      "value": "+26%",
+      "title": "Minskad personalomsättning",
+      "desc": "Rätt matchning ger längre uppdrag"
+    },
+    "k3": {
+      "value": "+20%",
+      "title": "Snabbare tillsättning",
+      "desc": "Effektiv process — snabbare igång"
+    }
+  },
+  "ready": {
+    "title": "Behöver ni bemanning? Kontakta oss idag.",
+    "cta": "Få offert"
+  },
+  "featured": {
+    "kicker": "HÖJDPUNKTER FRÅN SERCO",
+    "readMore": "Läs mer →",
+    "visitNews": "BESÖK VÅRA NYHETER",
+    "c1": {
+      "badge": "Transport",
+      "title": "SERCO expanderar inom transport",
+      "desc": "Nya samarbeten och fler chaufförer — vi växer för att möta efterfrågan."
+    },
+    "c2": {
+      "badge": "Kvalitet",
+      "title": "Nya rutiner för kvalitetssäkring",
+      "desc": "Bakgrundskontroller och verifierade kompetenser i varje steg."
+    },
+    "c3": {
+      "badge": "Ungdomssatsning",
+      "title": "Vår satsning på ungdomsanställning",
+      "desc": "Vi hjälper unga in i arbetslivet — med struktur och stöd."
+    },
+    "c4": {
+      "badge": "Logistik",
+      "title": "Logistiklösningar i Stockholmsregionen",
+      "desc": "Lager och terminal bemanning som håller era flöden igång."
+    },
+    "c5": {
+      "badge": "Matchning",
+      "title": "Så matchar vi rätt person till rätt roll",
+      "desc": "Vår beprövade matchningsprocess ger tryggare anställningar."
+    }
+  },
+  "footer": {
+    "newsletter": "Jobba hos oss",
+    "newsletterDesc": "Lämna din e-post så hör vi av oss när rätt uppdrag dyker upp.",
+    "emailPlaceholder": "Ange din e-post...",
+    "send": "Skicka",
+    "tagline": "Professionell bemanning inom transport, logistik, industri och lokalvård.",
+    "servicesTitle": "TJÄNSTER",
+    "companyTitle": "FÖRETAGET",
+    "contactTitle": "KONTAKT",
+    "aboutUs": "Om oss",
+    "whySerco": "Varför SERCO",
+    "howItWorks": "Hur det går till",
+    "workWithUs": "Jobba hos oss",
+    "copyright": "SERCO Bemanning. Alla rättigheter reserverade.",
+    "privacy": "Integritetspolicy"
+  },
+  "cta": {
+    "defaultTitle": "Behöver ni bemanning? Kontakta oss idag.",
+    "defaultButton": "Få offert"
+  },
+  "contact": {
+    "title": "Kontaktuppgifter",
+    "phone": "Telefon",
+    "email": "E-post",
+    "address": "Besöksadress",
+    "hours": "Öppettider",
+    "hoursValue": "Måndag–Fredag: 08:00–17:00",
+    "quickResponse": "Snabb respons.",
+    "quickResponseDesc": "Vi svarar vanligtvis inom samma arbetsdag. Har ni ett akut bemanningsbehov? Ring oss direkt så hjälper vi er.",
+    "formTitle": "Skicka ett meddelande",
+    "name": "Namn",
+    "namePlaceholder": "Ditt namn",
+    "company": "Företag",
+    "companyPlaceholder": "Företagsnamn",
+    "emailLabel": "E-post",
+    "emailPlaceholder": "din@email.se",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "070-XXX XX XX",
+    "subject": "Ärende",
+    "subjectPlaceholder": "Välj ärende",
+    "staffingNeed": "Bemanningsbehov",
+    "workWithUs": "Jobba hos oss",
+    "partnership": "Partnerskap",
+    "otherQuestion": "Övrig fråga",
+    "message": "Meddelande",
+    "messagePlaceholder": "Beskriv ert behov...",
+    "submit": "Skicka meddelande",
+    "gdpr": "Vi hanterar era uppgifter med respekt och i enlighet med GDPR.",
+    "contactPerson": "kontaktperson"
+  },
+  "aboutPage": {
+    "kicker": "Om oss",
+    "title": "Litet företag, stor leveransförmåga",
+    "desc": "SERCO Bemanning kombinerar personlig service med professionell struktur. Vi finns i Sollentuna och bemannar i hela Stockholmsregionen.",
+    "storyKicker": "Vår historia",
+    "storyTitle": "Hur det började",
+    "storyP1": "SERCO startades för att lösa ett akut bemanningsbehov — och upptäckte snabbt att det fanns en marknad för en bemanningspartner som verkligen lyssnar, matchar med omsorg och levererar med pålitlighet.",
+    "storyP2": "Sedan starten har vi vuxit genom förtroende, god matchning och långsiktiga relationer. Vi har aldrig försökt vara störst — men vi strävar efter att vara bäst på det vi gör.",
+    "visionKicker": "Vår vision",
+    "visionTitle": "Att växa utan att tappa närheten",
+    "visionDesc": "Vår vision är att bygga ett bemanningsföretag som kombinerar det personliga och nära med den professionalism och struktur som marknaden kräver. Vi vill växa — men aldrig på bekostnad av den relation vi har med våra kunder och medarbetare.",
+    "valuesKicker": "Vår värdegrund",
+    "valuesTitle": "Det vi tror på",
+    "v1": {
+      "title": "Ungdomssatsning",
+      "desc": "Vi hjälper unga människor in i arbetslivet på ett tryggt och strukturerat sätt."
+    },
+    "v2": {
+      "title": "Laganda & idrott",
+      "desc": "Idrotten lär oss disciplin, samarbete, ansvar och vikten av att göra sitt bästa varje dag."
+    },
+    "v3": {
+      "title": "Personlig approach",
+      "desc": "Vi tror på nära relationer — med kunder, kandidater och varandra."
+    },
+    "v4": {
+      "title": "Professionalism",
+      "desc": "Vi arbetar med tydliga processer, kvalitetskontroll och höga standarder."
+    },
+    "teamKicker": "Teamet",
+    "teamTitle": "Möt vårt team",
+    "teamDesc": "De personer som gör SERCO till vad det är.",
+    "nameCeo": "Gabriel Serban",
+    "nameHr": "Nicoleta Serban",
+    "nameTeamlead": "Alex",
+    "roleCeo": "Grundare & VD",
+    "roleStaffing": "Personalansvarig",
+    "roleCandidate": "Teamleader"
+  },
+  "whySercoPage": {
+    "kicker": "Varför SERCO",
+    "title": "Bemanning som gör skillnad",
+    "desc": "Vi är inte störst — men vi är snabbast, närmast och mest engagerade. Här är varför företag väljer SERCO.",
+    "r1": {
+      "title": "Mindre företag, närmare samarbete",
+      "desc": "Hos oss får ni direkt kontakt med de som styr bemanningen. Inga mellanled, snabba beslut och en partner som verkligen lyssnar."
+    },
+    "r2": {
+      "title": "Lägre overhead, bättre värde",
+      "desc": "Vår slimmade organisation innebär lägre kostnader — utan att kompromissa på kvalitet eller service."
+    },
+    "r3": {
+      "title": "Flexibel omfattning",
+      "desc": "Från enstaka timmar till långsiktiga heltidsuppdrag. Vi anpassar bemanningen efter era behov, inte tvärtom."
+    },
+    "r4": {
+      "title": "Personlig och smidig service",
+      "desc": "Ni har alltid en dedikerad kontaktperson som förstår er verksamhet och era krav."
+    },
+    "r5": {
+      "title": "Pålitlig matchning",
+      "desc": "Vi matchar baserat på erfarenhet, kompetens och personlighet — inte bara på tillgänglighet."
+    },
+    "r6": {
+      "title": "Kvalitetskontroll",
+      "desc": "Bakgrundskontroller, utdrag ur belastningsregistret, referenstagning och verifierade behörigheter."
+    },
+    "r7": {
+      "title": "Administrativ enkelhet",
+      "desc": "Lön, skatt, försäkring och avtal — vi tar hand om allt. Ni fokuserar på er kärnverksamhet."
+    },
+    "r8": {
+      "title": "Snabb tillgång till kandidater",
+      "desc": "Vi har en bred kandidatbas och kan ofta leverera personal inom 24 timmar."
+    },
+    "r9": {
+      "title": "Långsiktigt tänk",
+      "desc": "Vi bygger relationer, inte transaktioner. Vårt mål är att vara er bemanningspartner på lång sikt."
+    },
+    "bestOfBoth": "Vi kombinerar det bästa av två världar",
+    "bestOfBothDesc": "Närheten och flexibiliteten hos ett litet företag, kombinerat med den professionalism och struktur som krävs för att leverera rätt kompetens — varje gång. Det är SERCO."
+  },
+  "processPage": {
+    "kicker": "Hur det går till",
+    "title": "Från behov till rätt person — smidigt och tryggt",
+    "desc": "Vi har byggt en process som är enkel för er och trygg för kandidaten. Så här fungerar det.",
+    "s1": {
+      "title": "Kontakt",
+      "desc": "Ni hör av er via telefon, e-post eller vårt kontaktformulär. Vi svarar snabbt — vanligtvis inom samma dag."
+    },
+    "s2": {
+      "title": "Behovsanalys",
+      "desc": "Vi kartlägger ert uppdrag i detalj: roller, kompetenskrav, arbetsplats, schema och eventuella specifika önskemål."
+    },
+    "s3": {
+      "title": "Matchning ur kandidatbas",
+      "desc": "Vi matchar ur vår kvalitetssäkrade kandidatbas. Vi väljer kandidater baserat på erfarenhet, kompetens och personlighet."
+    },
+    "s4": {
+      "title": "Kvalitetssäkring",
+      "desc": "Varje kandidat genomgår bakgrundskontroll, referenstagning och verifiering av behörigheter innan de presenteras för er."
+    },
+    "s5": {
+      "title": "Provperiod",
+      "desc": "Ni får en veckas provperiod. Fungerar det inte matchar vi om — snabbt och utan extra kostnad."
+    },
+    "s6": {
+      "title": "Fortsatt uppdrag",
+      "desc": "Om samarbetet fungerar kör vi vidare. Vi följer upp kontinuerligt och säkerställer att ni alltid är nöjda."
+    },
+    "benefitsTitle": "Vad innebär det för er?",
+    "benefitsDesc": "Ni slipper krångel — vi tar hand om hela processen.",
+    "b1": {
+      "title": "Ingen administration",
+      "desc": "Vi hanterar lön, skatt, försäkring och avtal."
+    },
+    "b2": {
+      "title": "Snabb tillgång",
+      "desc": "Vi kan ofta leverera personal inom 24 timmar."
+    },
+    "b3": {
+      "title": "Flexibilitet",
+      "desc": "Från timmar till heltid — vi anpassar oss."
+    },
+    "b4": {
+      "title": "Trygghet",
+      "desc": "Provperiod, bakgrundskontroller och löpande uppföljning."
+    },
+    "ctaDesc": "Kontakta oss för en kostnadsfri behovsanalys. Vi hjälper er hitta rätt person — snabbt."
+  },
+  "jobPage": {
+    "kicker": "Jobba hos oss",
+    "title": "Hos oss är du inte bara en i mängden",
+    "desc": "Vi är ett mindre bemanningsföretag med stort hjärta. Här får du personlig kontakt, en smidig start och möjlighet att växa.",
+    "whyKicker": "Varför SERCO",
+    "whyTitle": "Mer än bara ett uppdrag",
+    "whyDesc": "Vi vill att du ska trivas, utvecklas och känna dig trygg. Här är vad som gör oss annorlunda.",
+    "j1": {
+      "title": "Personligt bemötande",
+      "desc": "Du är inte ett nummer. Vi lär känna dig och matchar dig med uppdrag som passar."
+    },
+    "j2": {
+      "title": "Trygg introduktion",
+      "desc": "Som ett mindre företag kan vi ge dig en smidigare start med bättre kunskapsöverföring."
+    },
+    "j3": {
+      "title": "Utvecklingsmöjligheter",
+      "desc": "Vi hjälper dig växa — genom nya uppdrag, utbildning och tydlig feedback."
+    },
+    "j4": {
+      "title": "Professionella standards",
+      "desc": "Vi arbetar strukturerat och seriöst med tydliga rutiner och kvalitetskrav."
+    },
+    "j5": {
+      "title": "Laganda",
+      "desc": "Inspirerade av idrotten tror vi på disciplin, samarbete och att lyfta varandra."
+    },
+    "j6": {
+      "title": "Snabb och smidig",
+      "desc": "Kortare beslutsvägar innebär att vi kan agera snabbt och flexibelt."
+    },
+    "offerKicker": "Vi erbjuder",
+    "offerTitle": "Vad du får hos SERCO",
+    "o1": "Personlig kontaktperson",
+    "o2": "Tydliga rutiner och processer",
+    "o3": "Försäkring och trygghetspaket",
+    "o4": "Varierade uppdrag inom flera branscher",
+    "o5": "Utbildningsmöjligheter",
+    "o6": "Smidig onboarding",
+    "o7": "Möjlighet till fast anställning",
+    "o8": "En arbetsgivare som bryr sig",
+    "whoKicker": "Vem söker vi",
+    "whoTitle": "Är du en av oss?",
+    "whoP1": "Vi söker dig som är driven, pålitlig och vill göra ett bra jobb. Du behöver inte ha den längsta CV:n — men du behöver ha rätt inställning.",
+    "whoP2": "Vi värdesätter ansvar, professionalism och viljan att utvecklas. Oavsett om du har lång erfarenhet eller precis har klivit in i arbetslivet — hos oss får du en ärlig chans.",
+    "youthKicker": "Ungdomssatsning",
+    "youthTitle": "Vi hjälper unga in i arbetslivet",
+    "youthDesc": "Vi tror på att ge unga människor en bra start i arbetslivet. Genom strukturerade introduktioner, tydliga förväntningar och personligt stöd hjälper vi unga medarbetare att snabbt komma in i arbetslivet på ett tryggt och professionellt sätt.",
+    "sportsKicker": "Värderingar",
+    "sportsTitle": "Idrott som inspiration",
+    "sportsDesc": "SERCO har ett starkt intresse för idrott — inte bara som hobby, utan som värdegrund. Disciplin, lagarbete, ansvar och struktur är värden vi bär med oss från idrottsvärlden in i vår vardag.",
+    "applyTitle": "Skicka in din ansökan",
+    "applyDesc": "Fyll i formuläret nedan så hör vi av oss. Det tar bara en minut.",
+    "area": "Område",
+    "areaPlaceholder": "Välj område",
+    "messagePlaceholder": "Berätta lite om dig själv...",
+    "submitApplication": "Skicka ansökan",
+    "ctaTitle": "Är du en av oss?",
+    "ctaDesc": "Kontakta oss idag — vi ser fram emot att höra från dig.",
+    "ctaButton": "Kontakta oss"
+  },
+  "partnersPage": {
+    "kicker": "Partners & Kundcase",
+    "title": "Företag som litar på SERCO",
+    "desc": "Vi bygger långsiktiga samarbeten och levererar resultat. Här är några exempel.",
+    "logosKicker": "Våra partners",
+    "logosTitle": "Samarbetspartners",
+    "logosDesc": "Vi är stolta över att samarbeta med företag i hela Stockholmsregionen.",
+    "partnerLogo": "Partnerlogotyp",
+    "casesKicker": "Kundcase",
+    "casesTitle": "Så har vi hjälpt andra",
+    "challenge": "Utmaning",
+    "solution": "Lösning",
+    "result": "Resultat",
+    "c1": {
+      "client": "Transportföretag i Stockholm",
+      "challenge": "Behövde snabbt fylla på med chaufförer under en expansionsfas.",
+      "solution": "SERCO matchade 5 erfarna chaufförer inom 48 timmar, alla med rätt behörigheter.",
+      "result": "Kunden kunde hålla sina leveranstider utan avbrott under hela expansionen."
+    },
+    "c2": {
+      "client": "E-handelslager i Stockholmsområdet",
+      "challenge": "Höga volymer under Black Friday och jul krävde snabb personalförstärkning.",
+      "solution": "SERCO levererade 12 lagerarbetare med erfarenhet av plock & pack.",
+      "result": "Alla ordrar hanterades i tid och kunden sparade tid på rekrytering."
+    },
+    "c3": {
+      "client": "Fastighetsbolag",
+      "challenge": "Behövde pålitlig lokalvårdspersonal för flera kontor och fastigheter.",
+      "solution": "SERCO matchade kvalitetssäkrad personal med erfarenhet av kontorsstädning.",
+      "result": "Stabilt samarbete med hög kundnöjdhet och konsekvent kvalitet."
+    },
+    "ctaTitle": "Bemanna redan idag",
+    "ctaDesc": "Kontakta oss för en kostnadsfri behovsanalys."
+  },
+  "newsPage": {
+    "kicker": "Nyheter",
+    "title": "Senaste från SERCO",
+    "desc": "Håll dig uppdaterad med nyheter, insikter och uppdateringar från SERCO Bemanning.",
+    "readMore": "Läs mer →",
+    "n1": {
+      "title": "SERCO expanderar inom logistikbemanning",
+      "date": "Mars 2026",
+      "excerpt": "Vi utökar vår kandidatbas och kapacitet inom lager och logistik för att möta den ökande efterfrågan i Stockholmsregionen."
+    },
+    "n2": {
+      "title": "Nya rutiner för kvalitetssäkring av kandidater",
+      "date": "Februari 2026",
+      "excerpt": "Vi har infört förbättrade processer för bakgrundskontroller och referenstagning för att säkerställa ännu högre kvalitet."
+    },
+    "n3": {
+      "title": "Vår satsning på ungdomsanställning",
+      "date": "Januari 2026",
+      "excerpt": "SERCO satsar på att hjälpa unga vuxna in i arbetslivet genom strukturerade introduktionsprogram och personlig uppföljning."
+    },
+    "n4": {
+      "title": "Nytt samarbete inom transportbranschen",
+      "date": "December 2025",
+      "excerpt": "Vi har inlett ett nytt samarbete med ett ledande transportföretag i Stockholmsområdet och utökar vår kapacitet."
+    },
+    "n5": {
+      "title": "SERCO firar ett framgångsrikt år",
+      "date": "November 2025",
+      "excerpt": "Vi blickar tillbaka på ett år av tillväxt, starka partnerskap och hundratals framgångsrika uppdrag."
+    },
+    "n6": {
+      "title": "Så matchar vi rätt person till rätt uppdrag",
+      "date": "Oktober 2025",
+      "excerpt": "Vi berättar mer om vår matchningsprocess och vad som gör den effektiv och pålitlig."
+    }
+  },
+  "servicesPage": {
+    "kicker": "Våra tjänster",
+    "title": "Bemanning som håller era flöden igång",
+    "desc": "Vi levererar kvalitetssäkrad personal inom fyra kärnområden — anpassat efter era specifika behov och tempo.",
+    "transportDesc": "Chaufförer, bud och distributionspersonal som levererar pålitligt, punktligt och med rätt körkort.",
+    "logisticsDesc": "Lagerarbetare, truckförare, plock & pack och terminalpersonal som håller era flöden effektiva.",
+    "industryDesc": "Produktionsmedarbetare, operatörer och industriarbetare med praktisk kompetens och säkerhetstänk.",
+    "cleaningDesc": "Professionell lokalvårdspersonal som levererar kvalitet, pålitlighet och flexibilitet.",
+    "readMore": "Läs mer →"
+  },
+  "serviceLayout": {
+    "offerKicker": "Vårt erbjudande",
+    "rolesKicker": "Roller",
+    "experienceKicker": "Erfarenhet",
+    "experienceTitle": "Vi förstår er bransch",
+    "qualityKicker": "Kvalitet",
+    "qualityTitle": "Så kvalitetssäkrar vi våra kandidater",
+    "q1": {
+      "title": "Intervju & bedömning",
+      "desc": "Varje kandidat genomgår en strukturerad intervjuprocess."
+    },
+    "q2": {
+      "title": "Bakgrundskontroll",
+      "desc": "Vi verifierar identitet, erfarenhet och utdrag ur belastningsregistret."
+    },
+    "q3": {
+      "title": "Referenstagning",
+      "desc": "Vi kontaktar tidigare arbetsgivare för att säkerställa kvalitet."
+    },
+    "q4": {
+      "title": "Uppföljning",
+      "desc": "Kontinuerlig dialog med både kund och konsult under uppdraget."
+    },
+    "advantagesKicker": "Fördelar",
+    "advantagesTitle": "Därför väljer företag SERCO",
+    "needsKicker": "Behov",
+    "needsTitle": "Vanliga behov vi löser"
+  },
+  "transportPage": {
+    "kicker": "Transport",
+    "title": "Pålitlig bemanning för transport och distribution",
+    "desc": "Vi levererar chaufförer, budpersonal och distributionsmedarbetare som håller era leveranser i tid.",
+    "introTitle": "Bemanning för en bransch som aldrig stannar",
+    "introText": "Transportbranschen kräver personal som levererar — varje dag, oavsett väder eller volym. SERCO förstår tempot och kraven i branschen och matchar er med chaufförer och distributionspersonal som är pålitliga, erfarna och redo att köra.",
+    "helpTitle": "Det här kan vi hjälpa er med",
+    "h1": "Lastbilschaufförer med rätt behörigheter",
+    "h2": "Budpersonal för sista milen",
+    "h3": "Distributionsmedarbetare",
+    "h4": "Chaufförer för temperaturreglerade transporter",
+    "h5": "Vikariat vid sjukdom och semester",
+    "h6": "Förstärkning vid toppar och säsong",
+    "rolesTitle": "Exempel på roller vi bemannar",
+    "role1": "Lastbilschaufför",
+    "role2": "Budchaufför",
+    "role3": "Distributionsförare",
+    "role4": "Kurirförare",
+    "role5": "Terminalarbetare",
+    "role6": "Leveranssamordnare",
+    "experienceText": "Vi har erfarenhet av bemanning för åkerier, distributionsföretag, e-handelslogistik och tredjepartslogistik. Vi förstår kraven på punktlighet, licensiering och tillgänglighet som präglar transportbranschen.",
+    "w1": {
+      "title": "Snabb tillgång",
+      "desc": "Vi kan ofta matcha och leverera personal inom 24 timmar."
+    },
+    "w2": {
+      "title": "Verifierade behörigheter",
+      "desc": "Vi säkerställer rätt körkort, ADR och andra certifikat."
+    },
+    "w3": {
+      "title": "Flexibla lösningar",
+      "desc": "Från enstaka körningar till långsiktiga uppdrag."
+    },
+    "w4": {
+      "title": "Personlig kontakt",
+      "desc": "Ni har alltid en dedikerad kontaktperson på SERCO."
+    },
+    "w5": {
+      "title": "Provperiod",
+      "desc": "En veckas provperiod utan risk."
+    },
+    "w6": {
+      "title": "Administration",
+      "desc": "Vi hanterar lön, skatt, försäkring och avtal."
+    },
+    "n1": "Akut vikariebehov vid sjukdom",
+    "n2": "Säsongsförstärkning",
+    "n3": "Bemanning för nya rutter eller upphandlingar",
+    "n4": "Långsiktig personalförstärkning",
+    "n5": "Helg- och kvällskörningar",
+    "n6": "Specialtransporter med ADR-krav"
+  },
+  "logistikPage": {
+    "kicker": "Logistik",
+    "title": "Effektiv bemanning för lager och logistik",
+    "desc": "Vi levererar lagerpersonal, truckförare och terminalpersonal som håller era flöden effektiva.",
+    "introTitle": "Bemanning som håller tempot uppe",
+    "introText": "I logistiken handlar allt om flöden, tempo och precision. SERCO levererar personal som förstår hur lager, terminaler och distributionscentraler fungerar — och som kan komma in, anpassa sig snabbt och bidra från dag ett.",
+    "helpTitle": "Det här kan vi hjälpa er med",
+    "h1": "Lagerarbetare för plock, pack och utleverans",
+    "h2": "Truckförare med rätt certifikat",
+    "h3": "Terminalpersonal",
+    "h4": "Godsmottagning och kvalitetskontroll",
+    "h5": "Säsongsförstärkning vid toppar",
+    "h6": "Skiftbemanning — dag, kväll, natt",
+    "rolesTitle": "Exempel på roller vi bemannar",
+    "role1": "Lagerarbetare",
+    "role2": "Truckförare",
+    "role3": "Plockare",
+    "role4": "Packare",
+    "role5": "Terminalpersonal",
+    "role6": "Teamledare lager",
+    "role7": "Logistikmedarbetare",
+    "experienceText": "Vi har levererat personal till e-handelslager, tredjepartslogistik, distributionscentraler och terminaler. Vi förstår era krav på effektivitet, ordning och rätt bemanning vid rätt tid.",
+    "w1": {
+      "title": "Flexibel omfattning",
+      "desc": "Från enstaka dagar till heltidsuppdrag — vi anpassar oss."
+    },
+    "w2": {
+      "title": "Snabb matchning",
+      "desc": "Vi har en bred kandidatbas med erfarenhet inom logistik."
+    },
+    "w3": {
+      "title": "Verifierade truckkort",
+      "desc": "Alla truckförare har giltiga certifikat och erfarenhet."
+    },
+    "w4": {
+      "title": "Driftskontinuitet",
+      "desc": "Vi ser till att ni aldrig står utan personal."
+    },
+    "w5": {
+      "title": "Provperiod",
+      "desc": "En veckas provperiod — testa riskfritt."
+    },
+    "w6": {
+      "title": "Smidig administration",
+      "desc": "Vi hanterar allt från lön till försäkring."
+    },
+    "n1": "Förstärkning vid kampanjer och toppar",
+    "n2": "Snabb ersättning vid frånvaro",
+    "n3": "Bemanning för nya anläggningar",
+    "n4": "Natt- och helgskift",
+    "n5": "Tillfällig projektbemanning",
+    "n6": "Långsiktig driftsförstärkning"
+  },
+  "industriPage": {
+    "kicker": "Industri",
+    "title": "Bemanning inom industri och produktion",
+    "desc": "Vi hjälper företag inom industri och produktion att snabbt hitta pålitlig personal för både tillfälliga och långsiktiga behov.",
+    "introTitle": "Flexibel bemanning för industriella verksamheter",
+    "introText": "SERCO erbjuder flexibel bemanning för industriella verksamheter som behöver förstärkning i produktionen, lagret eller det dagliga flödet. Vi matchar er med arbetsamma och pålitliga kandidater som snabbt kan komma in i arbetet.",
+    "helpTitle": "Det här kan vi hjälpa er med",
+    "h1": "Produktionsmedarbetare",
+    "h2": "Maskinoperatörer",
+    "h3": "Monteringspersonal",
+    "h4": "Materialhantering och lagerarbete",
+    "h5": "Kvalitetskontroller",
+    "h6": "Förstärkning vid arbetstoppar",
+    "rolesTitle": "Exempel på roller vi bemannar",
+    "role1": "Produktionspersonal",
+    "role2": "Maskinoperatörer",
+    "role3": "Montörer",
+    "role4": "Kvalitetskontrollanter",
+    "role5": "Materialhanterare",
+    "role6": "Industrimedarbetare",
+    "role7": "",
+    "experienceText": "Vi har erfarenhet av bemanning för industriella miljöer där det krävs noggrannhet, arbetsvilja och förmåga att snabbt komma in i rutiner och arbetsflöden.",
+    "w1": {
+      "title": "Pålitlig personal",
+      "desc": "Vi matchar er med arbetsamma och ansvarsfulla medarbetare."
+    },
+    "w2": {
+      "title": "Snabb tillsättning",
+      "desc": "Vi kan ofta leverera personal redan inom kort."
+    },
+    "w3": {
+      "title": "Flexibel bemanning",
+      "desc": "Vi hanterar både tillfälliga och långsiktiga behov."
+    },
+    "w4": {
+      "title": "Personlig matchning",
+      "desc": "Vi matchar rätt person till rätt uppdrag."
+    },
+    "w5": {
+      "title": "Provtid vid behov",
+      "desc": "Testa utan risk under en provperiod."
+    },
+    "w6": {
+      "title": "Administration vi sköter åt er",
+      "desc": "Lön, skatt, försäkring och avtal — vi tar hand om allt."
+    },
+    "n1": "Förstärkning i produktionen",
+    "n2": "Bemanning vid arbetstoppar",
+    "n3": "Tillfällig ersättning vid frånvaro",
+    "n4": "Löpande personalbehov",
+    "n5": "Lager- och materialhantering",
+    "n6": "Monterings- och produktionsstöd",
+    "ctaTitle": "Behöver ni bemanning inom industri? Kontakta oss idag."
+  },
+  "lokalvardPage": {
+    "kicker": "Lokalvård",
+    "title": "Professionell lokalvård med pålitlig personal",
+    "desc": "Vi levererar noggrannt utvald lokalvårdspersonal som garanterar kvalitet, pålitlighet och flexibilitet.",
+    "introTitle": "Pålitlig lokalvård — varje dag",
+    "introText": "Lokalvård handlar om mer än rena ytor. Det handlar om pålitlighet, konsekvens och service. SERCO levererar lokalvårdspersonal som förstår vikten av att göra ett noggrant jobb, varje gång — oavsett om det gäller kontor, skolor, vårdlokaler eller industrifastigheter.",
+    "helpTitle": "Det här kan vi hjälpa er med",
+    "h1": "Daglig kontorsstädning",
+    "h2": "Lokalvård för skolor och offentliga lokaler",
+    "h3": "Storstädning och flyttstädning",
+    "h4": "Industriell lokalvård",
+    "h5": "Vikariat vid sjukdom och semester",
+    "h6": "Flexibel förstärkning vid nya avtal",
+    "rolesTitle": "Exempel på roller vi bemannar",
+    "role1": "Lokalvårdare",
+    "role2": "Städare",
+    "role3": "Servicepersonal",
+    "role4": "Fastighetsskötare",
+    "role5": "Storstädare",
+    "role6": "Teamledare lokalvård",
+    "experienceText": "Vi har erfarenhet av att bemanna för fastighetsbolag, kontorshotell, skolor, sjukvårdsmiljöer och industrianläggningar. Vi förstår att varje uppdrag har sina specifika krav — och vi anpassar vår bemanning därefter.",
+    "w1": {
+      "title": "Pålitlig personal",
+      "desc": "Vi matchar er med noggrann, serviceinriktad personal som levererar varje dag."
+    },
+    "w2": {
+      "title": "Kvalitetskontroll",
+      "desc": "Bakgrundskontroller och uppföljning garanterar hög kvalitet."
+    },
+    "w3": {
+      "title": "Flexibilitet",
+      "desc": "Vi anpassar oss efter era behov — från timmar till heltid."
+    },
+    "w4": {
+      "title": "Snabb leverans",
+      "desc": "Vi kan ofta leverera personal redan nästa dag."
+    },
+    "w5": {
+      "title": "Provperiod",
+      "desc": "En veckas provperiod — testa utan risk."
+    },
+    "w6": {
+      "title": "Administration",
+      "desc": "Lön, försäkring och skatt — vi hanterar det åt er."
+    },
+    "n1": "Akut vikariebehov vid sjukdom",
+    "n2": "Förstärkning vid nya avtal eller upphandlingar",
+    "n3": "Semesterersättning",
+    "n4": "Utökning av befintlig personalstyrka",
+    "n5": "Storstädning och projektbaserade uppdrag",
+    "n6": "Långsiktig driftsförstärkning"
+  },
+  "seo": {
+    "home": {
+      "title": "SERCO Bemanning — Professionell bemanning i Stockholm",
+      "description": "SERCO Bemanning levererar kvalitetssäkrad personal inom transport, logistik, industri och lokalvård i Stockholmsregionen. Snabb, flexibel och pålitlig bemanning."
+    },
+    "services": {
+      "title": "Våra tjänster — Bemanning inom transport, logistik, industri & lokalvård | SERCO",
+      "description": "SERCO Bemanning erbjuder kvalitetssäkrad personal inom transport, logistik, industri och lokalvård. Anpassat efter era behov i Stockholmsregionen."
+    },
+    "transport": {
+      "title": "Transportbemanning Stockholm — Chaufförer & distribution | SERCO",
+      "description": "Hyr erfarna chaufförer, bud och distributionspersonal med rätt körkort i Stockholm. SERCO Bemanning levererar transportpersonal snabbt och kvalitetssäkrat."
+    },
+    "logistics": {
+      "title": "Logistikbemanning Stockholm — Lager, truck & terminal | SERCO",
+      "description": "Lagerarbetare, truckförare och terminalpersonal som håller era flöden igång. SERCO bemannar logistik i hela Stockholmsregionen — snabbt och flexibelt."
+    },
+    "industry": {
+      "title": "Industribemanning Stockholm — Produktion & operatörer | SERCO",
+      "description": "Produktionsmedarbetare och operatörer med praktisk kompetens och säkerhetstänk. SERCO Bemanning hjälper industriföretag i Stockholm att hålla produktionen igång."
+    },
+    "cleaning": {
+      "title": "Lokalvård & städpersonal Stockholm | SERCO Bemanning",
+      "description": "Professionell städpersonal för kontor, fastigheter och verksamhetslokaler i Stockholm. SERCO levererar pålitlig och kvalitetssäkrad lokalvård."
+    },
+    "howItWorks": {
+      "title": "Hur det går till — Vår bemanningsprocess steg för steg | SERCO",
+      "description": "Från behovsanalys till uppföljning: så fungerar SERCO Bemannings process. Snabb matchning, kvalitetssäkrade kandidater och löpande dialog."
+    },
+    "whySerco": {
+      "title": "Varför SERCO — Närhet, flexibilitet och kvalitet i bemanningen",
+      "description": "9 anledningar att välja SERCO Bemanning: personlig service, snabb matchning, kvalitetssäkrade kandidater och bättre värde för pengarna."
+    },
+    "careers": {
+      "title": "Jobba hos oss — Lediga uppdrag inom bemanning | SERCO",
+      "description": "Sök jobb hos SERCO Bemanning. Personlig kontakt, trygg introduktion och varierade uppdrag inom transport, logistik, industri och lokalvård i Stockholm."
+    },
+    "about": {
+      "title": "Om oss — SERCO Bemanning i Sollentuna & Stockholm",
+      "description": "SERCO Bemanning är ett mindre bemanningsföretag i Sollentuna med stor leveransförmåga. Lär känna vårt team, vår historia och vår värdegrund."
+    },
+    "partners": {
+      "title": "Partners & kundcase — Företag som litar på SERCO",
+      "description": "DHL, Löfgrens Transport, Trängsunds Åkeri och fler — se kundcase och resultat från företag som valt SERCO Bemanning som bemanningspartner."
+    },
+    "news": {
+      "title": "Nyheter — Senaste från SERCO Bemanning",
+      "description": "Nyheter, insikter och uppdateringar från SERCO Bemanning. Håll dig informerad om bemanningsbranschen och vår verksamhet i Stockholm."
+    },
+    "contact": {
+      "title": "Kontakta oss — SERCO Bemanning Stockholm",
+      "description": "Kontakta SERCO Bemanning för bemanning inom transport, logistik, industri och lokalvård. Telefon: 08-758 56 07. Sjöängsvägen 6, Sollentuna."
+    }
+  }
+}

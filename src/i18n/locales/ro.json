@@ -1,0 +1,765 @@
+{
+  "nav": {
+    "services": "SERVICII",
+    "howItWorks": "CUM FUNCȚIONEAZĂ",
+    "whySerco": "DE CE SERCO",
+    "workWithUs": "CARIERE",
+    "aboutUs": "DESPRE NOI",
+    "contactUs": "CONTACTAȚI-NE",
+    "about": "Despre noi",
+    "partners": "Parteneri",
+    "news": "Știri",
+    "transport": "Transport",
+    "logistics": "Logistică",
+    "industry": "Industrie",
+    "cleaning": "Curățenie"
+  },
+  "hero": {
+    "kicker": "GĂSIȚI",
+    "title": "TALENTUL POTRIVIT\nPENTRU ORICE NEVOIE",
+    "desc": "Ajutăm companiile din transport, logistică, industrie și curățenie să găsească talentul potrivit — rapid.",
+    "cta": "Contactați-ne",
+    "link": "Cum funcționează?"
+  },
+  "logoSlider": {
+    "trustedBy": "De încredere pentru"
+  },
+  "services": {
+    "kicker": "SERVICIILE NOASTRE",
+    "title": "ALEGEȚI DOMENIUL",
+    "readMore": "Citiți mai mult →",
+    "transport": {
+      "title": "Transport",
+      "desc": "Șoferi, curieri și personal de distribuție cu permisele și experiența potrivite."
+    },
+    "logistics": {
+      "title": "Logistică",
+      "desc": "Lucrători în depozit, operatori de stivuitoare și personal de terminal care mențin fluxul."
+    },
+    "industry": {
+      "title": "Industrie",
+      "desc": "Muncitori în producție și operatori cu competențe practice și conștiință de siguranță."
+    },
+    "cleaning": {
+      "title": "Curățenie",
+      "desc": "Personal profesional de curățenie care vă menține spațiile în stare perfectă."
+    },
+    "intro": "Ajutăm companiile în patru domenii cheie. Alegeți-l pe cel care se potrivește nevoilor dumneavoastră."
+  },
+  "valueProp": {
+    "title": "Oferim companiilor talentul potrivit — rapid, flexibil și cu asigurarea calității."
+  },
+  "howItWorks": {
+    "title": "CUM FUNCȚIONEAZĂ",
+    "readMore": "CITIȚI MAI MULT →",
+    "step1": {
+      "kicker": "PASUL 01",
+      "title": "Analiza nevoilor",
+      "desc": "Începem prin a înțelege afacerea dvs., cerințele și competențele de care aveți nevoie — indiferent de volum sau termen. Prin cartografiere amănunțită ne asigurăm că profilul potrivit este selectat de la început."
+    },
+    "step2": {
+      "kicker": "PASUL 02",
+      "title": "Selecție și potrivire",
+      "desc": "Potrivim candidați din baza noastră verificată pe baza experienței, competențelor și personalității. Fiecare candidat trece prin interviuri, verificări de referințe și validarea competențelor."
+    },
+    "step3": {
+      "kicker": "PASUL 03",
+      "title": "Introducere și start",
+      "desc": "Ne asigurăm că fiecare angajat are condițiile potrivite din prima zi — cu onboarding, instruire de siguranță și instrucțiuni clare adaptate afacerii dvs."
+    },
+    "step4": {
+      "kicker": "PASUL 04",
+      "title": "Urmărire și calitate",
+      "desc": "Control continuu al calității și dialog cu dvs. ca client pentru a asigura livrare pe termen lung. Urmărim atât cu dvs., cât și cu angajatul pentru a garanta rezultate."
+    }
+  },
+  "testimonials": {
+    "kicker": "RECENZII",
+    "title": "CE SPUN CLIENȚII NOȘTRI",
+    "t1": {
+      "quote": "SERCO a livrat exact talentul de care aveam nevoie — rapid și profesional. Am putut crește producția fără a compromite calitatea.",
+      "name": "Tobias Löfgren",
+      "role": "",
+      "company": "Löfgrens Transport"
+    },
+    "t2": {
+      "quote": "Flexibilitatea și urmărirea au fost fantastice. Avem în sfârșit un partener de personal care înțelege cu adevărat afacerea și nevoile noastre.",
+      "name": "Janne Bryner",
+      "role": "",
+      "company": "Trångsund Åkeri"
+    },
+    "t3": {
+      "quote": "De la primul contact până când personalul a fost pe loc au trecut mai puțin de 48 de ore. Serviciu impresionant și angajați de încredere de fiecare dată.",
+      "name": "Sayed Alti",
+      "role": "Director operațiuni",
+      "company": "DHL"
+    }
+  },
+  "kpi": {
+    "kicker": "REZULTATE",
+    "title": "Valoare și rezultate pentru clienți",
+    "k1": {
+      "value": "+89%",
+      "title": "Clienți mulțumiți",
+      "desc": "Calitate care creează parteneri loiali"
+    },
+    "k2": {
+      "value": "+26%",
+      "title": "Fluctuație redusă",
+      "desc": "Potrivirea corectă duce la misiuni mai lungi"
+    },
+    "k3": {
+      "value": "+20%",
+      "title": "Plasare mai rapidă",
+      "desc": "Proces eficient — start mai rapid"
+    }
+  },
+  "ready": {
+    "title": "Aveți nevoie de personal? Contactați-ne astăzi.",
+    "cta": "Obțineți o ofertă"
+  },
+  "featured": {
+    "kicker": "NOUTĂȚI DE LA SERCO",
+    "readMore": "Citiți mai mult →",
+    "visitNews": "VIZITAȚI ȘTIRILE NOASTRE",
+    "c1": {
+      "badge": "Transport",
+      "title": "SERCO se extinde în transport",
+      "desc": "Noi parteneriate și mai mulți șoferi — creștem pentru a satisface cererea."
+    },
+    "c2": {
+      "badge": "Calitate",
+      "title": "Noi rutine de asigurare a calității",
+      "desc": "Verificări de fond și competențe validate la fiecare pas."
+    },
+    "c3": {
+      "badge": "Inițiativă pentru tineri",
+      "title": "Inițiativa noastră pentru angajarea tinerilor",
+      "desc": "Ajutăm tinerii să intre în câmpul muncii — cu structură și sprijin."
+    },
+    "c4": {
+      "badge": "Logistică",
+      "title": "Soluții logistice în Stockholm",
+      "desc": "Personal pentru depozite și terminale care vă menține fluxurile."
+    },
+    "c5": {
+      "badge": "Potrivire",
+      "title": "Cum potrivim persoana potrivită cu rolul potrivit",
+      "desc": "Procesul nostru dovedit de potrivire duce la angajări mai sigure."
+    }
+  },
+  "footer": {
+    "newsletter": "Lucrează cu noi",
+    "newsletterDesc": "Lasă-ne emailul tău și te contactăm când apare misiunea potrivită.",
+    "emailPlaceholder": "Introduceți emailul dvs...",
+    "send": "Trimiteți",
+    "tagline": "Personal profesional în transport, logistică, industrie și curățenie.",
+    "servicesTitle": "SERVICII",
+    "companyTitle": "COMPANIE",
+    "contactTitle": "CONTACT",
+    "aboutUs": "Despre noi",
+    "whySerco": "De ce SERCO",
+    "howItWorks": "Cum funcționează",
+    "workWithUs": "Cariere",
+    "copyright": "SERCO Bemanning. Toate drepturile rezervate.",
+    "privacy": "Politica de confidențialitate"
+  },
+  "cta": {
+    "defaultTitle": "Aveți nevoie de personal? Contactați-ne astăzi.",
+    "defaultButton": "Obțineți o ofertă"
+  },
+  "contact": {
+    "title": "Date de contact",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresa de vizită",
+    "hours": "Program de lucru",
+    "hoursValue": "Luni–Vineri: 08:00–17:00",
+    "quickResponse": "Răspuns rapid.",
+    "quickResponseDesc": "Răspundem de obicei în aceeași zi lucrătoare. Aveți o nevoie urgentă de personal? Sunați-ne direct și vă ajutăm.",
+    "formTitle": "Trimiteți un mesaj",
+    "name": "Nume",
+    "namePlaceholder": "Numele dvs.",
+    "company": "Companie",
+    "companyPlaceholder": "Numele companiei",
+    "emailLabel": "Email",
+    "emailPlaceholder": "dvs@email.com",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "070-XXX XX XX",
+    "subject": "Subiect",
+    "subjectPlaceholder": "Alegeți subiectul",
+    "staffingNeed": "Nevoie de personal",
+    "workWithUs": "Lucrați cu noi",
+    "partnership": "Parteneriat",
+    "otherQuestion": "Altă întrebare",
+    "message": "Mesaj",
+    "messagePlaceholder": "Descrieți nevoile dvs...",
+    "submit": "Trimiteți mesajul",
+    "gdpr": "Tratăm datele dvs. cu respect și în conformitate cu GDPR.",
+    "contactPerson": "persoană de contact"
+  },
+  "aboutPage": {
+    "kicker": "Despre noi",
+    "title": "Companie mică, livrare mare",
+    "desc": "SERCO Bemanning combină serviciul personal cu structura profesională. Cu sediul în Sollentuna, asigurăm personal în toată regiunea Stockholm.",
+    "storyKicker": "Povestea noastră",
+    "storyTitle": "Cum a început",
+    "storyP1": "SERCO a fost înființat pentru a rezolva o nevoie urgentă de personal — și a descoperit rapid că există o piață pentru un partener de personal care ascultă cu adevărat, potrivește cu grijă și livrează cu fiabilitate.",
+    "storyP2": "De la început, am crescut prin încredere, potrivire bună și relații pe termen lung. Nu am încercat niciodată să fim cei mai mari — dar ne străduim să fim cei mai buni în ceea ce facem.",
+    "visionKicker": "Viziunea noastră",
+    "visionTitle": "Să creștem fără a pierde apropierea",
+    "visionDesc": "Viziunea noastră este să construim o companie de personal care combină personalul și apropierea cu profesionalismul și structura pe care piața o cere. Vrem să creștem — dar niciodată în detrimentul relațiilor pe care le avem cu clienții și angajații noștri.",
+    "valuesKicker": "Valorile noastre",
+    "valuesTitle": "În ce credem",
+    "v1": {
+      "title": "Inițiativă pentru tineri",
+      "desc": "Ajutăm tinerii să intre în câmpul muncii într-un mod sigur și structurat."
+    },
+    "v2": {
+      "title": "Spirit de echipă și sport",
+      "desc": "Sportul ne învață disciplină, muncă în echipă, responsabilitate și importanța de a face tot posibilul în fiecare zi."
+    },
+    "v3": {
+      "title": "Abordare personală",
+      "desc": "Credem în relații apropiate — cu clienții, candidații și între noi."
+    },
+    "v4": {
+      "title": "Profesionalism",
+      "desc": "Lucrăm cu procese clare, control al calității și standarde înalte."
+    },
+    "teamKicker": "Echipa",
+    "teamTitle": "Întâlniți echipa noastră",
+    "teamDesc": "Oamenii care fac SERCO ceea ce este.",
+    "nameCeo": "Gabriel Serban",
+    "nameHr": "Nicoleta Serban",
+    "nameTeamlead": "Alex",
+    "roleCeo": "Fondator & CEO",
+    "roleStaffing": "Responsabil HR",
+    "roleCandidate": "Teamleader"
+  },
+  "whySercoPage": {
+    "kicker": "De ce SERCO",
+    "title": "Personal care face diferența",
+    "desc": "Nu suntem cei mai mari — dar suntem cei mai rapizi, cei mai apropiați și cei mai implicați. Iată de ce companiile aleg SERCO.",
+    "r1": {
+      "title": "Companie mică, colaborare apropiată",
+      "desc": "La noi aveți contact direct cu cei care gestionează personalul. Fără intermediari, decizii rapide și un partener care ascultă cu adevărat."
+    },
+    "r2": {
+      "title": "Costuri mai mici, valoare mai bună",
+      "desc": "Organizația noastră eficientă înseamnă costuri mai mici — fără a compromite calitatea sau serviciul."
+    },
+    "r3": {
+      "title": "Amploare flexibilă",
+      "desc": "De la ore individuale la misiuni pe termen lung cu normă întreagă. Adaptăm personalul la nevoile dvs., nu invers."
+    },
+    "r4": {
+      "title": "Serviciu personal și fluid",
+      "desc": "Aveți întotdeauna o persoană de contact dedicată care înțelege afacerea și cerințele dvs."
+    },
+    "r5": {
+      "title": "Potrivire fiabilă",
+      "desc": "Potrivim pe baza experienței, competențelor și personalității — nu doar pe disponibilitate."
+    },
+    "r6": {
+      "title": "Control al calității",
+      "desc": "Verificări de fond, cazier judiciar, verificări de referințe și calificări validate."
+    },
+    "r7": {
+      "title": "Simplitate administrativă",
+      "desc": "Salariu, taxe, asigurare și contracte — noi ne ocupăm de tot. Dvs. vă concentrați pe activitatea de bază."
+    },
+    "r8": {
+      "title": "Acces rapid la candidați",
+      "desc": "Avem o bază largă de candidați și putem livra adesea personal în 24 de ore."
+    },
+    "r9": {
+      "title": "Gândire pe termen lung",
+      "desc": "Construim relații, nu tranzacții. Obiectivul nostru este să fim partenerul dvs. de personal pe termen lung."
+    },
+    "bestOfBoth": "Combinăm ce e mai bun din ambele lumi",
+    "bestOfBothDesc": "Apropierea și flexibilitatea unei companii mici, combinate cu profesionalismul și structura necesare pentru a livra talentul potrivit — de fiecare dată. Acesta este SERCO."
+  },
+  "processPage": {
+    "kicker": "Cum funcționează",
+    "title": "De la nevoie la persoana potrivită — ușor și sigur",
+    "desc": "Am construit un proces care este simplu pentru dvs. și sigur pentru candidat. Iată cum funcționează.",
+    "s1": {
+      "title": "Contact",
+      "desc": "Ne contactați prin telefon, email sau formularul nostru de contact. Răspundem rapid — de obicei în aceeași zi."
+    },
+    "s2": {
+      "title": "Analiza nevoilor",
+      "desc": "Cartografiem misiunea dvs. în detaliu: roluri, cerințe de competențe, loc de muncă, program și orice dorințe specifice."
+    },
+    "s3": {
+      "title": "Potrivire din baza de candidați",
+      "desc": "Potrivim din baza noastră verificată de candidați. Selectăm candidații pe baza experienței, competențelor și personalității."
+    },
+    "s4": {
+      "title": "Asigurarea calității",
+      "desc": "Fiecare candidat trece prin verificări de fond, verificări de referințe și validarea calificărilor înainte de a fi prezentat."
+    },
+    "s5": {
+      "title": "Perioadă de probă",
+      "desc": "Primiți o săptămână de probă. Dacă nu funcționează, repotrivim — rapid și fără costuri suplimentare."
+    },
+    "s6": {
+      "title": "Misiune continuă",
+      "desc": "Dacă colaborarea funcționează, continuăm. Urmărim continuu și ne asigurăm că sunteți mereu mulțumiți."
+    },
+    "benefitsTitle": "Ce înseamnă asta pentru dvs.?",
+    "benefitsDesc": "Fără bătăi de cap — noi ne ocupăm de întregul proces.",
+    "b1": {
+      "title": "Fără administrare",
+      "desc": "Ne ocupăm de salariu, taxe, asigurare și contracte."
+    },
+    "b2": {
+      "title": "Acces rapid",
+      "desc": "Putem livra adesea personal în 24 de ore."
+    },
+    "b3": {
+      "title": "Flexibilitate",
+      "desc": "De la ore la normă întreagă — ne adaptăm."
+    },
+    "b4": {
+      "title": "Siguranță",
+      "desc": "Perioadă de probă, verificări de fond și urmărire continuă."
+    },
+    "ctaDesc": "Contactați-ne pentru o analiză gratuită a nevoilor. Vă ajutăm să găsiți persoana potrivită — rapid."
+  },
+  "jobPage": {
+    "kicker": "Cariere",
+    "title": "La noi nu ești doar un număr",
+    "desc": "Suntem o companie mai mică de personal cu inimă mare. Aici primești contact personal, un start fluid și loc de creștere.",
+    "whyKicker": "De ce SERCO",
+    "whyTitle": "Mai mult decât o misiune",
+    "whyDesc": "Vrem să te simți bine, să te dezvolți și să te simți în siguranță. Iată ce ne face diferiți.",
+    "j1": {
+      "title": "Tratament personal",
+      "desc": "Nu ești un număr. Te cunoaștem și te potrivim cu misiuni care se potrivesc."
+    },
+    "j2": {
+      "title": "Introducere sigură",
+      "desc": "Ca o companie mai mică, îți putem oferi un start mai fluid cu un transfer de cunoștințe mai bun."
+    },
+    "j3": {
+      "title": "Oportunități de dezvoltare",
+      "desc": "Te ajutăm să crești — prin noi misiuni, instruire și feedback clar."
+    },
+    "j4": {
+      "title": "Standarde profesionale",
+      "desc": "Lucrăm structurat și serios cu rutine clare și cerințe de calitate."
+    },
+    "j5": {
+      "title": "Spirit de echipă",
+      "desc": "Inspirați de sport, credem în disciplină, muncă în echipă și în a ne ridica reciproc."
+    },
+    "j6": {
+      "title": "Rapid și fluid",
+      "desc": "Căi de decizie mai scurte înseamnă că putem acționa rapid și flexibil."
+    },
+    "offerKicker": "Oferim",
+    "offerTitle": "Ce primești la SERCO",
+    "o1": "Persoană de contact personală",
+    "o2": "Rutine și procese clare",
+    "o3": "Pachet de asigurare și siguranță",
+    "o4": "Misiuni variate în mai multe industrii",
+    "o5": "Oportunități de instruire",
+    "o6": "Onboarding fluid",
+    "o7": "Posibilitate de angajare permanentă",
+    "o8": "Un angajator căruia îi pasă",
+    "whoKicker": "Pe cine căutăm",
+    "whoTitle": "Ești unul dintre noi?",
+    "whoP1": "Căutăm oameni motivați, de încredere și care vor să facă o treabă bună. Nu ai nevoie de cel mai lung CV — dar ai nevoie de atitudinea potrivită.",
+    "whoP2": "Valorăm responsabilitatea, profesionalismul și dorința de a te dezvolta. Fie că ai experiență vastă sau tocmai ai intrat în câmpul muncii — la noi ai o șansă corectă.",
+    "youthKicker": "Inițiativă pentru tineri",
+    "youthTitle": "Ajutăm tinerii să intre în câmpul muncii",
+    "youthDesc": "Credem în a oferi tinerilor un start bun în viața profesională. Prin introduceri structurate, așteptări clare și sprijin personal, ajutăm angajații tineri să intre rapid în viața profesională într-un mod sigur și profesional.",
+    "sportsKicker": "Valori",
+    "sportsTitle": "Sportul ca inspirație",
+    "sportsDesc": "SERCO are un interes puternic pentru sport — nu doar ca hobby, ci ca fundament de valori. Disciplina, munca în echipă, responsabilitatea și structura sunt valori pe care le ducem din lumea sportului în munca noastră zilnică.",
+    "applyTitle": "Trimiteți aplicația dvs.",
+    "applyDesc": "Completați formularul de mai jos și vă vom contacta. Durează doar un minut.",
+    "area": "Domeniu",
+    "areaPlaceholder": "Alegeți domeniul",
+    "messagePlaceholder": "Spuneți-ne puțin despre dvs...",
+    "submitApplication": "Trimiteți aplicația",
+    "ctaTitle": "Ești unul dintre noi?",
+    "ctaDesc": "Contactați-ne astăzi — așteptăm cu nerăbdare să auzim de la dvs.",
+    "ctaButton": "Contactați-ne"
+  },
+  "partnersPage": {
+    "kicker": "Parteneri și cazuri",
+    "title": "Companii care au încredere în SERCO",
+    "desc": "Construim parteneriate pe termen lung și livrăm rezultate. Iată câteva exemple.",
+    "logosKicker": "Partenerii noștri",
+    "logosTitle": "Parteneri de colaborare",
+    "logosDesc": "Suntem mândri să colaborăm cu companii din toată regiunea Stockholm.",
+    "partnerLogo": "Logo partener",
+    "casesKicker": "Studii de caz",
+    "casesTitle": "Cum am ajutat pe alții",
+    "challenge": "Provocare",
+    "solution": "Soluție",
+    "result": "Rezultat",
+    "c1": {
+      "client": "Companie de transport din Stockholm",
+      "challenge": "Avea nevoie rapid de șoferi suplimentari în faza de expansiune.",
+      "solution": "SERCO a potrivit 5 șoferi experimentați în 48 de ore, toți cu permisele potrivite.",
+      "result": "Clientul și-a menținut timpii de livrare fără întreruperi pe tot parcursul expansiunii."
+    },
+    "c2": {
+      "client": "Depozit e-commerce în zona Stockholm",
+      "challenge": "Volume mari în Black Friday și Crăciun au necesitat întărirea rapidă a personalului.",
+      "solution": "SERCO a livrat 12 lucrători de depozit cu experiență în pick & pack.",
+      "result": "Toate comenzile au fost gestionate la timp și clientul a economisit timp la recrutare."
+    },
+    "c3": {
+      "client": "Companie imobiliară",
+      "challenge": "Avea nevoie de personal de curățenie de încredere pentru mai multe birouri și proprietăți.",
+      "solution": "SERCO a potrivit personal verificat cu experiență în curățenia birourilor.",
+      "result": "Colaborare stabilă cu satisfacție ridicată a clientului și calitate constantă."
+    },
+    "ctaTitle": "Angajați personal astăzi",
+    "ctaDesc": "Contactați-ne pentru o analiză gratuită a nevoilor."
+  },
+  "newsPage": {
+    "kicker": "Știri",
+    "title": "Ultimele noutăți de la SERCO",
+    "desc": "Rămâneți la curent cu știri, perspective și actualizări de la SERCO Bemanning.",
+    "readMore": "Citiți mai mult →",
+    "n1": {
+      "title": "SERCO se extinde în personalul logistic",
+      "date": "Martie 2026",
+      "excerpt": "Extindem baza noastră de candidați și capacitatea în depozit și logistică pentru a satisface cererea în creștere din regiunea Stockholm."
+    },
+    "n2": {
+      "title": "Noi rutine de asigurare a calității pentru candidați",
+      "date": "Februarie 2026",
+      "excerpt": "Am introdus procese îmbunătățite pentru verificări de fond și verificări de referințe pentru a asigura o calitate și mai ridicată."
+    },
+    "n3": {
+      "title": "Inițiativa noastră pentru angajarea tinerilor",
+      "date": "Ianuarie 2026",
+      "excerpt": "SERCO investește în ajutorarea tinerilor adulți să intre în câmpul muncii prin programe structurate de introducere și urmărire personală."
+    },
+    "n4": {
+      "title": "Nou parteneriat în industria transportului",
+      "date": "Decembrie 2025",
+      "excerpt": "Am început un nou parteneriat cu o companie de transport de top din zona Stockholm și ne extindem capacitatea."
+    },
+    "n5": {
+      "title": "SERCO sărbătorește un an de succes",
+      "date": "Noiembrie 2025",
+      "excerpt": "Privim înapoi la un an de creștere, parteneriate puternice și sute de misiuni de succes."
+    },
+    "n6": {
+      "title": "Cum potrivim persoana potrivită cu rolul potrivit",
+      "date": "Octombrie 2025",
+      "excerpt": "Împărtășim mai multe despre procesul nostru de potrivire și ce îl face eficient și fiabil."
+    }
+  },
+  "servicesPage": {
+    "kicker": "Serviciile noastre",
+    "title": "Personal care vă menține operațiunile în funcțiune",
+    "desc": "Livrăm personal verificat în patru domenii de bază — adaptat nevoilor și ritmului dvs. specific.",
+    "transportDesc": "Șoferi, curieri și personal de distribuție care livrează fiabil, la timp și cu permisele potrivite.",
+    "logisticsDesc": "Lucrători în depozit, operatori de stivuitoare, pick & pack și personal de terminal care vă mențin fluxurile eficiente.",
+    "industryDesc": "Muncitori în producție, operatori și muncitori industriali cu competențe practice și conștiință de siguranță.",
+    "cleaningDesc": "Personal profesional de curățenie care livrează calitate, fiabilitate și flexibilitate.",
+    "readMore": "Citiți mai mult →"
+  },
+  "serviceLayout": {
+    "offerKicker": "Oferta noastră",
+    "rolesKicker": "Roluri",
+    "experienceKicker": "Experiență",
+    "experienceTitle": "Înțelegem industria dvs.",
+    "qualityKicker": "Calitate",
+    "qualityTitle": "Cum ne asigurăm calitatea candidaților",
+    "q1": {
+      "title": "Interviu și evaluare",
+      "desc": "Fiecare candidat trece printr-un proces structurat de interviu."
+    },
+    "q2": {
+      "title": "Verificare de fond",
+      "desc": "Verificăm identitatea, experiența și cazierul judiciar."
+    },
+    "q3": {
+      "title": "Verificare referințe",
+      "desc": "Contactăm angajatorii anteriori pentru a asigura calitatea."
+    },
+    "q4": {
+      "title": "Urmărire",
+      "desc": "Dialog continuu cu clientul și consultantul pe durata misiunii."
+    },
+    "advantagesKicker": "Avantaje",
+    "advantagesTitle": "De ce companiile aleg SERCO",
+    "needsKicker": "Nevoi",
+    "needsTitle": "Nevoi comune pe care le rezolvăm"
+  },
+  "transportPage": {
+    "kicker": "Transport",
+    "title": "Personal de încredere pentru transport și distribuție",
+    "desc": "Livrăm șoferi, curieri și personal de distribuție care vă mențin livrările la timp.",
+    "introTitle": "Personal pentru o industrie care nu se oprește niciodată",
+    "introText": "Industria transporturilor necesită personal care livrează — în fiecare zi, indiferent de vreme sau volum. SERCO înțelege ritmul și cerințele industriei și vă potrivește cu șoferi și personal de distribuție care sunt de încredere, experimentați și pregătiți.",
+    "helpTitle": "Cu ce vă putem ajuta",
+    "h1": "Șoferi de camion cu permisele potrivite",
+    "h2": "Personal de curierat pentru ultimul kilometru",
+    "h3": "Lucrători în distribuție",
+    "h4": "Șoferi pentru transport cu temperatură controlată",
+    "h5": "Înlocuitori pentru boală și concediu",
+    "h6": "Întărire în perioade de vârf și sezon",
+    "rolesTitle": "Exemple de roluri pe care le asigurăm",
+    "role1": "Șofer de camion",
+    "role2": "Șofer curier",
+    "role3": "Șofer de distribuție",
+    "role4": "Curier",
+    "role5": "Lucrător terminal",
+    "role6": "Coordonator livrări",
+    "experienceText": "Avem experiență în asigurarea de personal pentru companii de transport, distribuție, logistică e-commerce și logistică terță parte. Înțelegem cerințele de punctualitate, licențiere și disponibilitate care caracterizează industria transporturilor.",
+    "w1": {
+      "title": "Acces rapid",
+      "desc": "Putem adesea potrivi și livra personal în 24 de ore."
+    },
+    "w2": {
+      "title": "Permise verificate",
+      "desc": "Asigurăm permisele de conducere, ADR și alte certificate potrivite."
+    },
+    "w3": {
+      "title": "Soluții flexibile",
+      "desc": "De la curse individuale la misiuni pe termen lung."
+    },
+    "w4": {
+      "title": "Contact personal",
+      "desc": "Aveți întotdeauna o persoană de contact dedicată la SERCO."
+    },
+    "w5": {
+      "title": "Perioadă de probă",
+      "desc": "O săptămână de probă fără risc."
+    },
+    "w6": {
+      "title": "Administrare",
+      "desc": "Ne ocupăm de salariu, taxe, asigurare și contracte."
+    },
+    "n1": "Nevoi urgente de înlocuire din cauza bolii",
+    "n2": "Întărire sezonieră",
+    "n3": "Personal pentru rute sau licitații noi",
+    "n4": "Întărire pe termen lung a personalului",
+    "n5": "Curse de weekend și seara",
+    "n6": "Transporturi speciale cu cerințe ADR"
+  },
+  "logistikPage": {
+    "kicker": "Logistică",
+    "title": "Personal eficient pentru depozit și logistică",
+    "desc": "Livrăm personal de depozit, operatori de stivuitoare și personal de terminal care vă mențin fluxurile eficiente.",
+    "introTitle": "Personal care menține ritmul",
+    "introText": "În logistică, totul ține de fluxuri, ritm și precizie. SERCO livrează personal care înțelege cum funcționează depozitele, terminalele și centrele de distribuție — și care poate veni, se adapta rapid și contribui din prima zi.",
+    "helpTitle": "Cu ce vă putem ajuta",
+    "h1": "Lucrători de depozit pentru picking, packing și expediere",
+    "h2": "Operatori de stivuitoare cu certificatele potrivite",
+    "h3": "Personal de terminal",
+    "h4": "Recepție marfă și control calitate",
+    "h5": "Întărire sezonieră în perioade de vârf",
+    "h6": "Personal pe schimburi — zi, seară, noapte",
+    "rolesTitle": "Exemple de roluri pe care le asigurăm",
+    "role1": "Lucrător depozit",
+    "role2": "Operator stivuitor",
+    "role3": "Picker",
+    "role4": "Packer",
+    "role5": "Personal terminal",
+    "role6": "Lider echipă depozit",
+    "role7": "Lucrător logistică",
+    "experienceText": "Am livrat personal pentru depozite e-commerce, logistică terță parte, centre de distribuție și terminale. Înțelegem cerințele dvs. de eficiență, ordine și personalul potrivit la momentul potrivit.",
+    "w1": {
+      "title": "Amploare flexibilă",
+      "desc": "De la zile individuale la misiuni cu normă întreagă — ne adaptăm."
+    },
+    "w2": {
+      "title": "Potrivire rapidă",
+      "desc": "Avem o bază largă de candidați cu experiență în logistică."
+    },
+    "w3": {
+      "title": "Permise de stivuitor verificate",
+      "desc": "Toți operatorii de stivuitoare au certificate valide și experiență."
+    },
+    "w4": {
+      "title": "Continuitate operațională",
+      "desc": "Ne asigurăm că nu rămâneți niciodată fără personal."
+    },
+    "w5": {
+      "title": "Perioadă de probă",
+      "desc": "O săptămână de probă — testați fără risc."
+    },
+    "w6": {
+      "title": "Administrare fluidă",
+      "desc": "Ne ocupăm de tot, de la salariu la asigurare."
+    },
+    "n1": "Întărire în perioade de campanii și vârf",
+    "n2": "Înlocuire rapidă în caz de absență",
+    "n3": "Personal pentru facilități noi",
+    "n4": "Schimburi de noapte și weekend",
+    "n5": "Personal temporar pentru proiecte",
+    "n6": "Întărire operațională pe termen lung"
+  },
+  "industriPage": {
+    "kicker": "Industrie",
+    "title": "Personal pentru industrie și producție",
+    "desc": "Ajutăm companiile din industrie și producție să găsească rapid personal de încredere pentru nevoi temporare și pe termen lung.",
+    "introTitle": "Personal flexibil pentru operațiuni industriale",
+    "introText": "SERCO oferă personal flexibil pentru operațiuni industriale care au nevoie de întărire în producție, depozitare sau fluxul zilnic. Vă potrivim cu candidați muncitori și de încredere care se pot adapta rapid.",
+    "helpTitle": "Cu ce vă putem ajuta",
+    "h1": "Muncitori în producție",
+    "h2": "Operatori de mașini",
+    "h3": "Personal de montaj",
+    "h4": "Manipulare materiale și lucru în depozit",
+    "h5": "Controlul calității",
+    "h6": "Întărire în perioade de vârf",
+    "rolesTitle": "Exemple de roluri pe care le asigurăm",
+    "role1": "Personal de producție",
+    "role2": "Operatori de mașini",
+    "role3": "Montatori",
+    "role4": "Controlori de calitate",
+    "role5": "Manipulanți materiale",
+    "role6": "Muncitori industriali",
+    "role7": "",
+    "experienceText": "Avem experiență în asigurarea de personal pentru medii industriale unde sunt esențiale meticulozitatea, etica muncii și capacitatea de a se adapta rapid la rutine și fluxuri de lucru.",
+    "w1": {
+      "title": "Personal de încredere",
+      "desc": "Vă potrivim cu muncitori harnici și responsabili."
+    },
+    "w2": {
+      "title": "Plasare rapidă",
+      "desc": "Putem livra adesea personal în timp scurt."
+    },
+    "w3": {
+      "title": "Personal flexibil",
+      "desc": "Gestionăm atât nevoi temporare, cât și pe termen lung."
+    },
+    "w4": {
+      "title": "Potrivire personală",
+      "desc": "Potrivim persoana potrivită cu misiunea potrivită."
+    },
+    "w5": {
+      "title": "Perioadă de probă la nevoie",
+      "desc": "Testați fără risc într-o perioadă de probă."
+    },
+    "w6": {
+      "title": "Administrație gestionată de noi",
+      "desc": "Salariu, taxe, asigurare și contracte — noi ne ocupăm de tot."
+    },
+    "n1": "Întărire în producție",
+    "n2": "Personal în perioade de vârf",
+    "n3": "Înlocuire temporară în caz de absență",
+    "n4": "Nevoi continue de personal",
+    "n5": "Depozitare și manipulare materiale",
+    "n6": "Suport de montaj și producție",
+    "ctaTitle": "Aveți nevoie de personal în industrie? Contactați-ne astăzi."
+  },
+  "lokalvardPage": {
+    "kicker": "Curățenie",
+    "title": "Curățenie profesională cu personal de încredere",
+    "desc": "Livrăm personal de curățenie selectat cu grijă care garantează calitate, fiabilitate și flexibilitate.",
+    "introTitle": "Curățenie de încredere — în fiecare zi",
+    "introText": "Curățenia este mai mult decât suprafețe curate. Este despre fiabilitate, consecvență și serviciu. SERCO livrează personal de curățenie care înțelege importanța de a face o treabă temeinică, de fiecare dată — fie că sunt birouri, școli, facilități de sănătate sau proprietăți industriale.",
+    "helpTitle": "Cu ce vă putem ajuta",
+    "h1": "Curățenie zilnică de birou",
+    "h2": "Curățenie pentru școli și facilități publice",
+    "h3": "Curățenie generală și curățenie la mutare",
+    "h4": "Curățenie industrială",
+    "h5": "Înlocuitori pentru boală și concediu",
+    "h6": "Întărire flexibilă pentru contracte noi",
+    "rolesTitle": "Exemple de roluri pe care le asigurăm",
+    "role1": "Personal de curățenie",
+    "role2": "Curățitor",
+    "role3": "Personal de serviciu",
+    "role4": "Întreținere proprietate",
+    "role5": "Curățitor general",
+    "role6": "Lider echipă curățenie",
+    "experienceText": "Avem experiență în asigurarea de personal pentru companii imobiliare, hoteluri de birouri, școli, medii de sănătate și facilități industriale. Înțelegem că fiecare misiune are cerințele sale specifice — și ne adaptăm personalul în consecință.",
+    "w1": {
+      "title": "Personal de încredere",
+      "desc": "Vă potrivim cu personal temeinic, orientat spre serviciu, care livrează în fiecare zi."
+    },
+    "w2": {
+      "title": "Control calitate",
+      "desc": "Verificări de fond și urmărire garantează calitate înaltă."
+    },
+    "w3": {
+      "title": "Flexibilitate",
+      "desc": "Ne adaptăm la nevoile dvs. — de la ore la normă întreagă."
+    },
+    "w4": {
+      "title": "Livrare rapidă",
+      "desc": "Putem adesea livra personal a doua zi."
+    },
+    "w5": {
+      "title": "Perioadă de probă",
+      "desc": "O săptămână de probă — testați fără risc."
+    },
+    "w6": {
+      "title": "Administrare",
+      "desc": "Salariu, asigurare și taxe — noi ne ocupăm."
+    },
+    "n1": "Nevoi urgente de înlocuire din cauza bolii",
+    "n2": "Întărire pentru contracte sau licitații noi",
+    "n3": "Înlocuire de concediu",
+    "n4": "Extinderea forței de muncă existente",
+    "n5": "Curățenie generală și misiuni bazate pe proiecte",
+    "n6": "Întărire operațională pe termen lung"
+  },
+  "seo": {
+    "home": {
+      "title": "SERCO Bemanning — Personal profesionist în Stockholm",
+      "description": "SERCO Bemanning oferă personal calificat în transport, logistică, industrie și curățenie în regiunea Stockholm. Personal rapid, flexibil și de încredere."
+    },
+    "services": {
+      "title": "Serviciile noastre — Personal în transport, logistică, industrie și curățenie | SERCO",
+      "description": "SERCO Bemanning oferă personal calificat în transport, logistică, industrie și curățenie. Adaptat nevoilor dumneavoastră în regiunea Stockholm."
+    },
+    "transport": {
+      "title": "Personal transport Stockholm — Șoferi și distribuție | SERCO",
+      "description": "Angajați șoferi cu experiență, curieri și personal de distribuție cu permisele corecte în Stockholm. SERCO Bemanning furnizează personal de transport rapid și calitativ."
+    },
+    "logistics": {
+      "title": "Personal logistică Stockholm — Depozit, stivuitor și terminal | SERCO",
+      "description": "Lucrători în depozit, operatori de stivuitor și personal de terminal care vă mențin fluxurile active. SERCO furnizează personal logistică în Stockholm — rapid și flexibil."
+    },
+    "industry": {
+      "title": "Personal industrial Stockholm — Producție și operatori | SERCO",
+      "description": "Muncitori în producție și operatori cu competențe practice și conștiință de siguranță. SERCO Bemanning ajută companiile industriale din Stockholm să mențină producția activă."
+    },
+    "cleaning": {
+      "title": "Personal de curățenie Stockholm | SERCO Bemanning",
+      "description": "Personal profesionist de curățenie pentru birouri, proprietăți și spații comerciale în Stockholm. SERCO oferă servicii de curățenie de încredere și calitative."
+    },
+    "howItWorks": {
+      "title": "Cum funcționează — Procesul nostru de personal pas cu pas | SERCO",
+      "description": "De la analiza nevoilor la urmărire: cum funcționează procesul SERCO Bemanning. Potrivire rapidă, candidați calificați și dialog continuu."
+    },
+    "whySerco": {
+      "title": "De ce SERCO — Apropiere, flexibilitate și calitate în personal",
+      "description": "9 motive pentru a alege SERCO Bemanning: serviciu personal, potrivire rapidă, candidați calificați și valoare mai bună pentru bani."
+    },
+    "careers": {
+      "title": "Cariere — Misiuni deschise în personal | SERCO",
+      "description": "Aplicați pentru locuri de muncă la SERCO Bemanning. Contact personal, integrare sigură și misiuni variate în transport, logistică, industrie și curățenie în Stockholm."
+    },
+    "about": {
+      "title": "Despre noi — SERCO Bemanning în Sollentuna și Stockholm",
+      "description": "SERCO Bemanning este o companie mai mică de personal în Sollentuna cu capacitate mare de livrare. Cunoașteți echipa, istoria și valorile noastre."
+    },
+    "partners": {
+      "title": "Parteneri și cazuri de client — Companii care au încredere în SERCO",
+      "description": "DHL, Löfgrens Transport, Trängsunds Åkeri și altele — vedeți cazuri de client și rezultate de la companii care au ales SERCO Bemanning ca partener de personal."
+    },
+    "news": {
+      "title": "Știri — Ultimele noutăți de la SERCO Bemanning",
+      "description": "Știri, perspective și actualizări de la SERCO Bemanning. Rămâneți informat despre industria de personal și operațiunile noastre în Stockholm."
+    },
+    "contact": {
+      "title": "Contactați-ne — SERCO Bemanning Stockholm",
+      "description": "Contactați SERCO Bemanning pentru personal în transport, logistică, industrie și curățenie. Telefon: 08-758 56 07. Sjöängsvägen 6, Sollentuna."
+    }
+  }
+}

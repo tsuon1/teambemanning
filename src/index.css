@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core — clean white minimal */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 8%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 8%;
+
+    --radius: 0.375rem;
+
+    --accent-glow: 0 0% 20%;
+    --brand: 30 100% 63%;
+
+    /* Light section tones */
+    --warm: 0 0% 96%;
+    --warm-foreground: 0 0% 8%;
+    --beige1: 0 0% 35%;
+    --beige2: 0 0% 30%;
+    --beige3: 0 0% 96%;
+
+    /* Typography — fluid clamp tokens (from Brizo) */
+    --h1-size: clamp(2.4rem, 4.6vw + 0.8rem, 3.75rem);
+    --h1-line: 1.1;
+    --h2-size: clamp(1.9rem, 2.2vw + 1rem, 2.6rem);
+    --h3-size: clamp(1.6rem, 1.5vw + 0.8rem, 2.2rem);
+    --h5-size: clamp(0.9rem, 0.7vw + 0.55rem, 1.125rem);
+    --h5-track: clamp(5px, 0.25vw + 4px, 10px);
+    --p-size: clamp(0.95rem, 0.8vw + 0.55rem, 1.1rem);
+    --p-line: 1.6;
+
+    /* Layout */
+    --page-pad: clamp(16px, 4.5vw, 48px);
+    --section-pad: clamp(72px, 8vw, 144px);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 0 0% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Open Sans", system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply uppercase;
+    font-family: "Open Sans", system-ui, sans-serif;
+  }
+
+  button, .btn, [class*="btn"], a[class*="rounded"] {
+    @apply uppercase tracking-wide;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 70%));
+  }
+
+  .section-padding {
+    padding-block: var(--section-pad);
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+    padding-inline: var(--page-pad);
+  }
+
+  .container-wide {
+    @apply mx-auto;
+    max-width: 1440px;
+    padding-inline: var(--page-pad);
+  }
+
+  /* Rounded button system */
+  .skew-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+
+  .skew-btn > span {
+    display: block;
+  }
+
+  .skew-btn--reverse {
+    /* no transform needed */
+  }
+}
+
+/* Responsive overrides (matching Brizo breakpoints) */
+@media (max-width: 600px) {
+  :root {
+    --h1-line: 1.03;
+    --p-line: 1.45;
+  }
+}
+
+@media (max-width: 333px) {
+  :root {
+    --h1-size: 2.4rem;
+    --p-size: 0.85rem;
+  }
+}
