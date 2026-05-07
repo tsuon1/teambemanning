@@ -229,7 +229,7 @@ const HowItWorks = () => {
         }}
       >
         <div className="container-wide">
-          <div className="text-center" style={{ marginBottom: "clamp(28px, 3vw, 48px)" }}>
+          <div className="text-center" style={{ marginBottom: "clamp(20px, 2vw, 32px)", marginTop: "clamp(-40px, -4vw, -16px)" }}>
             <h2 className="font-black text-foreground" style={{ fontSize: "var(--h2-size)" }}>
               {t("howItWorks.title")}
             </h2>
