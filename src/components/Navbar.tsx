@@ -82,7 +82,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
       <div className="container-wide flex items-center justify-between py-4 nav:py-5">
         <Link to={link("home")} className="flex items-center">
-          <img src={sercoLogo} alt="SERCO Bemanning" className="h-10 nav:h-12 w-auto" />
+          <img src={sercoLogo} alt="SERCO Bemanning" className="h-25 nav:h-30 w-auto" style={{ height: "6.25rem" }} />
         </Link>
 
         {/* Desktop nav */}
