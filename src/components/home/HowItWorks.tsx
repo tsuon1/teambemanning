@@ -224,7 +224,7 @@ const HowItWorks = () => {
       <div
         className="bg-secondary"
         style={{
-          paddingTop: "clamp(8px, 1.5vw, 24px)",
+          paddingTop: "0px",
           paddingBottom: "clamp(36px, 4vw, 72px)",
         }}
       >
