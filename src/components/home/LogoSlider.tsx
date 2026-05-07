@@ -2,14 +2,20 @@ import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-import logoDhl from "@/assets/logo-dhl.png";
-import logoTransgund from "@/assets/logo-trangsund.png";
-import logoLofgren from "@/assets/logo-lofgren.png";
+import logoAxelent from "@/assets/logo-axelent.png";
+import logoSporda from "@/assets/logo-sporda.png";
+import logoHexagon from "@/assets/logo-hexagon.png";
+import logoFixstud from "@/assets/logo-fixstud.png";
+import logoImage7 from "@/assets/logo-image7.png";
+import logoVarnamo from "@/assets/logo-varnamo.png";
 
 const partners = [
-  { name: "DHL", logo: logoDhl },
-  { name: "Löfgren Transport", logo: logoLofgren },
-  { name: "Trängsunds Åkeri", logo: logoTransgund },
+  { name: "Axelent", logo: logoAxelent },
+  { name: "Sporda Nonwoven", logo: logoSporda },
+  { name: "Hexagon", logo: logoHexagon },
+  { name: "Fix & Stud AB", logo: logoFixstud },
+  { name: "Partner", logo: logoImage7 },
+  { name: "Värnamo of Sweden", logo: logoVarnamo },
 ];
 
 const INTERVAL = 5000;
@@ -50,7 +56,7 @@ const LogoSlider = () => {
         </p>
 
         {/* Desktop / tablet: show all logos in a grid (default, SSR-visible) */}
-        <div className="hidden min-[600px]:grid grid-cols-3 items-center">
+        <div className="hidden min-[600px]:grid grid-cols-3 lg:grid-cols-6 items-center gap-y-6">
           {partners.map(({ name, logo }) => (
             <div key={name} className="flex items-center justify-center px-4">
               <img
