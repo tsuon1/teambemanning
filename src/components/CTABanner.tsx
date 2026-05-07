@@ -32,7 +32,7 @@ const CTABanner = ({ title, description, buttonText, buttonLink }: CTABannerProp
           </p>
         )}
         {!description && <div className="mb-8" />}
-        <Link to={resolvedLink} className="inline-flex items-center gap-2 border border-foreground text-foreground font-medium text-sm px-7 py-3 rounded-[5px] hover:bg-brand hover:text-foreground hover:border-brand transition-colors">
+        <Link to={resolvedLink} className="inline-flex items-center gap-2 border border-foreground text-foreground font-medium text-sm px-7 py-3 rounded-[2px] hover:bg-brand hover:text-foreground hover:border-brand transition-colors">
           {displayButton} <ArrowUpRight className="w-4 h-4" />
         </Link>
       </div>
