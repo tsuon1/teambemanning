@@ -19,7 +19,7 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] w-full object-cover object-[95%_center] min-[546px]:object-[80%_center] hero-img-fade"
+        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] w-full object-cover object-[70%_center] min-[546px]:object-[80%_center] hero-img-fade"
         style={{ height: 'calc(100% - var(--nav-h))' }}
       />
       <div
