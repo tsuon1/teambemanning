@@ -154,3 +154,9 @@
     --p-size: 0.85rem;
   }
 }
+
+@media (min-width: 1200px) {
+  :root {
+    --nav-h: 97px;
+  }
+}
