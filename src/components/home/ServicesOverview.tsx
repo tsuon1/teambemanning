@@ -250,7 +250,7 @@ const ServicesOverview = () => {
                 </div>
 
                 {/* Text block below illustration */}
-                <div className="p-5 md:p-6 flex flex-col gap-2 border-t border-border">
+                <div className="p-5 md:p-6 flex flex-col gap-2">
                   <h3 className="font-display font-black text-foreground text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
