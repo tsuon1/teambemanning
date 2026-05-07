@@ -226,22 +226,26 @@ const ServicesOverview = () => {
             const title = t(`services.${service.transKey}.title`);
             const desc = t(`services.${service.transKey}.desc`);
 
-            // Arc offsets (xl only): outer cards sit lower, inner cards higher,
-            // creating a subtle smooth half-circle / upward curve.
-            const arcOffsetsPx = [56, 0, 0, 56];
+            // Arc layout (xl only): outer cards sit lower + tilt inward,
+            // inner cards sit higher with a subtler tilt — forming a smooth half-circle.
+            const arcOffsetsPx = [56, 8, 8, 56];
+            const arcRotations = [6, 2, -2, -6]; // degrees
             const arcOffset = arcOffsetsPx[idx] ?? 0;
+            const arcRotate = arcRotations[idx] ?? 0;
 
             return (
               <Link
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md xl:[transform:translateY(var(--arc-offset))] xl:hover:[transform:translateY(calc(var(--arc-offset)_-_4px))] ${
+                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md xl:[transform:translateY(var(--arc-offset))_rotate(var(--arc-rotate))] xl:hover:[transform:translateY(calc(var(--arc-offset)_-_4px))_rotate(var(--arc-rotate))] ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
                   transitionDelay: gridVisible ? `${idx * 120}ms` : "0ms",
                   ['--arc-offset' as string]: `${arcOffset}px`,
+                  ['--arc-rotate' as string]: `${arcRotate}deg`,
+                  transformOrigin: 'center bottom',
                 }}
               >
                 {/* Illustration area — white background lets the line art breathe */}
