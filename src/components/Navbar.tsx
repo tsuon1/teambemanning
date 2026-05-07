@@ -82,7 +82,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
       <div className="container-wide flex items-center justify-between py-4 nav:py-5">
         <Link to={link("home")} className="flex items-center">
-          <img src={sercoLogo} alt="SERCO Bemanning" className="h-[2.925rem] nav:h-[3.515rem] w-auto" />
+          <img src={sercoLogo} alt="SERCO Bemanning" className="h-[7.3125rem] nav:h-[8.7875rem] w-auto" />
         </Link>
 
         {/* Desktop nav */}
@@ -140,7 +140,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="border border-background text-background font-medium text-sm px-6 py-2.5 rounded-[2px] hover:bg-brand hover:text-background hover:border-brand transition-colors"
+            className="border border-background text-background font-medium text-sm px-6 py-2.5 rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
           >
             {t("nav.contactUs")}
           </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <Link
             to={link("contact")}
-            className="border border-background text-background font-medium text-xs px-4 py-2 rounded-[2px] hover:bg-brand hover:text-background hover:border-brand transition-colors"
+            className="border border-background text-background font-medium text-xs px-4 py-2 rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
           >
             {t("nav.contactUs")}
           </Link>
@@ -250,7 +250,7 @@ const Navbar = () => {
               <Link
                 to={link("contact")}
                 onClick={() => setMobileOpen(false)}
-                className="mt-3 border border-foreground text-foreground font-medium text-sm text-center px-6 py-2.5 rounded-[2px] hover:bg-brand hover:text-background hover:border-brand transition-colors"
+                className="mt-3 border border-foreground text-foreground font-medium text-sm text-center px-6 py-2.5 rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
               >
                 {t("nav.contactUs")}
               </Link>
