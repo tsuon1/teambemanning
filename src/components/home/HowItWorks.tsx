@@ -207,16 +207,31 @@ const HowItWorks = () => {
 
   return (
     <section
-      className="bg-secondary text-foreground"
+      className="relative bg-surface text-background"
       style={{
         paddingTop: "var(--section-pad)",
         paddingBottom: "clamp(36px, 4vw, 72px)",
         overflowX: "clip",
       }}
     >
+      {/* Dark dome arching up into the section above */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-0 right-0 -translate-y-[calc(100%-1px)]"
+        style={{ top: 0, lineHeight: 0 }}
+      >
+        <svg
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+          className="block w-full h-[clamp(60px,9vw,160px)]"
+        >
+          <path d="M0,160 Q720,0 1440,160 Z" fill="hsl(var(--surface))" />
+        </svg>
+      </div>
+
       <div className="container-wide">
         <div className="text-center" style={{ marginBottom: "clamp(28px, 3vw, 48px)" }}>
-          <h2 className="font-black text-foreground" style={{ fontSize: "var(--h2-size)" }}>
+          <h2 className="font-black text-brand" style={{ fontSize: "var(--h2-size)" }}>
             {t("howItWorks.title")}
           </h2>
         </div>
