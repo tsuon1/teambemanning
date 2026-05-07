@@ -19,6 +19,7 @@ const partners = [
 ];
 
 const VISIBLE_DESKTOP = 5;
+const VISIBLE_TABLET = 3;
 const INTERVAL = 5000;
 
 const LogoSlider = () => {
@@ -42,6 +43,9 @@ const LogoSlider = () => {
   const visibleDesktop = Array.from({ length: VISIBLE_DESKTOP }, (_, i) =>
     partners[(startIndex + i) % partners.length]
   );
+  const visibleTablet = Array.from({ length: VISIBLE_TABLET }, (_, i) =>
+    partners[(startIndex + i) % partners.length]
+  );
   const current = partners[startIndex];
 
   return (
@@ -51,8 +55,8 @@ const LogoSlider = () => {
           {t("logoSlider.trustedBy")}
         </p>
 
-        {/* Desktop / tablet: 5 logos with arrows */}
-        <div className="hidden min-[600px]:flex items-center justify-center gap-2">
+        {/* Desktop: 5 logos with arrows */}
+        <div className="hidden lg:flex items-center justify-center gap-2">
           <button
             onClick={goPrev}
             className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
@@ -62,6 +66,35 @@ const LogoSlider = () => {
           </button>
           <div className="flex-1 grid grid-cols-5 items-center">
             {visibleDesktop.map(({ name, logo }, i) => (
+              <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+                <img
+                  src={logo}
+                  alt={name}
+                  className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+                />
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={goNext}
+            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
+            aria-label="Next"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Tablet: 3 logos with arrows */}
+        <div className="hidden min-[600px]:flex lg:hidden items-center justify-center gap-2">
+          <button
+            onClick={goPrev}
+            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
+            aria-label="Previous"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <div className="flex-1 grid grid-cols-3 items-center">
+            {visibleTablet.map(({ name, logo }, i) => (
               <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
                 <img
                   src={logo}
