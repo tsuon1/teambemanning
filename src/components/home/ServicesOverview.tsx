@@ -119,7 +119,7 @@ const ServicesOverview = () => {
   return (
     <section className="bg-background">
       <div className="bg-surface-muted">
-        <div className="container-wide pt-20 pb-12 md:pt-28 md:pb-16">
+        <div className="container-wide pt-20 pb-28 md:pt-28 md:pb-36">
         {/* Section header — kicker, headline, supporting intro */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
