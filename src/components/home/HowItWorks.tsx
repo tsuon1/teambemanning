@@ -184,10 +184,16 @@ const StepRow = ({
         <div className="how-text how-text-4">
           <Link
             to="/hur-det-gar-till"
-            className="inline-block text-foreground text-base font-medium hover:text-muted-foreground underline-offset-4 hover:underline transition-colors normal-case"
+            className="group inline-flex items-center text-foreground text-base font-medium hover:text-muted-foreground transition-colors normal-case"
             style={{ paddingBottom: "32px" }}
           >
-            {t("howItWorks.readMore")}
+            <span className="relative">
+              {t("howItWorks.readMore")}
+              <span
+                aria-hidden="true"
+                className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-brand"
+              />
+            </span>
           </Link>
         </div>
       </div>
