@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Navbar height — mobile default, overridden at nav: breakpoint below */
-    --nav-h: 79px;
+    --nav-h: 69px;
     /* Core — clean white minimal */
     --foreground: 191 9% 24%;
     --surface: 192 27% 9%;
