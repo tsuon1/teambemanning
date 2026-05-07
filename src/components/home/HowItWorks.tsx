@@ -261,6 +261,17 @@ const HowItWorks = () => {
         </div>
       </div>
 
+      {/* Dome bottom — arches upward, transitioning back to page background */}
+      <div aria-hidden style={{ lineHeight: 0 }}>
+        <svg
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          className="block w-full h-[clamp(80px,18vw,320px)]"
+        >
+          <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(var(--background))" />
+        </svg>
+      </div>
+
       <style>{`
         /* Defaults: content fully visible (SSR-safe) */
         .how-img,
