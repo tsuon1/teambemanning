@@ -159,25 +159,25 @@ const ServicesOverview = () => {
                   key={service.transKey}
                   to={href}
                   aria-label={`${title} — ${t("services.readMore")}`}
-                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-background ring-1 ring-background/15 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.15)] transition-all duration-500 hover:shadow-[0_8px_28px_-8px_hsl(var(--brand)/0.35)] hover:ring-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
+                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden flex items-center justify-center bg-background p-6">
+                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[50%] ring-2 ring-background/60">
                     <img
                       src={service.image}
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.04]"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                     />
                   </div>
-                  <div className="p-5 flex flex-col gap-2 border-t border-border">
-                    <h3 className="font-display font-black text-foreground text-xl leading-tight">
+                  <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm">
+                    <h3 className="font-display font-black text-background text-xl leading-tight">
                       {title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed normal-case line-clamp-3">
+                    <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
                       {desc}
                     </p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground mt-1">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-1">
                       {t("services.readMore").replace(/\s*→\s*$/, "")}
                       <ArrowUpRight className="w-4 h-4" />
                     </span>
