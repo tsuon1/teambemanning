@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <SEO
-        title="Sidan kunde inte hittas — 404 | SERCO Bemanning"
+        title="Sidan kunde inte hittas — 404 | TEAMBEMANNING Bemanning"
         description="Sidan du letade efter finns inte. Återgå till startsidan för att hitta rätt."
         noindex
       />
