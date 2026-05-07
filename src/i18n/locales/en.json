@@ -2,7 +2,7 @@
   "nav": {
     "services": "SERVICES",
     "howItWorks": "HOW IT WORKS",
-    "whySerco": "WHY US",
+    "whyTeambemanning": "WHY US",
     "workWithUs": "CAREERS",
     "aboutUs": "ABOUT US",
     "contactUs": "CONTACT US",
@@ -77,7 +77,7 @@
     "kicker": "REVIEWS",
     "title": "WHAT OUR CLIENTS SAY",
     "t1": {
-      "quote": "SERCO delivered exactly the talent we needed — fast and professionally. We could scale up our production without compromising quality.",
+      "quote": "TEAMBEMANNING delivered exactly the talent we needed — fast and professionally. We could scale up our production without compromising quality.",
       "name": "Tobias Löfgren",
       "role": "",
       "company": "Löfgrens Transport"
@@ -119,12 +119,12 @@
     "cta": "Get a quote"
   },
   "featured": {
-    "kicker": "HIGHLIGHTS FROM SERCO",
+    "kicker": "HIGHLIGHTS FROM TEAMBEMANNING",
     "readMore": "Read more →",
     "visitNews": "VISIT OUR NEWS",
     "c1": {
       "badge": "Transport",
-      "title": "SERCO expands in transport",
+      "title": "TEAMBEMANNING expands in transport",
       "desc": "New partnerships and more drivers — we're growing to meet demand."
     },
     "c2": {
@@ -158,10 +158,10 @@
     "companyTitle": "COMPANY",
     "contactTitle": "CONTACT",
     "aboutUs": "About us",
-    "whySerco": "Why SERCO",
+    "whyTeambemanning": "Why TEAMBEMANNING",
     "howItWorks": "How it works",
     "workWithUs": "Careers",
-    "copyright": "SERCO Bemanning. All rights reserved.",
+    "copyright": "TEAMBEMANNING Bemanning. All rights reserved.",
     "privacy": "Privacy policy"
   },
   "cta": {
@@ -201,10 +201,10 @@
   "aboutPage": {
     "kicker": "About us",
     "title": "Small company, big delivery",
-    "desc": "SERCO Bemanning combines personal service with professional structure. Based in Sollentuna, we staff across the Stockholm region.",
+    "desc": "TEAMBEMANNING Bemanning combines personal service with professional structure. Based in Sollentuna, we staff across the Stockholm region.",
     "storyKicker": "Our story",
     "storyTitle": "How it started",
-    "storyP1": "SERCO was started to solve an urgent staffing need — and quickly discovered there was a market for a staffing partner who truly listens, matches with care and delivers with reliability.",
+    "storyP1": "TEAMBEMANNING was started to solve an urgent staffing need — and quickly discovered there was a market for a staffing partner who truly listens, matches with care and delivers with reliability.",
     "storyP2": "Since the start, we've grown through trust, good matching and long-term relationships. We've never tried to be the biggest — but we strive to be the best at what we do.",
     "visionKicker": "Our vision",
     "visionTitle": "Growing without losing the closeness",
@@ -229,7 +229,7 @@
     },
     "teamKicker": "The team",
     "teamTitle": "Meet our team",
-    "teamDesc": "The people who make SERCO what it is.",
+    "teamDesc": "The people who make TEAMBEMANNING what it is.",
     "nameCeo": "Gabriel Serban",
     "nameHr": "Nicoleta Serban",
     "nameTeamlead": "Alex",
@@ -237,10 +237,10 @@
     "roleStaffing": "HR Manager",
     "roleCandidate": "Team Leader"
   },
-  "whySercoPage": {
-    "kicker": "Why SERCO",
+  "whyTeambemanningPage": {
+    "kicker": "Why TEAMBEMANNING",
     "title": "Staffing that makes a difference",
-    "desc": "We're not the biggest — but we're the fastest, closest and most engaged. Here's why companies choose SERCO.",
+    "desc": "We're not the biggest — but we're the fastest, closest and most engaged. Here's why companies choose TEAMBEMANNING.",
     "r1": {
       "title": "Smaller company, closer collaboration",
       "desc": "With us you get direct contact with those who manage staffing. No middlemen, fast decisions and a partner who truly listens."
@@ -278,7 +278,7 @@
       "desc": "We build relationships, not transactions. Our goal is to be your staffing partner for the long term."
     },
     "bestOfBoth": "We combine the best of both worlds",
-    "bestOfBothDesc": "The closeness and flexibility of a small company, combined with the professionalism and structure needed to deliver the right talent — every time. That's SERCO."
+    "bestOfBothDesc": "The closeness and flexibility of a small company, combined with the professionalism and structure needed to deliver the right talent — every time. That's TEAMBEMANNING."
   },
   "processPage": {
     "kicker": "How it works",
@@ -332,7 +332,7 @@
     "kicker": "Careers",
     "title": "With us, you're not just a number",
     "desc": "We're a smaller staffing company with a big heart. Here you get personal contact, a smooth start and room to grow.",
-    "whyKicker": "Why SERCO",
+    "whyKicker": "Why TEAMBEMANNING",
     "whyTitle": "More than just an assignment",
     "whyDesc": "We want you to thrive, develop and feel secure. Here's what makes us different.",
     "j1": {
@@ -360,7 +360,7 @@
       "desc": "Shorter decision paths mean we can act quickly and flexibly."
     },
     "offerKicker": "We offer",
-    "offerTitle": "What you get at SERCO",
+    "offerTitle": "What you get at TEAMBEMANNING",
     "o1": "Personal contact person",
     "o2": "Clear routines and processes",
     "o3": "Insurance and security package",
@@ -378,7 +378,7 @@
     "youthDesc": "We believe in giving young people a good start in working life. Through structured introductions, clear expectations and personal support, we help young employees quickly enter working life in a safe and professional way.",
     "sportsKicker": "Values",
     "sportsTitle": "Sports as inspiration",
-    "sportsDesc": "SERCO has a strong interest in sports — not just as a hobby, but as a foundation for values. Discipline, teamwork, responsibility and structure are values we carry from the sports world into our daily work.",
+    "sportsDesc": "TEAMBEMANNING has a strong interest in sports — not just as a hobby, but as a foundation for values. Discipline, teamwork, responsibility and structure are values we carry from the sports world into our daily work.",
     "applyTitle": "Submit your application",
     "applyDesc": "Fill in the form below and we'll get back to you. It only takes a minute.",
     "area": "Area",
@@ -391,7 +391,7 @@
   },
   "partnersPage": {
     "kicker": "Partners & Cases",
-    "title": "Companies that trust SERCO",
+    "title": "Companies that trust TEAMBEMANNING",
     "desc": "We build long-term partnerships and deliver results. Here are some examples.",
     "logosKicker": "Our partners",
     "logosTitle": "Collaboration partners",
@@ -405,19 +405,19 @@
     "c1": {
       "client": "Transport company in Stockholm",
       "challenge": "Needed to quickly add drivers during an expansion phase.",
-      "solution": "SERCO matched 5 experienced drivers within 48 hours, all with the right licenses.",
+      "solution": "TEAMBEMANNING matched 5 experienced drivers within 48 hours, all with the right licenses.",
       "result": "The client maintained delivery times without interruption throughout the expansion."
     },
     "c2": {
       "client": "E-commerce warehouse in Stockholm area",
       "challenge": "High volumes during Black Friday and Christmas required rapid staff reinforcement.",
-      "solution": "SERCO delivered 12 warehouse workers with pick & pack experience.",
+      "solution": "TEAMBEMANNING delivered 12 warehouse workers with pick & pack experience.",
       "result": "All orders were handled on time and the client saved time on recruitment."
     },
     "c3": {
       "client": "Property company",
       "challenge": "Needed reliable cleaning staff for multiple offices and properties.",
-      "solution": "SERCO matched quality-assured staff with office cleaning experience.",
+      "solution": "TEAMBEMANNING matched quality-assured staff with office cleaning experience.",
       "result": "Stable collaboration with high client satisfaction and consistent quality."
     },
     "ctaTitle": "Get staffed today",
@@ -425,11 +425,11 @@
   },
   "newsPage": {
     "kicker": "News",
-    "title": "Latest from SERCO",
-    "desc": "Stay updated with news, insights and updates from SERCO Bemanning.",
+    "title": "Latest from TEAMBEMANNING",
+    "desc": "Stay updated with news, insights and updates from TEAMBEMANNING Bemanning.",
     "readMore": "Read more →",
     "n1": {
-      "title": "SERCO expands in logistics staffing",
+      "title": "TEAMBEMANNING expands in logistics staffing",
       "date": "March 2026",
       "excerpt": "We're expanding our candidate base and capacity in warehouse and logistics to meet growing demand in the Stockholm region."
     },
@@ -441,7 +441,7 @@
     "n3": {
       "title": "Our youth employment initiative",
       "date": "January 2026",
-      "excerpt": "SERCO invests in helping young adults into working life through structured introduction programs and personal follow-up."
+      "excerpt": "TEAMBEMANNING invests in helping young adults into working life through structured introduction programs and personal follow-up."
     },
     "n4": {
       "title": "New partnership in the transport industry",
@@ -449,7 +449,7 @@
       "excerpt": "We've started a new partnership with a leading transport company in the Stockholm area and are expanding our capacity."
     },
     "n5": {
-      "title": "SERCO celebrates a successful year",
+      "title": "TEAMBEMANNING celebrates a successful year",
       "date": "November 2025",
       "excerpt": "We look back on a year of growth, strong partnerships and hundreds of successful assignments."
     },
@@ -493,7 +493,7 @@
       "desc": "Continuous dialogue with both client and consultant during the assignment."
     },
     "advantagesKicker": "Advantages",
-    "advantagesTitle": "Why companies choose SERCO",
+    "advantagesTitle": "Why companies choose TEAMBEMANNING",
     "needsKicker": "Needs",
     "needsTitle": "Common needs we solve"
   },
@@ -502,7 +502,7 @@
     "title": "Reliable staffing for transport and distribution",
     "desc": "We deliver drivers, courier staff and distribution workers who keep your deliveries on time.",
     "introTitle": "Staffing for an industry that never stops",
-    "introText": "The transport industry requires staff who deliver — every day, regardless of weather or volume. SERCO understands the pace and demands of the industry and matches you with drivers and distribution staff who are reliable, experienced and ready to go.",
+    "introText": "The transport industry requires staff who deliver — every day, regardless of weather or volume. TEAMBEMANNING understands the pace and demands of the industry and matches you with drivers and distribution staff who are reliable, experienced and ready to go.",
     "helpTitle": "What we can help you with",
     "h1": "Truck drivers with the right licenses",
     "h2": "Last-mile courier staff",
@@ -532,7 +532,7 @@
     },
     "w4": {
       "title": "Personal contact",
-      "desc": "You always have a dedicated contact person at SERCO."
+      "desc": "You always have a dedicated contact person at TEAMBEMANNING."
     },
     "w5": {
       "title": "Trial period",
@@ -554,7 +554,7 @@
     "title": "Efficient staffing for warehouse and logistics",
     "desc": "We deliver warehouse staff, forklift operators and terminal staff who keep your flows efficient.",
     "introTitle": "Staffing that keeps the pace up",
-    "introText": "In logistics, everything is about flows, pace and precision. SERCO delivers staff who understand how warehouses, terminals and distribution centers work — and who can come in, adapt quickly and contribute from day one.",
+    "introText": "In logistics, everything is about flows, pace and precision. TEAMBEMANNING delivers staff who understand how warehouses, terminals and distribution centers work — and who can come in, adapt quickly and contribute from day one.",
     "helpTitle": "What we can help you with",
     "h1": "Warehouse workers for picking, packing and dispatch",
     "h2": "Forklift operators with the right certificates",
@@ -607,7 +607,7 @@
     "title": "Staffing for industry and production",
     "desc": "We help companies in industry and production quickly find reliable staff for both temporary and long-term needs.",
     "introTitle": "Flexible staffing for industrial operations",
-    "introText": "SERCO offers flexible staffing for industrial operations that need reinforcement in production, warehousing or daily operations. We match you with hardworking and reliable candidates who can quickly get up to speed.",
+    "introText": "TEAMBEMANNING offers flexible staffing for industrial operations that need reinforcement in production, warehousing or daily operations. We match you with hardworking and reliable candidates who can quickly get up to speed.",
     "helpTitle": "What we can help you with",
     "h1": "Production workers",
     "h2": "Machine operators",
@@ -661,7 +661,7 @@
     "title": "Professional cleaning with reliable staff",
     "desc": "We deliver carefully selected cleaning staff who guarantee quality, reliability and flexibility.",
     "introTitle": "Reliable cleaning — every day",
-    "introText": "Cleaning is about more than clean surfaces. It's about reliability, consistency and service. SERCO delivers cleaning staff who understand the importance of doing a thorough job, every time — whether it's offices, schools, healthcare facilities or industrial properties.",
+    "introText": "Cleaning is about more than clean surfaces. It's about reliability, consistency and service. TEAMBEMANNING delivers cleaning staff who understand the importance of doing a thorough job, every time — whether it's offices, schools, healthcare facilities or industrial properties.",
     "helpTitle": "What we can help you with",
     "h1": "Daily office cleaning",
     "h2": "Cleaning for schools and public facilities",
@@ -710,56 +710,56 @@
   },
   "seo": {
     "home": {
-      "title": "SERCO Bemanning — Professional staffing in Stockholm",
-      "description": "SERCO Bemanning delivers quality-assured staff in transport, logistics, industry and cleaning across the Stockholm region. Fast, flexible and reliable staffing."
+      "title": "TEAMBEMANNING Bemanning — Professional staffing in Stockholm",
+      "description": "TEAMBEMANNING Bemanning delivers quality-assured staff in transport, logistics, industry and cleaning across the Stockholm region. Fast, flexible and reliable staffing."
     },
     "services": {
-      "title": "Our services — Staffing in transport, logistics, industry & cleaning | SERCO",
-      "description": "SERCO Bemanning provides quality-assured personnel in transport, logistics, industry and cleaning. Tailored to your needs in the Stockholm region."
+      "title": "Our services — Staffing in transport, logistics, industry & cleaning | TEAMBEMANNING",
+      "description": "TEAMBEMANNING Bemanning provides quality-assured personnel in transport, logistics, industry and cleaning. Tailored to your needs in the Stockholm region."
     },
     "transport": {
-      "title": "Transport staffing Stockholm — Drivers & distribution | SERCO",
-      "description": "Hire experienced drivers, couriers and distribution staff with the right licenses in Stockholm. SERCO Bemanning delivers transport personnel fast and quality-assured."
+      "title": "Transport staffing Stockholm — Drivers & distribution | TEAMBEMANNING",
+      "description": "Hire experienced drivers, couriers and distribution staff with the right licenses in Stockholm. TEAMBEMANNING Bemanning delivers transport personnel fast and quality-assured."
     },
     "logistics": {
-      "title": "Logistics staffing Stockholm — Warehouse, forklift & terminal | SERCO",
-      "description": "Warehouse workers, forklift drivers and terminal staff who keep your flows running. SERCO staffs logistics across the Stockholm region — fast and flexible."
+      "title": "Logistics staffing Stockholm — Warehouse, forklift & terminal | TEAMBEMANNING",
+      "description": "Warehouse workers, forklift drivers and terminal staff who keep your flows running. TEAMBEMANNING staffs logistics across the Stockholm region — fast and flexible."
     },
     "industry": {
-      "title": "Industrial staffing Stockholm — Production & operators | SERCO",
-      "description": "Production workers and operators with practical skills and safety mindset. SERCO Bemanning helps industrial companies in Stockholm keep production running."
+      "title": "Industrial staffing Stockholm — Production & operators | TEAMBEMANNING",
+      "description": "Production workers and operators with practical skills and safety mindset. TEAMBEMANNING Bemanning helps industrial companies in Stockholm keep production running."
     },
     "cleaning": {
-      "title": "Cleaning & janitorial staff Stockholm | SERCO Bemanning",
-      "description": "Professional cleaning staff for offices, properties and commercial premises in Stockholm. SERCO delivers reliable, quality-assured cleaning services."
+      "title": "Cleaning & janitorial staff Stockholm | TEAMBEMANNING Bemanning",
+      "description": "Professional cleaning staff for offices, properties and commercial premises in Stockholm. TEAMBEMANNING delivers reliable, quality-assured cleaning services."
     },
     "howItWorks": {
-      "title": "How it works — Our staffing process step by step | SERCO",
-      "description": "From needs analysis to follow-up: how SERCO Bemanning's process works. Fast matching, quality-assured candidates and continuous dialogue."
+      "title": "How it works — Our staffing process step by step | TEAMBEMANNING",
+      "description": "From needs analysis to follow-up: how TEAMBEMANNING Bemanning's process works. Fast matching, quality-assured candidates and continuous dialogue."
     },
-    "whySerco": {
-      "title": "Why SERCO — Proximity, flexibility and quality in staffing",
-      "description": "9 reasons to choose SERCO Bemanning: personal service, fast matching, quality-assured candidates and better value for money."
+    "whyTeambemanning": {
+      "title": "Why TEAMBEMANNING — Proximity, flexibility and quality in staffing",
+      "description": "9 reasons to choose TEAMBEMANNING Bemanning: personal service, fast matching, quality-assured candidates and better value for money."
     },
     "careers": {
-      "title": "Careers — Open assignments in staffing | SERCO",
-      "description": "Apply for jobs at SERCO Bemanning. Personal contact, safe onboarding and varied assignments in transport, logistics, industry and cleaning in Stockholm."
+      "title": "Careers — Open assignments in staffing | TEAMBEMANNING",
+      "description": "Apply for jobs at TEAMBEMANNING Bemanning. Personal contact, safe onboarding and varied assignments in transport, logistics, industry and cleaning in Stockholm."
     },
     "about": {
-      "title": "About us — SERCO Bemanning in Sollentuna & Stockholm",
-      "description": "SERCO Bemanning is a smaller staffing company in Sollentuna with great delivery capacity. Get to know our team, history and values."
+      "title": "About us — TEAMBEMANNING Bemanning in Sollentuna & Stockholm",
+      "description": "TEAMBEMANNING Bemanning is a smaller staffing company in Sollentuna with great delivery capacity. Get to know our team, history and values."
     },
     "partners": {
-      "title": "Partners & client cases — Companies that trust SERCO",
-      "description": "DHL, Löfgrens Transport, Trängsunds Åkeri and more — see client cases and results from companies that chose SERCO Bemanning as their staffing partner."
+      "title": "Partners & client cases — Companies that trust TEAMBEMANNING",
+      "description": "DHL, Löfgrens Transport, Trängsunds Åkeri and more — see client cases and results from companies that chose TEAMBEMANNING Bemanning as their staffing partner."
     },
     "news": {
-      "title": "News — Latest from SERCO Bemanning",
-      "description": "News, insights and updates from SERCO Bemanning. Stay informed about the staffing industry and our operations in Stockholm."
+      "title": "News — Latest from TEAMBEMANNING Bemanning",
+      "description": "News, insights and updates from TEAMBEMANNING Bemanning. Stay informed about the staffing industry and our operations in Stockholm."
     },
     "contact": {
-      "title": "Contact us — SERCO Bemanning Stockholm",
-      "description": "Contact SERCO Bemanning for staffing in transport, logistics, industry and cleaning. Phone: 08-758 56 07. Sjöängsvägen 6, Sollentuna."
+      "title": "Contact us — TEAMBEMANNING Bemanning Stockholm",
+      "description": "Contact TEAMBEMANNING Bemanning for staffing in transport, logistics, industry and cleaning. Phone: 08-758 56 07. Sjöängsvägen 6, Sollentuna."
     }
   }
 }
