@@ -12,18 +12,18 @@ const HeroSection = () => {
   const kickerRest = kickerWords.slice(1).join(" ");
 
   return (
-    <section className="relative min-h-[70vh] md:min-h-[88vh] overflow-hidden bg-secondary">
+    <section className="relative min-h-[75vh] md:min-h-screen overflow-hidden bg-secondary">
       <link rel="preload" as="image" href={heroImage} />
       <img
         src={heroImage}
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[95%_100%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[95%_center] hero-img-fade"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
-      <div className="relative z-10 min-h-[70vh] md:min-h-[88vh] flex flex-col container-wide">
+      <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
           <div className="max-w-[760px] lg:max-w-[760px] md:max-w-[55%] hero-content-in">
             <p
