@@ -19,9 +19,12 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[95%_center] hero-img-fade"
+        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] w-full object-cover object-[95%_center] hero-img-fade"
+        style={{ height: 'calc(100% - var(--nav-h))' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+      <div
+        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] bg-gradient-to-r from-black/85 via-black/60 to-black/20"
+      />
 
       <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
