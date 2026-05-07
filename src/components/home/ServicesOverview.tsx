@@ -117,8 +117,9 @@ const ServicesOverview = () => {
   }, [isPaused, services.length]);
 
   return (
-    <section className="bg-surface-muted">
-      <div className="container-wide pt-20 pb-12 md:pt-28 md:pb-16">
+    <section className="bg-background">
+      <div className="bg-surface-muted">
+        <div className="container-wide pt-20 pb-12 md:pt-28 md:pb-16">
         {/* Section header — kicker, headline, supporting intro */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
           <p
@@ -289,8 +290,9 @@ const ServicesOverview = () => {
           })}
         </div>
       </div>
+      </div>
 
-      {/* Dome bottom — surface-muted dome arching down into the white section */}
+      {/* Dome bottom — same downward arch as How It Works, gray surface-muted color */}
       <div aria-hidden style={{ lineHeight: 0 }}>
         <svg
           viewBox="0 0 1440 320"
