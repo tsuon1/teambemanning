@@ -235,6 +235,24 @@ const HowItWorks = () => {
             </h2>
           </div>
 
+          <div className="grid justify-items-center" style={{ marginBottom: "clamp(20px, 2.5vw, 36px)" }}>
+            <div className="overflow-hidden bg-black/20 rounded-md" style={{ width: "min(760px, 100%)", aspectRatio: "16 / 9" }}>
+              <iframe
+                src="https://player.vimeo.com/video/76979871?title=0&byline=0&portrait=0"
+                title="Hur det går till"
+                className="w-full h-full block border-0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div className="text-center mx-auto" style={{ maxWidth: "770px", marginBottom: "clamp(32px, 4vw, 56px)" }}>
+            <p className="text-muted-foreground" style={{ fontSize: "var(--p-size)", lineHeight: "var(--p-line)" }}>
+              Vi hjälper dig att hitta rätt kompetens snabbt — från första behovsanalys till uppföljning. En transparent process där varje steg är utformat för att leverera kvalitet och trygghet.
+            </p>
+          </div>
+
           <div className="grid" style={{ gap: "clamp(32px, 5vw, 84px)", paddingBlock: "clamp(24px, 3vw, 48px)" }}>
             {steps.map((row, i) => (
               <StepRow key={row.kicker} row={row} index={i} />
