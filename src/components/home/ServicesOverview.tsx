@@ -291,7 +291,7 @@ const ServicesOverview = () => {
         </div>
       </div>
 
-      {/* Dome bottom — surface-muted dome arching down into the white section */}
+      {/* Dome bottom — same downward arch as How It Works, gray surface-muted color */}
       <div aria-hidden style={{ lineHeight: 0 }}>
         <svg
           viewBox="0 0 1440 320"
