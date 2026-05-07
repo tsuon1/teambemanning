@@ -79,9 +79,9 @@ const HeroSection = () => {
               </Link>
               <Link
                 to="/jobba-hos-oss"
-                className="text-sm font-medium text-white/80 hover:text-white underline underline-offset-4 transition-colors normal-case"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-white/80 hover:text-white underline underline-offset-4 transition-colors normal-case"
               >
-              {t("hero.link")}
+              {t("hero.link")} <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
