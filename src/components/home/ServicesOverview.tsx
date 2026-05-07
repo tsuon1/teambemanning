@@ -250,7 +250,7 @@ const ServicesOverview = () => {
                 </div>
 
                 {/* Text block below illustration */}
-                <div className="p-5 md:p-6 flex flex-col gap-2">
+                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10">
                   <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
