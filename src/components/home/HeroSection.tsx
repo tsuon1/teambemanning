@@ -21,7 +21,7 @@ const HeroSection = () => {
         decoding="sync"
         className="absolute inset-0 w-full h-full object-cover object-[95%_center] hero-img-fade"
       />
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
       <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
