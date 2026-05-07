@@ -251,13 +251,13 @@ const ServicesOverview = () => {
 
                 {/* Text block below illustration */}
                 <div className="p-5 md:p-6 flex flex-col gap-2">
-                  <h3 className="font-display font-black text-foreground text-xl md:text-2xl leading-tight">
+                  <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed normal-case line-clamp-3">
+                  <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
                     {desc}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground mt-1 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-1 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
                     <span className="relative">
                       {t("services.readMore").replace(/\s*→\s*$/, "")}
                       <span
