@@ -213,11 +213,11 @@ const HowItWorks = () => {
       {/* Dome top — sits inside this section, arches downward into the dark area */}
       <div aria-hidden style={{ lineHeight: 0 }}>
         <svg
-          viewBox="0 0 1440 220"
+          viewBox="0 0 1440 320"
           preserveAspectRatio="none"
-          className="block w-full h-[clamp(60px,13vw,220px)]"
+          className="block w-full h-[clamp(80px,18vw,320px)]"
         >
-          <path d="M0,220 Q720,-30 1440,220 Z" fill="hsl(var(--secondary))" />
+          <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(var(--secondary))" />
         </svg>
       </div>
 
