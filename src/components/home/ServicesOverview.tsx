@@ -231,54 +231,42 @@ const ServicesOverview = () => {
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden ring-1 ring-background/30 bg-background/[0.02] shadow-[0_0_20px_-8px_hsl(0_0%_100%/0.08)] transition-all duration-700 ease-out hover:shadow-[0_0_20px_-8px_hsl(var(--brand)/0.35)] hover:ring-accent hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`group relative overflow-hidden bg-background ring-1 ring-background/15 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.4)] hover:ring-accent hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
-                  borderRadius: "5px",
                   transitionDelay: gridVisible ? `${idx * 120}ms` : "0ms",
                 }}
               >
-                {/* Fixed-aspect media so all 4 cards share identical proportions */}
-                <div className="relative aspect-[5/6] xl:aspect-[3/4] overflow-hidden" style={{ borderRadius: "5px" }}>
+                {/* Illustration area — white background lets the line art breathe */}
+                <div className="relative aspect-square overflow-hidden flex items-center justify-center bg-background p-6 md:p-8">
                   <img
                     src={service.image}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+                    className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />
-                  {/* Premium dark gradient overlay — stronger at the bottom for
-                      readability, lighter on hover for image emphasis. */}
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/15 transition-opacity duration-500 group-hover:opacity-80"
-                  />
-                  {/* Subtle accent edge that brightens on hover */}
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  />
+                </div>
 
-                  {/* Bottom-aligned content area — same on every card */}
-                  <div className="absolute inset-x-0 bottom-0 p-5 md:p-6 flex flex-col gap-3">
-                    <h3 className="font-display font-black text-white text-xl md:text-2xl leading-tight">
-                      {title}
-                    </h3>
-                    <p className="text-sm text-white/75 leading-relaxed normal-case line-clamp-3">
-                      {desc}
-                    </p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white mt-1 transition-all duration-500 opacity-90 group-hover:opacity-100 translate-y-0 group-hover:gap-2.5">
-                      <span className="relative">
-                        {t("services.readMore").replace(/\s*→\s*$/, "")}
-                        <span
-                          aria-hidden="true"
-                          className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"
-                        />
-                      </span>
-                      <ArrowUpRight className="w-4 h-4 text-white transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                {/* Text block below illustration */}
+                <div className="p-5 md:p-6 flex flex-col gap-2 border-t border-border">
+                  <h3 className="font-display font-black text-foreground text-xl md:text-2xl leading-tight">
+                    {title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed normal-case line-clamp-3">
+                    {desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground mt-1 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
+                    <span className="relative">
+                      {t("services.readMore").replace(/\s*→\s*$/, "")}
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-brand transition-all duration-500 group-hover:w-full"
+                      />
                     </span>
-                  </div>
+                    <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </span>
                 </div>
               </Link>
             );
