@@ -207,39 +207,39 @@ const HowItWorks = () => {
 
   return (
     <section
-      className="relative bg-secondary text-foreground"
-      style={{
-        paddingTop: "var(--section-pad)",
-        paddingBottom: "clamp(36px, 4vw, 72px)",
-        overflowX: "clip",
-      }}
+      className="relative bg-background text-foreground"
+      style={{ overflowX: "clip" }}
     >
-      {/* Dome arching up into the section above (same color as section) */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-0 right-0 -translate-y-[calc(100%-1px)]"
-        style={{ top: 0, lineHeight: 0 }}
-      >
+      {/* Dome top — sits inside this section, arches downward into the dark area */}
+      <div aria-hidden style={{ lineHeight: 0 }}>
         <svg
-          viewBox="0 0 1440 320"
+          viewBox="0 0 1440 220"
           preserveAspectRatio="none"
-          className="block w-full h-[clamp(60px,18vw,320px)]"
+          className="block w-full h-[clamp(60px,13vw,220px)]"
         >
-          <path d="M0,320 Q720,-40 1440,320 Z" fill="hsl(var(--secondary))" />
+          <path d="M0,220 Q720,-30 1440,220 Z" fill="hsl(var(--secondary))" />
         </svg>
       </div>
 
-      <div className="container-wide">
-        <div className="text-center" style={{ marginBottom: "clamp(28px, 3vw, 48px)" }}>
-          <h2 className="font-black text-foreground" style={{ fontSize: "var(--h2-size)" }}>
-            {t("howItWorks.title")}
-          </h2>
-        </div>
+      <div
+        className="bg-secondary"
+        style={{
+          paddingTop: "clamp(8px, 2vw, 32px)",
+          paddingBottom: "clamp(36px, 4vw, 72px)",
+        }}
+      >
+        <div className="container-wide">
+          <div className="text-center" style={{ marginBottom: "clamp(28px, 3vw, 48px)" }}>
+            <h2 className="font-black text-foreground" style={{ fontSize: "var(--h2-size)" }}>
+              {t("howItWorks.title")}
+            </h2>
+          </div>
 
-        <div className="grid" style={{ gap: "clamp(32px, 5vw, 84px)", paddingBlock: "clamp(24px, 3vw, 48px)" }}>
-          {steps.map((row, i) => (
-            <StepRow key={row.kicker} row={row} index={i} />
-          ))}
+          <div className="grid" style={{ gap: "clamp(32px, 5vw, 84px)", paddingBlock: "clamp(24px, 3vw, 48px)" }}>
+            {steps.map((row, i) => (
+              <StepRow key={row.kicker} row={row} index={i} />
+            ))}
+          </div>
         </div>
       </div>
 
