@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Core — clean white minimal */
-    --foreground: 191 9% 32%;
+    --foreground: 191 9% 27%;
     --surface: 192 27% 9%;
     --surface-muted: 191 9% 40%;
     --surface-alt: 190 19% 23%;
