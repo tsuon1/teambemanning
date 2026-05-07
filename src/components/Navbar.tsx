@@ -201,13 +201,13 @@ const Navbar = () => {
 
               <div className="border-t border-border my-3" />
 
-              <Link to={link("howItWorks")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.howItWorks")}
               </Link>
-              <Link to={link("whySerco")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.whyTeambemanning")}
               </Link>
-              <Link to={link("careers")} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
+              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
                 {t("nav.workWithUs")}
               </Link>
 
