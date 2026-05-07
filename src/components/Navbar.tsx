@@ -122,7 +122,7 @@ const Navbar = () => {
           <NavDropdown
             label={t("nav.aboutUs")}
             items={aboutLinks}
-            isActive={aboutLinks.some((l) => l.href === location.pathname)}
+            isActive={false}
             open={openDropdown === "about"}
             onOpen={() => setOpenDropdown("about")}
             onClose={() => setOpenDropdown(null)}
