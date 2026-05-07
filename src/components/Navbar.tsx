@@ -99,28 +99,22 @@ const Navbar = () => {
           />
 
           <Link
-            to={link("howItWorks")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("howItWorks") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.howItWorks")}
           </Link>
 
           <Link
-            to={link("whySerco")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("whySerco") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.whyTeambemanning")}
           </Link>
 
           <Link
-            to={link("careers")}
-            className={`font-medium text-sm tracking-[0.02em] transition-colors ${
-              location.pathname === link("careers") ? "text-brand" : "text-background/80 hover:text-brand"
-            }`}
+            to={home}
+            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
           >
             {t("nav.workWithUs")}
           </Link>
