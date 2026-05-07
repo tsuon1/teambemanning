@@ -231,7 +231,7 @@ const ServicesOverview = () => {
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden bg-background ring-1 ring-background/15 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.4)] hover:ring-accent hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
+                className={`group relative overflow-hidden bg-transparent transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
