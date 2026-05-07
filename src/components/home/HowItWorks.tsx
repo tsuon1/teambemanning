@@ -257,6 +257,7 @@ const HowItWorks = () => {
             {steps.map((row, i) => (
               <StepRow key={row.kicker} row={row} index={i} />
             ))}
+          </div>
         </div>
       </div>
 
