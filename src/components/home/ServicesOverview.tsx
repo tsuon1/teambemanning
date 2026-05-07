@@ -231,7 +231,7 @@ const ServicesOverview = () => {
                 key={service.transKey}
                 to={href}
                 aria-label={`${title} — ${t("services.readMore")}`}
-                className={`group relative overflow-hidden bg-background ring-1 ring-background/15 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.4)] hover:ring-accent hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
+                className={`group relative overflow-hidden bg-transparent transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
@@ -239,7 +239,7 @@ const ServicesOverview = () => {
                 }}
               >
                 {/* Illustration area — white background lets the line art breathe */}
-                <div className="relative aspect-square overflow-hidden bg-background">
+                <div className="relative aspect-square overflow-hidden bg-transparent">
                   <img
                     src={service.image}
                     alt=""
@@ -250,7 +250,7 @@ const ServicesOverview = () => {
                 </div>
 
                 {/* Text block below illustration */}
-                <div className="p-5 md:p-6 flex flex-col gap-2 border-t border-border">
+                <div className="p-5 md:p-6 flex flex-col gap-2">
                   <h3 className="font-display font-black text-foreground text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
