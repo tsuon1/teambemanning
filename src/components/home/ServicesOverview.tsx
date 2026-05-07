@@ -159,33 +159,28 @@ const ServicesOverview = () => {
                   key={service.transKey}
                   to={href}
                   aria-label={`${title} — ${t("services.readMore")}`}
-                  className="group relative shrink-0 w-full snap-center overflow-hidden ring-1 ring-background/30 shadow-[0_0_20px_-8px_hsl(0_0%_100%/0.08)] transition-all duration-500 hover:shadow-[0_0_20px_-8px_hsl(var(--brand)/0.35)] hover:ring-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  style={{ borderRadius: "5px" }}
+                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-background ring-1 ring-background/15 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.15)] transition-all duration-500 hover:shadow-[0_8px_28px_-8px_hsl(var(--brand)/0.35)] hover:ring-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: "5px" }}>
+                  <div className="relative aspect-[4/5] overflow-hidden flex items-center justify-center bg-background p-6">
                     <img
                       src={service.image}
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.04]"
                     />
-                    <div
-                      aria-hidden="true"
-                      className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/15"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 p-5 flex flex-col gap-3">
-                      <h3 className="font-display font-black text-white text-xl leading-tight">
-                        {title}
-                      </h3>
-                      <p className="text-sm text-white/75 leading-relaxed normal-case line-clamp-3">
-                        {desc}
-                      </p>
-                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white mt-1">
-                        {t("services.readMore").replace(/\s*→\s*$/, "")}
-                        <ArrowUpRight className="w-4 h-4 text-white" />
-                      </span>
-                    </div>
+                  </div>
+                  <div className="p-5 flex flex-col gap-2 border-t border-border">
+                    <h3 className="font-display font-black text-foreground text-xl leading-tight">
+                      {title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed normal-case line-clamp-3">
+                      {desc}
+                    </p>
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground mt-1">
+                      {t("services.readMore").replace(/\s*→\s*$/, "")}
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
                   </div>
                 </Link>
               );
