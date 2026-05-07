@@ -83,7 +83,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
       <div className="container-wide flex items-center justify-between py-4 nav:py-5">
         <Link to={link("home")} className="flex items-center -ml-3 nav:-ml-4">
-          <img src={sercoLogo} alt="SERCO Bemanning" className="h-[7.0625rem] nav:h-[8.5375rem] w-auto my-[-2.09rem] nav:my-[-2.52rem] translate-y-[2px]" />
+          <img src={sercoLogo} alt="SERCO Bemanning" className="h-[5.5rem] nav:h-[8.5375rem] w-auto my-[-1.6rem] nav:my-[-2.52rem] translate-y-[2px]" />
         </Link>
 
         {/* Desktop nav */}
