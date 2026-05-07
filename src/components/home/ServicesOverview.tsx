@@ -290,6 +290,7 @@ const ServicesOverview = () => {
           })}
         </div>
       </div>
+      </div>
 
       {/* Dome bottom — same downward arch as How It Works, gray surface-muted color */}
       <div aria-hidden style={{ lineHeight: 0 }}>
