@@ -250,7 +250,7 @@ const Navbar = () => {
               <Link
                 to={link("contact")}
                 onClick={() => setMobileOpen(false)}
-                className="mt-3 border border-foreground text-foreground font-medium text-sm text-center px-6 py-2.5 rounded-full hover:bg-brand hover:text-background hover:border-brand transition-colors"
+                className="mt-3 bg-brand text-white font-medium text-sm text-center px-6 py-2.5 rounded-full hover:scale-105 transition-transform"
               >
                 {t("nav.contactUs")}
               </Link>
