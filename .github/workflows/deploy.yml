@@ -30,11 +30,25 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Determine base URL
+        run: |
+          REPO_NAME=${GITHUB_REPOSITORY#*/}
+          if [[ "$REPO_NAME" == *.github.io ]]; then
+            echo "BASE_URL=/" >> $GITHUB_ENV
+          else
+            echo "BASE_URL=/$REPO_NAME/" >> $GITHUB_ENV
+          fi
+
       - name: Build
         run: npm run build
+        env:
+          BASE_URL: ${{ env.BASE_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Add 404 fallback
+        run: cp dist/index.html dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -8,7 +8,7 @@ import "./i18n";
 const root = document.getElementById("root")!;
 const app = (
   <HelmetProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
   </HelmetProvider>
