@@ -187,12 +187,10 @@ const ServicesOverview = () => {
             })}
           </div>
 
-          {/* Static icon tabs below the image — one per service category.
-              The active category is highlighted in orange. */}
-          <div className="mt-5 px-6 flex items-center justify-between" role="tablist">
+          {/* Bullet pagination — one dot per service. */}
+          <div className="mt-6 flex items-center justify-center gap-2" role="tablist">
             {services.map((service, i) => {
               const isActive = i === activeIndex;
-              const Icon = service.Icon;
               return (
                 <button
                   key={service.transKey}
@@ -204,14 +202,12 @@ const ServicesOverview = () => {
                     setIsPaused(true);
                     scrollToIndex(i);
                   }}
-                  className={`inline-flex items-center justify-center w-12 h-12 rounded-full transition-colors duration-300 ${
+                  className={`rounded-full transition-all duration-300 ${
                     isActive
-                      ? "bg-brand text-foreground ring-2 ring-brand shadow-[0_0_0_4px_hsl(var(--brand)/0.25)]"
-                      : "ring-1 ring-background/30 text-background/60 hover:text-background hover:ring-background/60"
+                      ? "bg-brand w-6 h-2"
+                      : "bg-background/30 hover:bg-background/60 w-2 h-2"
                   }`}
-                >
-                  <Icon className="w-5 h-5" strokeWidth={isActive ? 2.25 : 2} />
-                </button>
+                />
               );
             })}
           </div>
