@@ -6,7 +6,7 @@ const PreviewTimeout = () => {
   useEffect(() => {
     const isPreview = window.location.hostname.includes("id-preview--");
     if (!isPreview) return;
-    const t = setTimeout(() => setExpired(true), 11000);
+    const t = setTimeout(() => setExpired(true), 45000);
     return () => clearTimeout(t);
   }, []);
 
