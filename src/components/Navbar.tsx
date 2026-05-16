@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
+    <header className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-gradient-to-r from-surface from-50% via-surface/80 via-75% to-transparent">
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
         <div className="flex items-center">
