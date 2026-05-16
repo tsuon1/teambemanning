@@ -38,16 +38,30 @@ const HeroSection = () => {
             </p>
 
             <h1
-              className="font-black text-white mb-[18px]"
+              className="text-white mb-[18px]"
               style={{
                 fontSize: 'var(--h1-size)',
                 lineHeight: 'var(--h1-line)',
                 textShadow: '0 1px 4px rgba(0,0,0,0.5)',
               }}
             >
-              <span className="max-[545px]:hidden whitespace-pre-line">{t("hero.title")}</span>
-              <span className="hidden max-[545px]:block whitespace-pre-line">
-                KOMPETENS{"\n"}FÖR VARJE{"\n"}BEHOV
+              <span className="max-[545px]:hidden">
+                <span className="font-black uppercase block">KOMPETENS FÖR</span>
+                <span
+                  className="italic font-normal normal-case block"
+                  style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
+                >
+                  varje behov
+                </span>
+              </span>
+              <span className="hidden max-[545px]:block">
+                <span className="font-black uppercase block">KOMPETENS{"\n"}FÖR</span>
+                <span
+                  className="italic font-normal normal-case block"
+                  style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
+                >
+                  varje behov
+                </span>
               </span>
             </h1>
 
