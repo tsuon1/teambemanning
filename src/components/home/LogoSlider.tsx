@@ -1,5 +1,4 @@
 import { useEffect, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import logoAxelent from "@/assets/logo-axelent.png";
@@ -30,11 +29,6 @@ const LogoSlider = () => {
     setStartIndex((prev) => (prev + 1) % partners.length);
   }, []);
 
-  const goPrev = useCallback(() => {
-    setStartIndex((prev) => (prev - 1 + partners.length) % partners.length);
-  }, []);
-
-  // Auto-advance on all viewports
   useEffect(() => {
     const timer = setInterval(goNext, INTERVAL);
     return () => clearInterval(timer);
@@ -55,88 +49,40 @@ const LogoSlider = () => {
           {t("logoSlider.trustedBy")}
         </p>
 
-        {/* Desktop: 5 logos with arrows */}
-        <div className="hidden lg:flex items-center justify-center gap-2">
-          <button
-            onClick={goPrev}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Previous"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <div className="flex-1 grid grid-cols-5 items-center">
-            {visibleDesktop.map(({ name, logo }, i) => (
-              <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
-                <img
-                  src={logo}
-                  alt={name}
-                  className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-                />
-              </div>
-            ))}
-          </div>
-          <button
-            onClick={goNext}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Next"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+        {/* Desktop: 5 logos */}
+        <div className="hidden lg:grid grid-cols-5 items-center">
+          {visibleDesktop.map(({ name, logo }, i) => (
+            <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+              <img
+                src={logo}
+                alt={name}
+                className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+              />
+            </div>
+          ))}
         </div>
 
-        {/* Tablet: 3 logos with arrows */}
-        <div className="hidden min-[600px]:flex lg:hidden items-center justify-center gap-2">
-          <button
-            onClick={goPrev}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Previous"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <div className="flex-1 grid grid-cols-3 items-center">
-            {visibleTablet.map(({ name, logo }, i) => (
-              <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
-                <img
-                  src={logo}
-                  alt={name}
-                  className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-                />
-              </div>
-            ))}
-          </div>
-          <button
-            onClick={goNext}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Next"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+        {/* Tablet: 3 logos */}
+        <div className="hidden min-[600px]:grid lg:hidden grid-cols-3 items-center">
+          {visibleTablet.map(({ name, logo }, i) => (
+            <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+              <img
+                src={logo}
+                alt={name}
+                className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+              />
+            </div>
+          ))}
         </div>
 
-        {/* Mobile: single logo + arrows */}
-        <div className="min-[600px]:hidden flex items-center justify-center">
-          <button
-            onClick={goPrev}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Previous"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <div className="flex-1 flex items-center justify-center overflow-hidden min-h-[36px]">
-            <img
-              key={current.name}
-              src={current.logo}
-              alt={current.name}
-              className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-            />
-          </div>
-          <button
-            onClick={goNext}
-            className="text-white/70 hover:text-white transition-colors shrink-0 p-2"
-            aria-label="Next"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+        {/* Mobile: single logo */}
+        <div className="min-[600px]:hidden flex items-center justify-center overflow-hidden min-h-[36px]">
+          <img
+            key={current.name}
+            src={current.logo}
+            alt={current.name}
+            className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+          />
         </div>
       </div>
 
