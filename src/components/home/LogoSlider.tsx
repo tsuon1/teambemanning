@@ -52,7 +52,7 @@ const LogoSlider = () => {
         {/* Desktop: 5 logos */}
         <div className="hidden lg:grid grid-cols-5 items-center">
           {visibleDesktop.map(({ name, logo }, i) => (
-            <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+            <div key={`${name}-${i}`} className="flex items-center justify-center">
               <img
                 src={logo}
                 alt={name}
@@ -65,7 +65,7 @@ const LogoSlider = () => {
         {/* Tablet: 3 logos */}
         <div className="hidden min-[600px]:grid lg:hidden grid-cols-3 items-center">
           {visibleTablet.map(({ name, logo }, i) => (
-            <div key={`${name}-${i}`} className="flex items-center justify-center px-4">
+            <div key={`${name}-${i}`} className="flex items-center justify-center">
               <img
                 src={logo}
                 alt={name}
