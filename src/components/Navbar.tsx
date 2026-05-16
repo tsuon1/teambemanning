@@ -45,14 +45,14 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
-      <div className="container-wide flex items-stretch justify-between">
+      <div className="container-wide flex items-stretch justify-between min-h-[88px] sm:min-h-[104px]">
         {/* Left: Meny + Logo */}
         <div className="flex items-center">
           <Link to={home} className="flex items-center">
             <img
               src={sercoLogo}
               alt="Teambemanning"
-              className="h-10 sm:h-12 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </Link>
         </div>
