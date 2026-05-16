@@ -47,7 +47,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
       <div className="container-wide flex items-stretch justify-between">
         {/* Left: Meny + Logo */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center">
           <Link to={home} className="flex items-center">
             <img
               src={sercoLogo}
@@ -55,19 +55,19 @@ const Navbar = () => {
               className="h-10 sm:h-12 w-auto"
             />
           </Link>
-
-          <button
-            onClick={() => setMenuOpen((v) => !v)}
-            className="flex flex-col items-center justify-center gap-1 px-2 py-3 text-background/90 hover:text-brand transition-colors"
-            aria-label="Meny"
-          >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            <span className="text-[11px] font-medium tracking-wide">{t("nav.menu", { defaultValue: "Meny" })}</span>
-          </button>
         </div>
 
         {/* Right: action tiles */}
         <div className="flex items-stretch">
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            className="flex flex-col items-center justify-center gap-1 px-5 text-background/90 hover:text-brand transition-colors"
+            aria-label="Meny"
+          >
+            {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            <span className="text-[11px] font-medium tracking-wide">{t("nav.menu", { defaultValue: "Meny" })}</span>
+          </button>
+
           <Link
             to={link("contact")}
             className="hidden sm:flex flex-col items-center justify-center gap-1 px-5 text-background/90 hover:text-brand transition-colors"
