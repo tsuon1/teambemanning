@@ -126,7 +126,7 @@ const FeaturedResources = () => {
               <Link key={card.title} to={card.href} className="group bg-background border border-border rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all duration-200">
                 <div className="aspect-[16/10] overflow-hidden relative">
                   <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <span className="absolute top-3 left-3 bg-foreground text-background text-xs font-bold px-3 py-1 rounded-full">{card.badge}</span>
+                  <span className="absolute top-3 left-3 bg-foreground text-background text-xs font-bold px-3 py-1 rounded-[3px]">{card.badge}</span>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-foreground text-sm leading-snug mb-2 normal-case">{card.title}</h3>
@@ -140,14 +140,14 @@ const FeaturedResources = () => {
           {showNav && visibleCount >= 5 && (
             <div className="flex justify-center gap-2 mt-6">
               {Array.from({ length: maxStart + 1 }, (_, i) => (
-                <button key={i} onClick={() => setStartIndex(i)} className={`w-2 h-2 rounded-full transition-colors ${i === startIndex ? "bg-foreground" : "bg-foreground/20"}`} aria-label={`Go to ${i + 1}`} />
+                <button key={i} onClick={() => setStartIndex(i)} className={`w-2 h-2 rounded-[3px] transition-colors ${i === startIndex ? "bg-foreground" : "bg-foreground/20"}`} aria-label={`Go to ${i + 1}`} />
               ))}
             </div>
           )}
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/nyheter" className="inline-flex items-center bg-brand text-white font-medium text-sm px-7 py-2.5 rounded-full hover:scale-105 transition-transform">
+          <Link to="/nyheter" className="inline-flex items-center bg-brand text-white font-medium text-sm px-7 py-2.5 rounded-[3px] hover:scale-105 transition-transform">
             {t("featured.visitNews")}
           </Link>
         </div>
