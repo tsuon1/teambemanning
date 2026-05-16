@@ -27,7 +27,7 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
-        <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
+        <div className="flex-1 flex items-center pt-[96px] pb-0">
           <div className="max-w-[760px] lg:max-w-[760px] md:max-w-[55%] hero-content-in">
             <p
               className="text-white font-semibold uppercase mb-4"
