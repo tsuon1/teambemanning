@@ -48,6 +48,14 @@ const Navbar = () => {
       <div className="container-wide flex items-stretch justify-between">
         {/* Left: Meny + Logo */}
         <div className="flex items-center gap-6">
+          <Link to={home} className="flex items-center">
+            <img
+              src={sercoLogo}
+              alt="Teambemanning"
+              className="h-10 sm:h-12 w-auto"
+            />
+          </Link>
+
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className="flex flex-col items-center justify-center gap-1 px-2 py-3 text-background/90 hover:text-brand transition-colors"
@@ -56,14 +64,6 @@ const Navbar = () => {
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             <span className="text-[11px] font-medium tracking-wide">{t("nav.menu", { defaultValue: "Meny" })}</span>
           </button>
-
-          <Link to={home} className="flex items-center">
-            <img
-              src={sercoLogo}
-              alt="Teambemanning"
-              className="h-10 sm:h-12 w-auto"
-            />
-          </Link>
         </div>
 
         {/* Right: action tiles */}
