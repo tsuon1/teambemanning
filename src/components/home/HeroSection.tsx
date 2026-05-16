@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-6">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-brand text-white font-medium text-sm px-[29px] py-[16px] rounded-[3px] hover:scale-105 transition-transform"
+                className="inline-flex items-center gap-2 bg-brand text-white font-medium text-sm px-[29px] py-[16px] rounded-none hover:scale-105 transition-transform"
               >
                 {t("hero.cta")} <ArrowUpRight className="w-4 h-4" />
               </Link>
