@@ -33,7 +33,7 @@ const Navbar = () => {
   const close = () => { setMenuOpen(false); setMobileDropdown(null); };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 text-white bg-surface/40 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 text-white">
       <div className="grid grid-cols-[auto_1fr_auto] items-stretch">
         {/* Left: Meny trigger */}
         <button
@@ -67,13 +67,17 @@ const Navbar = () => {
             <LanguageSwitcher />
           </div>
 
-          {/* Brand CTA block — Akavia-style */}
+          {/* Brand CTA block — fades to transparent on the left, Akavia-style */}
           <Link
             to={link("contact")}
-            className="flex flex-col items-center justify-center gap-1.5 px-6 md:px-10 py-5 bg-brand text-white hover:brightness-110 transition-all"
+            className="relative flex flex-col items-center justify-center gap-1.5 pl-16 md:pl-24 pr-6 md:pr-10 py-5 text-white hover:brightness-110 transition-all"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, transparent 0%, hsl(var(--brand) / 0.0) 5%, hsl(var(--brand) / 0.85) 45%, hsl(var(--brand)) 75%)",
+            }}
           >
-            <Plus className="w-6 h-6" strokeWidth={2} />
-            <span className="text-xs font-semibold tracking-wide">{t("nav.contactUs")}</span>
+            <Plus className="w-6 h-6 relative" strokeWidth={2} />
+            <span className="text-xs font-semibold tracking-wide relative">{t("nav.contactUs")}</span>
           </Link>
         </div>
       </div>
