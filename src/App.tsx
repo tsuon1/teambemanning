@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PreviewTimeout from "@/components/PreviewTimeout";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import LanguageRoute from "@/components/LanguageRoute";
@@ -77,7 +77,6 @@ const App = () => (
         </Routes>
       </main>
       <Footer />
-      <PreviewTimeout />
     </TooltipProvider>
   </QueryClientProvider>
 );
