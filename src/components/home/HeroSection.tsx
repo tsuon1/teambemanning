@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="flex-1 flex items-center pt-[96px] pb-[12vh] md:pb-[calc(12vh+120px)] lg:pb-[calc(12vh+160px)]">
           <div className="max-w-[760px] lg:max-w-[760px] md:max-w-[55%] hero-content-in">
             <p
-              className="text-white font-black uppercase mb-4"
+              className="text-white font-semibold uppercase mb-4"
               style={{ fontSize: 'var(--h5-size)', letterSpacing: 'var(--h5-track)' }}
             >
               <span className="text-brand">{kickerFirst}</span>
@@ -46,7 +46,7 @@ const HeroSection = () => {
               }}
             >
               <span className="max-[545px]:hidden">
-                <span className="font-black uppercase block">KOMPETENS FÖR</span>
+                <span className="font-bold uppercase block">KOMPETENS FÖR</span>
                 <span
                   className="italic font-normal normal-case block"
                   style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 </span>
               </span>
               <span className="hidden max-[545px]:block">
-                <span className="font-black uppercase block">KOMPETENS{"\n"}FÖR</span>
+                <span className="font-bold uppercase block">KOMPETENS{"\n"}FÖR</span>
                 <span
                   className="italic font-normal normal-case block"
                   style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
