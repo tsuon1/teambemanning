@@ -50,28 +50,26 @@ const LogoSlider = () => {
         </p>
 
         {/* Desktop: 5 logos */}
-        <div className="hidden lg:grid grid-cols-5 items-center">
+        <div className="hidden lg:flex items-center justify-between">
           {visibleDesktop.map(({ name, logo }, i) => (
-            <div key={`${name}-${i}`} className="flex items-center justify-center">
-              <img
-                src={logo}
-                alt={name}
-                className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-              />
-            </div>
+            <img
+              key={`${name}-${i}`}
+              src={logo}
+              alt={name}
+              className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+            />
           ))}
         </div>
 
         {/* Tablet: 3 logos */}
-        <div className="hidden min-[600px]:grid lg:hidden grid-cols-3 items-center">
+        <div className="hidden min-[600px]:flex lg:hidden items-center justify-between">
           {visibleTablet.map(({ name, logo }, i) => (
-            <div key={`${name}-${i}`} className="flex items-center justify-center">
-              <img
-                src={logo}
-                alt={name}
-                className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
-              />
-            </div>
+            <img
+              key={`${name}-${i}`}
+              src={logo}
+              alt={name}
+              className="logo-fade h-9 max-w-[130px] object-contain brightness-0 invert opacity-80"
+            />
           ))}
         </div>
 
