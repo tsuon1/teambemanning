@@ -1,66 +1,18 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Plus, Mail, Search } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import sercoLogo from "@/assets/serco-logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { ROUTES, LangCode, resolveRoute, detectLangFromPath } from "@/i18n/routes";
 
-interface DropdownProps {
-  label: string;
-  items: { name: string; href: string }[];
-  isActive: boolean;
-  open: boolean;
-  onOpen: () => void;
-  onClose: () => void;
-  onNavigate: () => void;
-}
-
-const NavDropdown = ({ label, items, isActive, open, onOpen, onClose, onNavigate }: DropdownProps) => (
-  <div className="relative" onMouseEnter={onOpen} onMouseLeave={onClose}>
-    <button
-      className={`flex items-center gap-1.5 font-medium text-sm tracking-[0.02em] transition-colors ${
-        isActive ? "text-brand" : "text-background/80 hover:text-brand"
-      }`}
-    >
-      {label}
-      <ChevronDown className={`w-3 h-3 opacity-50 transition-transform ${open ? "rotate-180" : ""}`} />
-    </button>
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          initial={{ opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 6 }}
-          transition={{ duration: 0.15 }}
-          className="absolute top-full left-0 mt-2 min-w-[200px] bg-background border border-border rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.08)] py-2 z-50"
-        >
-          {items.map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              onClick={onNavigate}
-              className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors uppercase"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
-);
-
 const Navbar = () => {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
   const location = useLocation();
   const { t } = useTranslation();
 
-  // Resolve current language from the URL so all nav links point to the
-  // matching language version of each page.
   const lang: LangCode =
     resolveRoute(location.pathname)?.lang ?? detectLangFromPath(location.pathname);
   const link = (key: keyof typeof ROUTES) => ROUTES[key][lang];
@@ -72,183 +24,116 @@ const Navbar = () => {
     { name: t("nav.industry"),  href: home },
     { name: t("nav.cleaning"),  href: home },
   ];
-
   const aboutLinks = [
     { name: t("nav.about"),    href: home },
     { name: t("nav.partners"), href: home },
     { name: t("nav.news"),     href: home },
   ];
 
+  const close = () => { setMenuOpen(false); setMobileDropdown(null); };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface text-background border-b border-background/10">
-      <div className="container-wide flex items-center justify-between py-4 nav:py-5">
-        <Link to={link("home")} className="flex items-center -ml-3 nav:-ml-4">
-          <img src={sercoLogo} alt="SERCO Bemanning" className="h-[5.5rem] nav:h-[8.5375rem] w-auto my-[-1.6rem] nav:my-[-2.52rem] translate-y-[2px]" />
-        </Link>
+    <header className="absolute top-0 left-0 right-0 z-50 text-white">
+      <div className="grid grid-cols-[auto_1fr_auto] items-stretch">
+        {/* Left: Meny trigger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="flex flex-col items-center justify-center gap-1.5 px-6 md:px-10 py-5 hover:bg-white/5 transition-colors"
+          aria-label="Meny"
+        >
+          {menuOpen ? <X className="w-6 h-6" strokeWidth={2} /> : <Menu className="w-6 h-6" strokeWidth={2} />}
+          <span className="text-xs font-medium tracking-wide">{menuOpen ? t("nav.close") || "Stäng" : "Meny"}</span>
+        </button>
 
-        {/* Desktop nav */}
-        <nav className="hidden nav:flex items-center gap-8">
-          <NavDropdown
-            label={t("nav.services")}
-            items={services}
-            isActive={location.pathname === link("services")}
-            open={openDropdown === "tjanster"}
-            onOpen={() => setOpenDropdown("tjanster")}
-            onClose={() => setOpenDropdown(null)}
-            onNavigate={() => setOpenDropdown(null)}
-          />
-
-          <Link
-            to={home}
-            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
-          >
-            {t("nav.howItWorks")}
-          </Link>
-
-          <Link
-            to={home}
-            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
-          >
-            {t("nav.whyTeambemanning")}
-          </Link>
-
-          <Link
-            to={home}
-            className="font-medium text-sm tracking-[0.02em] transition-colors text-background/80 hover:text-brand"
-          >
-            {t("nav.workWithUs")}
-          </Link>
-
-          <NavDropdown
-            label={t("nav.aboutUs")}
-            items={aboutLinks}
-            isActive={false}
-            open={openDropdown === "about"}
-            onOpen={() => setOpenDropdown("about")}
-            onClose={() => setOpenDropdown(null)}
-            onNavigate={() => setOpenDropdown(null)}
-          />
-        </nav>
-
-        {/* Right side */}
-        <div className="hidden nav:flex items-center gap-5">
-          <LanguageSwitcher />
-          <Link
-            to={link("contact")}
-            className="bg-brand text-white font-medium text-sm px-[28px] py-[14px] rounded-full hover:scale-105 transition-transform"
-          >
-            {t("nav.contactUs")}
+        {/* Center: Logo with slash separator */}
+        <div className="flex items-center gap-4 md:gap-6 pl-2 md:pl-6">
+          <span className="text-white/40 text-3xl md:text-4xl font-light leading-none select-none">/</span>
+          <Link to={home} className="flex items-center" onClick={close}>
+            <img src={sercoLogo} alt="SERCO Bemanning" className="h-14 md:h-20 w-auto" />
           </Link>
         </div>
 
-        {/* Mobile right side */}
-        <div className="nav:hidden flex items-center gap-3 z-50">
-          <LanguageSwitcher />
+        {/* Right: icon stack items + brand CTA block */}
+        <div className="flex items-stretch">
           <Link
             to={link("contact")}
-            className="bg-brand text-white font-medium text-xs px-[20px] py-[10px] rounded-full hover:scale-105 transition-transform whitespace-nowrap"
+            className="hidden sm:flex flex-col items-center justify-center gap-1.5 px-4 md:px-6 py-5 text-white hover:bg-white/5 transition-colors"
           >
-            {t("nav.contactUs")}
+            <Mail className="w-5 h-5" strokeWidth={1.75} />
+            <span className="text-xs font-medium tracking-wide">{t("nav.contact") || "Kontakt"}</span>
           </Link>
-          <button
-            className="p-2 text-background"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Meny"
+
+          <div className="hidden md:flex flex-col items-center justify-center gap-1.5 px-4 md:px-6 py-5 hover:bg-white/5 transition-colors">
+            <LanguageSwitcher />
+          </div>
+
+          {/* Brand CTA block — Akavia-style */}
+          <Link
+            to={link("contact")}
+            className="flex flex-col items-center justify-center gap-1.5 px-6 md:px-10 py-5 bg-brand text-white hover:brightness-110 transition-all"
           >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+            <Plus className="w-6 h-6" strokeWidth={2} />
+            <span className="text-xs font-semibold tracking-wide">{t("nav.contactUs")}</span>
+          </Link>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Slide-down full menu */}
       <AnimatePresence>
-        {mobileOpen && (
+        {menuOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="nav:hidden bg-background border-t border-border overflow-hidden"
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="bg-surface border-t border-white/10 overflow-hidden"
           >
-            <div className="container-wide py-6 flex flex-col gap-1">
-              <button
-                onClick={() => setMobileDropdown(mobileDropdown === "tjanster" ? null : "tjanster")}
-                className="flex items-center justify-between w-full px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest uppercase"
-              >
-                {t("nav.services")}
-                <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown === "tjanster" ? "rotate-180" : ""}`} />
-              </button>
-              <AnimatePresence>
-                {mobileDropdown === "tjanster" && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="overflow-hidden"
-                  >
-                    {services.map((s) => (
-                      <Link
-                        key={s.href}
-                        to={s.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="block px-6 py-2.5 text-xs text-foreground hover:text-muted-foreground transition-colors uppercase tracking-widest"
-                      >
-                        {s.name}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+            <div className="container-wide py-10 grid md:grid-cols-3 gap-10">
+              <div>
+                <button
+                  onClick={() => setMobileDropdown(mobileDropdown === "tjanster" ? null : "tjanster")}
+                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide mb-3"
+                >
+                  {t("nav.services")}
+                  <ChevronDown className={`w-5 h-5 transition-transform md:hidden ${mobileDropdown === "tjanster" ? "rotate-180" : ""}`} />
+                </button>
+                <div className={`flex-col gap-2 ${mobileDropdown === "tjanster" ? "flex" : "hidden md:flex"}`}>
+                  {services.map((s) => (
+                    <Link key={s.name} to={s.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-1">
+                      {s.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
 
-              <div className="border-t border-border my-3" />
+              <div className="flex flex-col gap-3">
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                  {t("nav.howItWorks")}
+                </Link>
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                  {t("nav.whyTeambemanning")}
+                </Link>
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                  {t("nav.workWithUs")}
+                </Link>
+              </div>
 
-              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
-                {t("nav.howItWorks")}
-              </Link>
-              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
-                {t("nav.whyTeambemanning")}
-              </Link>
-              <Link to={home} onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest hover:text-foreground transition-colors uppercase">
-                {t("nav.workWithUs")}
-              </Link>
-
-              <div className="border-t border-border my-3" />
-
-              <button
-                onClick={() => setMobileDropdown(mobileDropdown === "about" ? null : "about")}
-                className="flex items-center justify-between w-full px-3 py-2.5 text-xs text-muted-foreground font-bold tracking-widest uppercase"
-              >
-                {t("nav.aboutUs")}
-                <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdown === "about" ? "rotate-180" : ""}`} />
-              </button>
-              <AnimatePresence>
-                {mobileDropdown === "about" && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="overflow-hidden"
-                  >
-                    {aboutLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        to={link.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="block px-6 py-2.5 text-xs text-foreground hover:text-muted-foreground transition-colors uppercase tracking-widest"
-                      >
-                        {link.name}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <Link
-                to={link("contact")}
-                onClick={() => setMobileOpen(false)}
-                className="mt-3 bg-brand text-white font-medium text-sm text-center px-6 py-2.5 rounded-full hover:scale-105 transition-transform"
-              >
-                {t("nav.contactUs")}
-              </Link>
+              <div>
+                <button
+                  onClick={() => setMobileDropdown(mobileDropdown === "about" ? null : "about")}
+                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide mb-3"
+                >
+                  {t("nav.aboutUs")}
+                  <ChevronDown className={`w-5 h-5 transition-transform md:hidden ${mobileDropdown === "about" ? "rotate-180" : ""}`} />
+                </button>
+                <div className={`flex-col gap-2 ${mobileDropdown === "about" ? "flex" : "hidden md:flex"}`}>
+                  {aboutLinks.map((l) => (
+                    <Link key={l.name} to={l.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-1">
+                      {l.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
