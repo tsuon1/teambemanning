@@ -52,7 +52,7 @@ const Navbar = () => {
             <img
               src={sercoLogo}
               alt="Teambemanning"
-              className="h-12 sm:h-16 w-auto"
+              className="h-11 sm:h-14 w-auto"
             />
           </Link>
         </div>
