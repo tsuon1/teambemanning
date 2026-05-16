@@ -33,7 +33,7 @@ const Navbar = () => {
   const close = () => { setMenuOpen(false); setMobileDropdown(null); };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 text-white">
+    <header className="fixed top-0 left-0 right-0 z-50 text-white bg-surface/40 backdrop-blur-sm">
       <div className="grid grid-cols-[auto_1fr_auto] items-stretch">
         {/* Left: Meny trigger */}
         <button
