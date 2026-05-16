@@ -57,11 +57,11 @@ const Navbar = () => {
             <span className="text-[11px] font-medium tracking-wide">{t("nav.menu", { defaultValue: "Meny" })}</span>
           </button>
 
-          <Link to={home} className="flex items-center -ml-2">
+          <Link to={home} className="flex items-center">
             <img
               src={sercoLogo}
-              alt="SERCO Bemanning"
-              className="h-[5.5rem] nav:h-[8.5375rem] w-auto my-[-1.6rem] nav:my-[-2.52rem] translate-y-[2px]"
+              alt="Teambemanning"
+              className="h-10 sm:h-12 w-auto"
             />
           </Link>
         </div>
