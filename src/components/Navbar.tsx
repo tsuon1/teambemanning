@@ -78,66 +78,102 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Slide-down full menu */}
+      {/* Side menu */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="bg-surface border-t border-white/10 overflow-hidden"
-          >
-            <div className="container-wide py-10 grid md:grid-cols-3 gap-10">
-              <div>
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={close}
+              className="fixed inset-0 bg-black/50 z-40"
+            />
+            <motion.aside
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+              className="fixed top-0 left-0 bottom-0 w-[88vw] sm:w-[420px] bg-surface border-r border-white/10 z-50 overflow-y-auto"
+            >
+              <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
+                <span className="text-white font-display text-lg font-bold uppercase tracking-wide">Meny</span>
+                <button onClick={close} aria-label="Stäng" className="p-2 text-white hover:text-brand transition-colors">
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+
+              <nav className="px-6 py-8 flex flex-col gap-1">
                 <button
                   onClick={() => setMobileDropdown(mobileDropdown === "tjanster" ? null : "tjanster")}
-                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide mb-3"
+                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide py-3 hover:text-brand transition-colors"
                 >
                   {t("nav.services")}
-                  <ChevronDown className={`w-5 h-5 transition-transform md:hidden ${mobileDropdown === "tjanster" ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`w-5 h-5 transition-transform ${mobileDropdown === "tjanster" ? "rotate-180" : ""}`} />
                 </button>
-                <div className={`flex-col gap-2 ${mobileDropdown === "tjanster" ? "flex" : "hidden md:flex"}`}>
-                  {services.map((s) => (
-                    <Link key={s.name} to={s.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-1">
-                      {s.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+                <AnimatePresence initial={false}>
+                  {mobileDropdown === "tjanster" && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="flex flex-col gap-1 pl-4 pb-3">
+                        {services.map((s) => (
+                          <Link key={s.name} to={s.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-2">
+                            {s.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
-              <div className="flex flex-col gap-3">
-                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide py-3 hover:text-brand transition-colors">
                   {t("nav.howItWorks")}
                 </Link>
-                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide py-3 hover:text-brand transition-colors">
                   {t("nav.whyTeambemanning")}
                 </Link>
-                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide hover:text-brand transition-colors">
+                <Link to={home} onClick={close} className="text-white font-display text-xl font-bold uppercase tracking-wide py-3 hover:text-brand transition-colors">
                   {t("nav.workWithUs")}
                 </Link>
-              </div>
 
-              <div>
                 <button
                   onClick={() => setMobileDropdown(mobileDropdown === "about" ? null : "about")}
-                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide mb-3"
+                  className="flex items-center justify-between w-full text-left text-white font-display text-xl font-bold uppercase tracking-wide py-3 hover:text-brand transition-colors"
                 >
                   {t("nav.aboutUs")}
-                  <ChevronDown className={`w-5 h-5 transition-transform md:hidden ${mobileDropdown === "about" ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`w-5 h-5 transition-transform ${mobileDropdown === "about" ? "rotate-180" : ""}`} />
                 </button>
-                <div className={`flex-col gap-2 ${mobileDropdown === "about" ? "flex" : "hidden md:flex"}`}>
-                  {aboutLinks.map((l) => (
-                    <Link key={l.name} to={l.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-1">
-                      {l.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
+                <AnimatePresence initial={false}>
+                  {mobileDropdown === "about" && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="flex flex-col gap-1 pl-4 pb-3">
+                        {aboutLinks.map((l) => (
+                          <Link key={l.name} to={l.href} onClick={close} className="text-white/70 hover:text-brand transition-colors text-sm uppercase tracking-wide py-2">
+                            {l.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </nav>
+            </motion.aside>
+          </>
         )}
       </AnimatePresence>
+
     </header>
   );
 };
