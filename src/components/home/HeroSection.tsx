@@ -66,15 +66,11 @@ const HeroSection = () => {
             </h1>
 
             <p
-              className="text-white/70 font-medium mb-7 lg:max-w-[560px] normal-case"
+              className="text-white/70 font-medium mb-7 normal-case"
               style={{ fontSize: 'var(--p-size)', lineHeight: 'var(--p-line)' }}
             >
-              <span className="lg:hidden">
-                Vi hjälper företag inom<br />
-                transport, logistik, industri och<br />
-                lokalvård att snabbt hitta rätt kompetens.
-              </span>
-              <span className="hidden lg:inline">{t("hero.desc")}</span>
+              Vi hjälper företag inom transport,<br />
+              logistik, industri och lokalvård att snabbt hitta rätt kompetens.
             </p>
 
             <div className="flex items-center gap-6">
