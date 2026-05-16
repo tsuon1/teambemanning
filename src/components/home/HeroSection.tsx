@@ -19,12 +19,9 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] w-full object-cover object-[70%_center] min-[546px]:object-[80%_center] hero-img-fade"
-        style={{ height: 'calc(100% - var(--nav-h))' }}
+        className="absolute inset-0 w-full h-full object-cover object-[70%_center] min-[546px]:object-[80%_center] hero-img-fade"
       />
-      <div
-        className="absolute left-0 right-0 bottom-0 top-[var(--nav-h)] bg-gradient-to-r from-black/85 via-black/60 to-black/20"
-      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
 
       <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[96px] pb-[64px]">
