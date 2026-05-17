@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, MessageCircle, Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -92,8 +93,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Slide-out menu panel */}
-      <AnimatePresence>
+      {/* Slide-out menu panel — rendered via portal to escape header's containing block (backdrop-filter) */}
+      {typeof document !== "undefined" && createPortal(
+        <AnimatePresence>
         {menuOpen && (
           <>
             <motion.div
