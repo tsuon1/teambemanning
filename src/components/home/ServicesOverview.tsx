@@ -161,7 +161,7 @@ const ServicesOverview = () => {
                   aria-label={`${title} — ${t("services.readMore")}`}
                   className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
                 >
-                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[50%] ring-2 ring-background/60">
+                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-md ring-2 ring-background/60">
                     <img
                       src={service.image}
                       alt=""
