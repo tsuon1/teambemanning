@@ -44,15 +44,7 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      className="fixed top-0 left-0 right-0 z-50 text-background bg-gradient-to-r from-surface/70 from-50% via-surface/50 via-75% to-transparent backdrop-blur-md"
-      style={{
-        WebkitMaskImage:
-          "linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
-        maskImage:
-          "linear-gradient(to bottom, black 0%, black 70%, transparent 100%)",
-      }}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-gradient-to-r from-surface/70 from-50% via-surface/50 via-75% to-transparent backdrop-blur-md">
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
         <div className="flex items-center">
@@ -109,7 +101,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/40 z-[60]"
+              className="fixed inset-0 top-[var(--nav-h,96px)] bg-black/40 z-40"
               onClick={closeMenu}
             />
             <motion.div
@@ -117,7 +109,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="fixed left-0 top-0 bottom-0 w-full max-w-[420px] bg-surface text-background z-[70] pt-[89px] overflow-y-auto border-r border-background/10"
+              className="fixed left-0 top-0 bottom-0 w-full max-w-[420px] bg-surface text-background z-40 pt-[var(--nav-h,96px)] overflow-y-auto border-r border-background/10"
             >
               <nav className="flex flex-col py-4">
                 {/* Services group */}
