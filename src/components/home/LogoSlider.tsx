@@ -43,7 +43,7 @@ const LogoSlider = () => {
   const current = partners[startIndex];
 
   return (
-    <section className="py-8 overflow-hidden bg-gradient-to-r from-surface/70 from-50% via-surface/50 via-75% to-transparent backdrop-blur-md">
+    <section className="py-8 overflow-hidden" style={{ backgroundColor: "#192e33" }}>
       <div className="container-wide">
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-white/70 text-center mb-4">
           {t("logoSlider.trustedBy")}
