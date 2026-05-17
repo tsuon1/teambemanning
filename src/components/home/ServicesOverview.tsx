@@ -235,7 +235,7 @@ const ServicesOverview = () => {
                 }}
               >
                 {/* Illustration area — white background lets the line art breathe */}
-                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[50%] ring-2 ring-background/60">
+                <div className="relative aspect-square overflow-hidden bg-transparent rounded-md ring-2 ring-background/60">
                   <img
                     src={service.image}
                     alt=""
