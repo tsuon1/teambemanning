@@ -109,7 +109,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 top-[var(--nav-h,96px)] bg-black/40 z-40"
+              className="fixed inset-0 bg-black/40 z-[60]"
               onClick={closeMenu}
             />
             <motion.div
@@ -117,7 +117,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="fixed left-0 top-0 bottom-0 w-full max-w-[420px] bg-surface text-background z-40 pt-[var(--nav-h,96px)] overflow-y-auto border-r border-background/10"
+              className="fixed left-0 top-0 bottom-0 w-full max-w-[420px] bg-surface text-background z-[70] pt-[89px] overflow-y-auto border-r border-background/10"
             >
               <nav className="flex flex-col py-4">
                 {/* Services group */}
