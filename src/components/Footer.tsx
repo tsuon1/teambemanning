@@ -15,7 +15,7 @@ const Footer = () => {
   const link = (key: keyof typeof ROUTES) => ROUTES[key][lang];
 
   return (
-    <footer className="bg-foreground text-background pt-20 pb-10 lg:pt-28 lg:pb-14">
+    <footer className="bg-surface text-background pt-20 pb-10 lg:pt-28 lg:pb-14">
       <div className="container-wide">
         <div className="grid md:grid-cols-2 gap-8 items-center pb-14 lg:pb-20">
           <div>
