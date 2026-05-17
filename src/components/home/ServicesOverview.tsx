@@ -118,7 +118,7 @@ const ServicesOverview = () => {
 
   return (
     <section className="bg-background">
-      <div style={{ backgroundColor: "#1f3a40" }}>
+      <div style={{ backgroundColor: "#284953" }}>
         <div className="container-wide pt-20 pb-28 md:pt-28 md:pb-36">
         {/* Section header — kicker, headline, supporting intro */}
         <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
@@ -278,7 +278,7 @@ const ServicesOverview = () => {
           preserveAspectRatio="none"
           className="block w-full h-[clamp(60px,11vw,200px)]"
         >
-          <path d="M0,0 Q720,260 1440,0 Z" fill="#1f3a40" />
+          <path d="M0,0 Q720,260 1440,0 Z" fill="#284953" />
         </svg>
       </div>
     </section>
