@@ -101,7 +101,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 top-[var(--nav-h,96px)] bg-black/40 z-40"
+              className="fixed inset-0 bg-black/50 z-[55]"
               onClick={closeMenu}
             />
             <motion.div
@@ -109,8 +109,15 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="fixed left-0 top-0 bottom-0 w-full max-w-[420px] bg-surface text-background z-40 pt-[var(--nav-h,96px)] overflow-y-auto border-r border-background/10"
+              className="fixed left-0 top-0 bottom-0 w-[85vw] max-w-[420px] bg-surface text-background z-[60] pt-[88px] overflow-y-auto border-r border-background/10 shadow-2xl"
             >
+              <button
+                onClick={closeMenu}
+                aria-label="Stäng meny"
+                className="absolute top-4 right-4 p-2 text-background/80 hover:text-brand transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
               <nav className="flex flex-col py-4">
                 {/* Services group */}
                 <button
