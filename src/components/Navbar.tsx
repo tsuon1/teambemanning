@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-surface"
+      className="fixed top-0 left-0 right-0 z-50 text-background bg-surface"
     >
       {/* Decorative curve hanging from the navbar */}
       <div aria-hidden className="pointer-events-none absolute left-0 right-0 top-full" style={{ lineHeight: 0 }}>
