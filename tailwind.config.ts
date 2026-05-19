@@ -105,30 +105,29 @@ export default {
           to: { opacity: "1" },
         },
         "bubble-retract": {
-          "0%":   { transform: "scaleY(1) scaleX(1) rotateX(0deg)" },
-          "20%":  { transform: "scaleY(1.08) scaleX(1.015) rotateX(-3deg)" },
-          "45%":  { transform: "scaleY(0.55) scaleX(0.99) rotateX(30deg)" },
-          "65%":  { transform: "scaleY(0.7) scaleX(1.005) rotateX(22deg)" },
-          "82%":  { transform: "scaleY(0.3) scaleX(0.97) rotateX(50deg)" },
-          "100%": { transform: "scaleY(0.05) scaleX(0.92) rotateX(75deg)" },
+          "0%":   { transform: "scaleY(1) scaleX(1)" },
+          "22%":  { transform: "scaleY(1.05) scaleX(1.008)" },
+          "55%":  { transform: "scaleY(0.5) scaleX(0.99)" },
+          "78%":  { transform: "scaleY(0.22) scaleX(0.96)" },
+          "100%": { transform: "scaleY(0.04) scaleX(0.93)" },
         },
         "bubble-extend": {
-          "0%":   { transform: "scaleY(0.05) scaleX(0.92) rotateX(75deg)" },
-          "35%":  { transform: "scaleY(0.7) scaleX(0.99) rotateX(20deg)" },
-          "60%":  { transform: "scaleY(1.06) scaleX(1.01) rotateX(-4deg)" },
-          "80%":  { transform: "scaleY(0.97) scaleX(0.998) rotateX(2deg)" },
-          "100%": { transform: "scaleY(1) scaleX(1) rotateX(0deg)" },
+          "0%":   { transform: "scaleY(0.04) scaleX(0.93)" },
+          "45%":  { transform: "scaleY(0.75) scaleX(0.99)" },
+          "72%":  { transform: "scaleY(1.04) scaleX(1.006)" },
+          "88%":  { transform: "scaleY(0.99) scaleX(0.999)" },
+          "100%": { transform: "scaleY(1) scaleX(1)" },
         },
-
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "bubble-retract": "bubble-retract 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards",
-        "bubble-extend": "bubble-extend 950ms cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "bubble-retract": "bubble-retract 850ms cubic-bezier(0.33, 1, 0.68, 1) forwards",
+        "bubble-extend": "bubble-extend 850ms cubic-bezier(0.33, 1, 0.68, 1) forwards",
       },
+
 
 
     },
