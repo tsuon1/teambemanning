@@ -51,7 +51,10 @@ const HeroSection = () => {
               }}
             >
               <span className="block uppercase">Rätt personal.</span>
-              <span className="block text-white/85 font-normal normal-case mt-1 md:mt-2" style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}>
+              <span
+                className="block text-white/85 font-normal normal-case mt-1 md:mt-2 whitespace-nowrap text-[1.45rem] sm:text-[1.9rem] md:text-[inherit]"
+                style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
+              >
                 När arbetet inte får stanna.
               </span>
             </h1>
