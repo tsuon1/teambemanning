@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImage from "@/assets/hero-home.jpg";
+import heroImage from "@/assets/hero-home.png";
 
 const HeroSection = () => {
   const { t } = useTranslation();
