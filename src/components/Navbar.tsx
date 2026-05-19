@@ -46,12 +46,10 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 backdrop-blur-md"
-      style={{
-        backgroundImage:
-          "linear-gradient(to right, rgba(23,41,46,0.7) 0%, rgba(23,41,46,0.7) 50%, rgba(23,41,46,0.5) 75%, rgba(23,41,46,0) 100%)",
-      }}
+      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10"
+      style={{ backgroundColor: "#17292e" }}
     >
+
 
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
