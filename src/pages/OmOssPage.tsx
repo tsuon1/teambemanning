@@ -8,6 +8,7 @@ import heroImg from "@/assets/hero-about.jpg";
 import teamVd from "@/assets/team-vd.jpg";
 import teamBemanning from "@/assets/team-bemanning.jpg";
 import teamKandidat from "@/assets/team-kandidat.jpg";
+import teamGroup from "@/assets/team-bemanning.png";
 
 const OmOssPage = () => {
   const { t } = useTranslation();
@@ -56,6 +57,14 @@ const OmOssPage = () => {
       <section className="section-padding bg-warm">
         <div className="container-wide">
           <SectionHeading kicker={t("aboutPage.teamKicker")} title={t("aboutPage.teamTitle")} />
+          <div className="rounded-[2px] overflow-hidden mb-12 -mt-4">
+            <img
+              src={teamGroup}
+              alt={t("aboutPage.teamTitle")}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { nameKey: "nameCeo", roleKey: "roleCeo", image: teamVd },
