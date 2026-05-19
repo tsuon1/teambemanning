@@ -204,10 +204,11 @@ const Navbar = () => {
                 <Link
                   to={link("contact")}
                   onClick={closeMenu}
-                  className="block px-6 py-4 text-base font-semibold border-b border-background/10 hover:text-brand transition-colors"
+                  className="block px-6 py-4 text-base font-semibold uppercase border-b border-background/10 hover:text-brand transition-colors"
                 >
                   {t("nav.contact", { defaultValue: "Kontakt" })}
                 </Link>
+
 
                 <div className="px-6 py-6 sm:hidden">
                   <LanguageSwitcher />
