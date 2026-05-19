@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import sercoLogo from "@/assets/serco-logo.png";
+import sercoLogo from "@/assets/teambemanning-logo.png";
 import { ROUTES, LangCode, resolveRoute, detectLangFromPath } from "@/i18n/routes";
 
 const Footer = () => {
