@@ -228,8 +228,8 @@ const HowItWorks = () => {
       </div>
 
       <div
-        className="bg-secondary"
         style={{
+          backgroundColor: "hsl(0 0% 77%)",
           paddingTop: "clamp(8px, 2vw, 32px)",
           paddingBottom: "clamp(36px, 4vw, 72px)",
         }}
