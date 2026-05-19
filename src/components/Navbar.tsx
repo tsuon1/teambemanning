@@ -48,6 +48,17 @@ const Navbar = () => {
     <header
       className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-surface"
     >
+      {/* Decorative curve hanging from the navbar */}
+      <div aria-hidden className="pointer-events-none absolute left-0 right-0 top-full" style={{ lineHeight: 0 }}>
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          className="block w-full h-[36px] sm:h-[56px]"
+        >
+          <path d="M0,0 C360,90 1080,-30 1440,30 L1440,0 L0,0 Z" fill="hsl(var(--surface))" />
+        </svg>
+      </div>
+
 
 
 
