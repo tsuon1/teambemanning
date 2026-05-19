@@ -77,22 +77,22 @@
     "kicker": "RECENSIONER",
     "title": "VAD VÅRA KUNDER SÄGER",
     "t1": {
-      "quote": "TEAMBEMANNING levererade exakt den kompetens vi behövde — snabbt och professionellt. Vi kunde skala upp vår produktion utan att kompromissa med kvaliteten.",
-      "name": "Tobias Löfgren",
-      "role": "",
-      "company": "Löfgrens Transport"
+      "quote": "SERCO levererade exakt den kompetens vi behövde — snabbt och professionellt. Vi kunde skala upp vår produktion utan att kompromissa med kvaliteten.",
+      "name": "Mikael Andersson",
+      "role": "Produktionschef",
+      "company": "Axelent"
     },
     "t2": {
       "quote": "Flexibiliteten och uppföljningen har varit fantastisk. Vi har äntligen en bemanningspartner som verkligen förstår vår verksamhet och våra behov.",
-      "name": "Janne Bryner",
-      "role": "",
-      "company": "Trångsund Åkeri"
+      "name": "Anna Karlsson",
+      "role": "HR-ansvarig",
+      "company": "Sporda Nonwoven"
     },
     "t3": {
       "quote": "Från första kontakten till att personalen var på plats tog det mindre än 48 timmar. Imponerande service och pålitliga medarbetare varje gång.",
-      "name": "Sayed Alti",
-      "role": "Verksamhetschef",
-      "company": "DHL"
+      "name": "Johan Lindqvist",
+      "role": "Operations Manager",
+      "company": "Hexagon"
     }
   },
   "kpi": {
