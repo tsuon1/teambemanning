@@ -1,90 +1,90 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Zap, ShieldCheck, RefreshCw } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-home.png";
 
 const HeroSection = () => {
   const { t } = useTranslation();
 
-  const kickerText = t("hero.kicker");
-  const kickerWords = kickerText.split(" ");
-  const kickerFirst = kickerWords[0];
-  const kickerRest = kickerWords.slice(1).join(" ");
+  const trustPoints = [
+    { icon: Zap, label: "Snabb tillsättning" },
+    { icon: ShieldCheck, label: "Kvalitetssäkrad personal" },
+    { icon: RefreshCw, label: "Kontinuerlig uppföljning" },
+  ];
 
   return (
-    <section className="relative min-h-[75vh] md:min-h-screen overflow-hidden bg-secondary">
+    <section className="relative min-h-[88vh] md:min-h-screen overflow-hidden bg-secondary">
       <link rel="preload" as="image" href={heroImage} />
       <img
         src={heroImage}
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[70%_20%] min-[546px]:object-[80%_20%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[72%_25%] md:object-[68%_22%] hero-img-fade"
+        style={{ filter: "brightness(1.05) contrast(1.02)" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
+      {/* Dark gradient overlay — stronger on the left for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/15" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 md:bg-none" />
 
-      <div className="relative z-10 min-h-[75vh] md:min-h-screen flex flex-col container-wide">
-        <div className="flex-1 flex items-center pt-[96px] pb-[64px]">
-          <div className="max-w-[760px] lg:max-w-[760px] md:max-w-[55%] hero-content-in">
+      <div className="relative z-10 min-h-[88vh] md:min-h-screen flex flex-col container-wide">
+        <div className="flex-1 flex items-center pt-[120px] pb-[80px] md:pt-[140px] md:pb-[100px]">
+          <div className="max-w-[680px] hero-content-in">
             <p
-              className="text-white font-semibold uppercase mb-4"
-              style={{ fontSize: 'var(--h5-size)', letterSpacing: 'var(--h5-track)' }}
+              className="text-white/90 font-semibold uppercase mb-7 tracking-[0.18em]"
+              style={{ fontSize: 'var(--h5-size)' }}
             >
-              <span className="text-brand">{kickerFirst}</span>
-              {kickerRest ? ` ${kickerRest}` : ""}
+              <span className="inline-block w-8 h-px bg-brand align-middle mr-3" />
+              <span className="text-brand">HITTA</span> RÄTT PERSONAL
             </p>
 
             <h1
-              className="text-white mb-[18px]"
+              className="text-white mb-8 font-bold normal-case"
               style={{
                 fontSize: 'var(--h1-size)',
-                lineHeight: 'var(--h1-line)',
-                textShadow: '0 1px 4px rgba(0,0,0,0.5)',
+                lineHeight: 1.08,
+                letterSpacing: '-0.015em',
+                textShadow: '0 2px 12px rgba(0,0,0,0.4)',
               }}
             >
-              <span className="max-[545px]:hidden">
-                <span className="font-bold uppercase block">KOMPETENS</span>
-                <span
-                  className="italic font-normal normal-case block"
-                  style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
-                >
-                  för varje behov
-                </span>
-              </span>
-              <span className="hidden max-[545px]:block">
-                <span className="font-bold uppercase block">KOMPETENS</span>
-                <span
-                  className="italic font-normal normal-case block"
-                  style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
-                >
-                  för varje behov
-                </span>
+              <span className="block uppercase">Rätt personal.</span>
+              <span className="block text-white/85 font-normal normal-case mt-2" style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}>
+                När arbetet inte får stanna.
               </span>
             </h1>
 
             <p
-              className="text-white/70 font-medium mb-7 normal-case"
-              style={{ fontSize: 'var(--p-size)', lineHeight: 'var(--p-line)' }}
+              className="text-white/75 font-normal mb-10 normal-case max-w-[580px]"
+              style={{ fontSize: 'var(--p-size)', lineHeight: 1.65 }}
             >
-              Bemanning inom industri, lager och bygg,<br />
-              administration, restaurang och vård & omsorg.
-
-
+              Vi hjälper företag inom industri, lager, bygg, administration, restaurang och vård &amp; omsorg att snabbt hitta pålitlig personal — med rätt kompetens, tydlig uppföljning och trygg leverans.
             </p>
 
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-4 mb-10">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-brand text-white font-medium text-sm px-[29px] py-[16px] rounded-none hover:scale-105 transition-transform"
+                className="inline-flex items-center gap-2 bg-brand text-white font-semibold text-sm px-[30px] py-[17px] rounded-none hover:scale-[1.03] hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.6)] transition-all"
               >
-                {t("hero.cta")} <ArrowUpRight className="w-4 h-4" />
+                Kontakta oss <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
-                to="/jobba-hos-oss"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-white/80 hover:text-white underline underline-offset-4 transition-colors normal-case"
+                to="/tjanster"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-white/85 hover:text-white underline underline-offset-[6px] decoration-white/30 hover:decoration-brand transition-colors normal-case"
               >
-              {t("hero.link")} <ArrowUpRight className="w-4 h-4" />
+                Se våra tjänster <ArrowUpRight className="w-4 h-4" />
               </Link>
+            </div>
+
+            {/* Trust points */}
+            <div className="pt-7 border-t border-white/15">
+              <ul className="flex flex-wrap gap-x-7 gap-y-3">
+                {trustPoints.map(({ icon: Icon, label }) => (
+                  <li key={label} className="inline-flex items-center gap-2 text-white/80 text-[13px] font-medium normal-case">
+                    <Icon className="w-4 h-4 text-brand shrink-0" strokeWidth={2.25} />
+                    {label}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -92,26 +92,28 @@ const HeroSection = () => {
 
       <style>{`
         @keyframes heroImgFade {
-          from { opacity: 0; }
-          to { opacity: 1; }
+          from { opacity: 0; transform: scale(1.04); }
+          to { opacity: 1; transform: scale(1); }
         }
         @keyframes heroContentIn {
-          from { opacity: 0; transform: translateX(-40px); }
-          to { opacity: 1; transform: translateX(0); }
+          from { opacity: 0; transform: translateY(24px); }
+          to { opacity: 1; transform: translateY(0); }
         }
         .hero-img-fade {
           opacity: 1;
-          animation: heroImgFade 1.2s ease-out both;
+          animation: heroImgFade 1.4s ease-out both;
         }
-        .hero-content-in {
-          opacity: 1;
+        .hero-content-in > * {
+          opacity: 0;
           animation: heroContentIn 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) both;
-          animation-delay: 0.1s;
         }
+        .hero-content-in > *:nth-child(1) { animation-delay: 0.15s; }
+        .hero-content-in > *:nth-child(2) { animation-delay: 0.28s; }
+        .hero-content-in > *:nth-child(3) { animation-delay: 0.40s; }
+        .hero-content-in > *:nth-child(4) { animation-delay: 0.52s; }
+        .hero-content-in > *:nth-child(5) { animation-delay: 0.64s; }
         @media (prefers-reduced-motion: reduce) {
-          .hero-img-fade, .hero-content-in {
-            animation: none;
-          }
+          .hero-img-fade, .hero-content-in > * { animation: none; opacity: 1; }
         }
       `}</style>
     </section>
