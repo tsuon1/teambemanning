@@ -98,7 +98,7 @@ const Navbar = () => {
         {/* Left: Meny + Logo */}
         <div
           className="flex items-center transition-[margin] duration-700 ease-out"
-          style={{ marginLeft: scrolled ? (isMobile ? "-1%" : "0%") : isMobile ? "0%" : "1%" }}
+          style={{ marginLeft: scrolled ? (isMobile ? "-1%" : "0%") : isMobile ? "0%" : "2%" }}
         >
           <Link
             to={home}
