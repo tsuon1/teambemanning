@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, MessageCircle, Plus } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle, Plus, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import sercoLogo from "@/assets/teambemanning-logo.png";
 import { motion, AnimatePresence } from "framer-motion";
