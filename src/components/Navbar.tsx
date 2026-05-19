@@ -68,18 +68,13 @@ const Navbar = () => {
         }}
       >
         <div
-          className={scrolled ? "animate-bubble-retract" : ""}
+          className={scrolled ? "animate-bubble-retract" : "animate-bubble-extend"}
           style={{
             transformOrigin: "20% 0%",
-            transform: scrolled
-              ? "scaleY(0.05) scaleX(0.92) rotateX(75deg) translateY(-4px)"
-              : "scaleY(1) scaleX(1) rotateX(0deg) translateY(0)",
-            transition: scrolled
-              ? undefined
-              : "transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1)",
             willChange: "transform",
           }}
         >
+
 
           <svg
             viewBox="0 0 1440 80"
