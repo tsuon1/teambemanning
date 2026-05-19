@@ -31,11 +31,12 @@ const HeroSection = () => {
         <div className="flex-1 flex items-center pt-[120px] pb-[80px] md:pt-[140px] md:pb-[100px]">
           <div className="max-w-[680px] hero-content-in">
             <p
-              className="text-white/90 font-semibold uppercase mb-7 tracking-[0.18em]"
+              className="text-white/90 font-semibold uppercase mb-7 tracking-[0.18em] inline-flex items-center"
               style={{ fontSize: 'var(--h5-size)' }}
             >
-              <span className="inline-block w-8 h-px bg-brand align-middle mr-3" />
+              <span className="inline-block w-8 h-px bg-brand mr-3" />
               <span className="text-brand">HITTA</span>
+              <span className="inline-block w-8 h-px bg-brand ml-3" />
             </p>
 
             <h1
