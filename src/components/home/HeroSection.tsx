@@ -43,21 +43,21 @@ const HeroSection = () => {
               }}
             >
               <span className="max-[545px]:hidden">
-                <span className="font-bold uppercase block">KOMPETENS FÖR</span>
+                <span className="font-bold uppercase block">KOMPETENS</span>
                 <span
                   className="italic font-normal normal-case block"
                   style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
                 >
-                  varje behov
+                  för varje behov
                 </span>
               </span>
               <span className="hidden max-[545px]:block">
-                <span className="font-bold uppercase block">KOMPETENS{"\n"}FÖR</span>
+                <span className="font-bold uppercase block">KOMPETENS</span>
                 <span
                   className="italic font-normal normal-case block"
                   style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}
                 >
-                  varje behov
+                  för varje behov
                 </span>
               </span>
             </h1>
