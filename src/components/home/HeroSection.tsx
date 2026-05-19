@@ -13,7 +13,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-[88vh] md:min-h-screen overflow-hidden bg-secondary">
+    <section className="relative min-h-[78vh] md:min-h-screen overflow-hidden bg-secondary">
       <link rel="preload" as="image" href={heroImage} />
       <img
         src={heroImage}
