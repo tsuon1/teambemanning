@@ -13,6 +13,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
+
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
