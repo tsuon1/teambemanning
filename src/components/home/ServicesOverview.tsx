@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
-import {
-  ArrowUpRight,
-  Factory,
-  Boxes,
-  Hammer,
-  ClipboardList,
-  UtensilsCrossed,
-  HeartPulse,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRef, useState, useEffect } from "react";
+import industriImg from "@/assets/service-industri.png";
+import logistikImg from "@/assets/service-logistik.png";
+import byggImg from "@/assets/service-bygg.jpg";
+import adminImg from "@/assets/service-admin.jpg";
+import restaurangImg from "@/assets/service-restaurang.jpg";
+import vardImg from "@/assets/service-vard.jpg";
 
 type Service = {
   key: string;
   title: string;
   desc: string;
-  Icon: LucideIcon;
+  image: string;
   href: string;
 };
 
@@ -28,42 +25,42 @@ const ServicesOverview = () => {
       key: "industri",
       title: "Industri & produktion",
       desc: "Vi hjälper företag med kompetent personal inom industri, produktion, montering, maskinoperatörer, svetsare och andra praktiska yrkesroller.",
-      Icon: Factory,
+      image: industriImg,
       href: "/kontakt",
     },
     {
       key: "lager",
       title: "Lager & logistik",
       desc: "Bemanning för lager, truck, orderplock, materialhantering, distribution och logistikflöden.",
-      Icon: Boxes,
+      image: logistikImg,
       href: "/kontakt",
     },
     {
       key: "bygg",
       title: "Bygg & hantverk",
       desc: "Vi bemannar med yrkeskunnig personal inom bygg, snickeri, plattsättning och andra hantverksnära uppdrag.",
-      Icon: Hammer,
+      image: byggImg,
       href: "/kontakt",
     },
     {
       key: "admin",
       title: "Administration",
       desc: "Stöd inom administrativa roller, kontor, kundservice och enklare tjänstemannauppdrag.",
-      Icon: ClipboardList,
+      image: adminImg,
       href: "/kontakt",
     },
     {
       key: "restaurang",
       title: "Restaurang & service",
       desc: "Personal till hotell, restaurang, kök, service och andra kundnära uppdrag.",
-      Icon: UtensilsCrossed,
+      image: restaurangImg,
       href: "/kontakt",
     },
     {
       key: "vard",
       title: "Vård & omsorg",
       desc: "Bemanning inom vård och omsorg när verksamheter behöver trygg och pålitlig personal.",
-      Icon: HeartPulse,
+      image: vardImg,
       href: "/kontakt",
     },
   ];
@@ -168,21 +165,27 @@ const ServicesOverview = () => {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              {services.map(({ key, title, desc, Icon, href }) => (
+              {services.map(({ key, title, desc, image, href }) => (
                 <Link
                   key={key}
                   to={href}
                   aria-label={`${title} — ${readMore}`}
                   className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
                 >
-                  <div className="p-6 flex flex-col gap-3 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm">
-                    <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand/15 text-brand">
-                      <Icon className="w-7 h-7" strokeWidth={1.8} />
-                    </span>
+                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[12px]">
+                    <img
+                      src={image}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                  <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm">
                     <h3 className="font-display font-black text-background text-xl leading-tight">
                       {title}
                     </h3>
-                    <p className="text-sm text-background/70 leading-relaxed normal-case">
+                    <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
                       {desc}
                     </p>
                     <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-1">
@@ -219,39 +222,47 @@ const ServicesOverview = () => {
             </div>
           </div>
 
-          {/* Desktop / tablet grid: 2 cols on sm, 3 cols on xl */}
-          <div ref={gridRef} className="hidden sm:grid grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6">
-            {services.map(({ key, title, desc, Icon, href }, idx) => (
+          {/* Desktop / tablet grid: 3 columns × 2 rows */}
+          <div ref={gridRef} className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+            {services.map(({ key, title, desc, image, href }, idx) => (
               <Link
                 key={key}
                 to={href}
                 aria-label={`${title} — ${readMore}`}
-                className={`group relative overflow-hidden flex flex-col h-full p-6 md:p-8 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-all duration-700 ease-out hover:-translate-y-1 hover:bg-background/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
                   transitionDelay: gridVisible ? `${idx * 100}ms` : "0ms",
                 }}
               >
-                <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand/15 text-brand mb-5 transition-transform duration-500 group-hover:scale-110">
-                  <Icon className="w-7 h-7" strokeWidth={1.8} />
-                </span>
-                <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight mb-3">
-                  {title}
-                </h3>
-                <p className="text-sm text-background/70 leading-relaxed normal-case">
-                  {desc}
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-auto pt-5 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
-                  <span className="relative">
-                    {readMore}
-                    <span
-                      aria-hidden="true"
-                      className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-brand transition-all duration-500"
-                    />
+                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[12px]">
+                  <img
+                    src={image}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                  />
+                </div>
+                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
+                  <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
+                    {title}
+                  </h3>
+                  <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
+                    {desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-auto pt-2 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
+                    <span className="relative">
+                      {readMore}
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-brand transition-all duration-500"
+                      />
+                    </span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
-                  <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </span>
+                </div>
               </Link>
             ))}
           </div>
