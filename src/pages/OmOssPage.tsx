@@ -15,7 +15,7 @@ const OmOssPage = () => {
   return (
     <div>
       <SEO pageKey="about" />
-      <PageHero kicker={t("aboutPage.kicker")} title={t("aboutPage.title")} description={t("aboutPage.desc")} image={heroImg} imagePosition="70% 30%" />
+      <PageHero kicker={t("aboutPage.kicker")} title={t("aboutPage.title")} description={t("aboutPage.desc")} image={teamGroup} imagePosition="center 30%" />
 
       <section className="section-padding bg-background">
         <div className="container-wide">
