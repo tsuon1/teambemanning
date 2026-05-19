@@ -103,7 +103,7 @@ const Navbar = () => {
           <Link
             to={home}
             className="flex items-center origin-bottom transition-transform duration-700 ease-out"
-            style={{ transform: scrolled ? "translateY(0) scale(1)" : `translateY(24px) scale(${isMobile ? 1.1 : 1.3})` }}
+            style={{ transform: scrolled ? "translateY(0) scale(1)" : `translateY(24px) scale(${isMobile ? 1.3 : 1.5})` }}
           >
             <img
               src={sercoLogo}
