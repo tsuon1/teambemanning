@@ -60,7 +60,7 @@ const Navbar = () => {
       {/* Decorative curve hanging from the navbar */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-0 right-0 top-full -mt-px"
+        className="pointer-events-none absolute left-0 right-0 top-full -mt-[3px]"
         style={{
           lineHeight: 0,
           perspective: "600px",
