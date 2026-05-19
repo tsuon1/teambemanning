@@ -98,12 +98,12 @@ const Navbar = () => {
         {/* Left: Meny + Logo */}
         <div
           className="flex items-center transition-[margin] duration-700 ease-out"
-          style={{ marginLeft: scrolled ? "0%" : "3.5%" }}
+          style={{ marginLeft: scrolled ? "0%" : isMobile ? "1%" : "3.5%" }}
         >
           <Link
             to={home}
             className="flex items-center origin-bottom transition-transform duration-700 ease-out"
-            style={{ transform: scrolled ? "translateY(0) scale(1)" : "translateY(24px) scale(1.3)" }}
+            style={{ transform: scrolled ? "translateY(0) scale(1)" : `translateY(24px) scale(${isMobile ? 1.1 : 1.3})` }}
           >
             <img
               src={sercoLogo}
