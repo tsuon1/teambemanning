@@ -24,7 +24,7 @@ const HeroSection = () => {
         style={{ filter: "brightness(1.1) contrast(1.05) saturate(1.02)" }}
       />
       {/* Dark gradient overlay — strong on the left for text legibility, fully clear on the right */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(192_40%_5%/0.7),hsl(192_40%_5%/0.2)_60%,transparent_95%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(192_38%_10%/0.78),hsl(192_38%_10%/0.3)_50%,transparent_85%)]" />
       {/* Subtle right-side vignette to tame the bright background behind the people */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_85%_50%,rgba(0,0,0,0.23)_0%,rgba(0,0,0,0)_55%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,transparent_25%,rgba(0,0,0,0.75)_100%)] md:bg-none" />
