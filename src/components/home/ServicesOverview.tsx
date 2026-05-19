@@ -139,21 +139,28 @@ const ServicesOverview = () => {
         <div className="container-wide pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
             <p
-              className="font-black text-background/50 mb-4 uppercase"
+              className="font-black mb-4 uppercase text-background"
               style={{ fontSize: "var(--h5-size)", letterSpacing: "var(--h5-track)" }}
             >
-              Våra bemanningsområden
+              <span className="text-brand">Våra</span> bemanningsområden
             </p>
             <h2
-              className="font-black text-background leading-tight"
+              className="font-black text-background leading-[1.05]"
               style={{ fontSize: "var(--h2-size)" }}
             >
-              Rätt person på rätt plats — i hela din verksamhet
+              <span className="block font-bold uppercase">RÄTT PERSON</span>
+              <span
+                className="block italic font-normal normal-case"
+                style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: "-0.01em" }}
+              >
+                på rätt plats
+              </span>
             </h2>
             <p className="mt-5 text-background/60 text-base md:text-lg leading-relaxed normal-case">
               Vi hjälper lokala företag att snabbt hitta trygg och kompetent personal inom de områden där det behövs som mest.
             </p>
           </div>
+
 
           {/* Mobile carousel */}
           <div className="sm:hidden">
