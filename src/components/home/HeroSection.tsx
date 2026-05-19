@@ -13,14 +13,14 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-[78vh] md:min-h-screen overflow-hidden bg-secondary">
+    <section className="relative min-h-[68vh] md:min-h-screen overflow-hidden bg-secondary">
       <link rel="preload" as="image" href={heroImage} />
       <img
         src={heroImage}
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[72%_12%] md:object-[68%_22%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[72%_19%] md:object-[68%_22%] hero-img-fade"
         style={{ filter: "brightness(1.1) contrast(1.05) saturate(1.02)" }}
       />
       {/* Dark gradient overlay — strong on the left for text legibility, fully clear on the right */}
@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_85%_50%,rgba(0,0,0,0.23)_0%,rgba(0,0,0,0)_55%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,transparent_25%,rgba(0,0,0,0.75)_100%)] md:bg-none" />
 
-      <div className="relative z-10 min-h-[78vh] md:min-h-screen flex flex-col container-wide">
+      <div className="relative z-10 min-h-[68vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-end md:items-center pb-[80px] md:pb-[100px]" style={{ paddingTop: 'calc(var(--nav-h) + clamp(16px, 3vw, 88px))' }}>
           <div className="max-w-[680px] hero-content-in">
             <p
