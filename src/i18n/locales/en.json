@@ -77,22 +77,22 @@
     "kicker": "REVIEWS",
     "title": "WHAT OUR CLIENTS SAY",
     "t1": {
-      "quote": "TEAMBEMANNING delivered exactly the talent we needed — fast and professionally. We could scale up our production without compromising quality.",
-      "name": "Tobias Löfgren",
-      "role": "",
-      "company": "Löfgrens Transport"
+      "quote": "SERCO delivered exactly the talent we needed — fast and professionally. We could scale up our production without compromising quality.",
+      "name": "Mikael Andersson",
+      "role": "Production Manager",
+      "company": "Axelent"
     },
     "t2": {
       "quote": "The flexibility and follow-up has been fantastic. We finally have a staffing partner who truly understands our business and needs.",
-      "name": "Janne Bryner",
-      "role": "",
-      "company": "Trångsund Åkeri"
+      "name": "Anna Karlsson",
+      "role": "Head of HR",
+      "company": "Sporda Nonwoven"
     },
     "t3": {
       "quote": "From first contact to having staff on site took less than 48 hours. Impressive service and reliable employees every time.",
-      "name": "Sayed Alti",
+      "name": "Johan Lindqvist",
       "role": "Operations Manager",
-      "company": "DHL"
+      "company": "Hexagon"
     }
   },
   "kpi": {

@@ -77,22 +77,22 @@
     "kicker": "RECENZII",
     "title": "CE SPUN CLIENȚII NOȘTRI",
     "t1": {
-      "quote": "TEAMBEMANNING a livrat exact talentul de care aveam nevoie — rapid și profesional. Am putut crește producția fără a compromite calitatea.",
-      "name": "Tobias Löfgren",
-      "role": "",
-      "company": "Löfgrens Transport"
+      "quote": "SERCO a livrat exact talentul de care aveam nevoie — rapid și profesional. Am putut crește producția fără a compromite calitatea.",
+      "name": "Mikael Andersson",
+      "role": "Director de producție",
+      "company": "Axelent"
     },
     "t2": {
       "quote": "Flexibilitatea și urmărirea au fost fantastice. Avem în sfârșit un partener de personal care înțelege cu adevărat afacerea și nevoile noastre.",
-      "name": "Janne Bryner",
-      "role": "",
-      "company": "Trångsund Åkeri"
+      "name": "Anna Karlsson",
+      "role": "Responsabil HR",
+      "company": "Sporda Nonwoven"
     },
     "t3": {
       "quote": "De la primul contact până când personalul a fost pe loc au trecut mai puțin de 48 de ore. Serviciu impresionant și angajați de încredere de fiecare dată.",
-      "name": "Sayed Alti",
+      "name": "Johan Lindqvist",
       "role": "Director operațiuni",
-      "company": "DHL"
+      "company": "Hexagon"
     }
   },
   "kpi": {
