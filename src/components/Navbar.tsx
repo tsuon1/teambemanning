@@ -49,7 +49,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 text-background bg-surface"
     >
       {/* Decorative curve hanging from the navbar */}
-      <div aria-hidden className="pointer-events-none absolute left-0 right-0 top-full" style={{ lineHeight: 0 }}>
+      <div aria-hidden className="pointer-events-none absolute left-0 right-0 top-full -mt-px" style={{ lineHeight: 0 }}>
         <svg
           viewBox="0 0 1440 80"
           preserveAspectRatio="none"
