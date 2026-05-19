@@ -66,8 +66,9 @@ const HeroSection = () => {
               className="text-white/70 font-medium mb-7 normal-case"
               style={{ fontSize: 'var(--p-size)', lineHeight: 'var(--p-line)' }}
             >
-              Bemanning inom industri, lager, bygg, administration,<br />
-              restaurang och vård.
+              Bemanning inom industri, lager och bygg,<br />
+              administration, restaurang och vård & omsorg.
+
 
             </p>
 
