@@ -93,7 +93,7 @@ const Navbar = () => {
 
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
-        <div className="flex items-center ml-[15%]">
+        <div className="flex items-center ml-[22%]">
           <Link to={home} className="flex items-center">
             <img
               src={sercoLogo}
