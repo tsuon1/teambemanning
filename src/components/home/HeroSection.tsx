@@ -66,8 +66,8 @@ const HeroSection = () => {
               className="text-white/70 font-medium mb-7 normal-case"
               style={{ fontSize: 'var(--p-size)', lineHeight: 'var(--p-line)' }}
             >
-              Vi hjälper företag inom transport,<br />
-              logistik, industri och lokalvård att snabbt hitta rätt kompetens.
+              Vi hjälper företag inom transport, logistik, industri<br />
+              och lokalvård att snabbt hitta rätt kompetens.
             </p>
 
             <div className="flex items-center gap-6">
