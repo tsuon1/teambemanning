@@ -70,7 +70,7 @@ const Navbar = () => {
         <div
           className={scrolled ? "animate-bubble-retract" : "animate-bubble-extend"}
           style={{
-            transformOrigin: "20% 0%",
+            transformOrigin: "50% 0%",
             willChange: "transform",
           }}
         >
@@ -79,7 +79,7 @@ const Navbar = () => {
           <svg
             viewBox="0 0 1440 80"
             preserveAspectRatio="none"
-            className="block w-full h-[36px] sm:h-[56px]"
+            className="block w-full h-[56px] sm:h-[72px]"
           >
             <path d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 L1440,0 Z" fill="hsl(var(--surface))" />
           </svg>
