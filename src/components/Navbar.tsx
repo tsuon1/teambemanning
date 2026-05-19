@@ -60,17 +60,34 @@ const Navbar = () => {
       {/* Decorative curve hanging from the navbar */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-0 right-0 top-full -mt-px overflow-hidden transition-all duration-500 ease-out"
-        style={{ lineHeight: 0, maxHeight: scrolled ? 0 : 64, opacity: scrolled ? 0 : 1 }}
+        className="pointer-events-none absolute left-0 right-0 top-full -mt-px"
+        style={{
+          lineHeight: 0,
+          perspective: "600px",
+          transformStyle: "preserve-3d",
+        }}
       >
-        <svg
-          viewBox="0 0 1440 80"
-          preserveAspectRatio="none"
-          className="block w-full h-[36px] sm:h-[56px]"
+        <div
+          style={{
+            transformOrigin: "20% 0%",
+            transform: scrolled
+              ? "scaleY(0.05) scaleX(0.92) rotateX(75deg) translateY(-4px)"
+              : "scaleY(1) scaleX(1) rotateX(0deg) translateY(0)",
+            transition:
+              "transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1)",
+            willChange: "transform",
+          }}
         >
-          <path d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 L1440,0 Z" fill="hsl(var(--surface))" />
-        </svg>
+          <svg
+            viewBox="0 0 1440 80"
+            preserveAspectRatio="none"
+            className="block w-full h-[36px] sm:h-[56px]"
+          >
+            <path d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 L1440,0 Z" fill="hsl(var(--surface))" />
+          </svg>
+        </div>
       </div>
+
 
 
 
