@@ -55,7 +55,7 @@ const Navbar = () => {
           preserveAspectRatio="none"
           className="block w-full h-[36px] sm:h-[56px]"
         >
-          <path d="M0,0 C360,90 1080,-30 1440,30 L1440,0 L0,0 Z" fill="hsl(var(--surface))" />
+          <path d="M0,0 L0,40 C120,70 360,70 600,0 L1440,0 Z" fill="hsl(var(--surface))" />
         </svg>
       </div>
 
