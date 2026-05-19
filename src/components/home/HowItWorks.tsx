@@ -223,13 +223,13 @@ const HowItWorks = () => {
           preserveAspectRatio="none"
           className="block w-full h-[clamp(80px,18vw,320px)]"
         >
-          <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(0 0% 77%)" />
+          <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(0 0% 85%)" />
         </svg>
       </div>
 
       <div
         style={{
-          backgroundColor: "hsl(0 0% 77%)",
+          backgroundColor: "hsl(0 0% 85%)",
           paddingTop: "clamp(8px, 2vw, 32px)",
           paddingBottom: "clamp(36px, 4vw, 72px)",
         }}
@@ -274,7 +274,7 @@ const HowItWorks = () => {
           preserveAspectRatio="none"
           className="block w-full h-[clamp(80px,18vw,320px)]"
         >
-          <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(0 0% 77%)" />
+          <path d="M0,0 Q720,410 1440,0 Z" fill="hsl(0 0% 85%)" />
         </svg>
       </div>
 
