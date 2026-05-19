@@ -79,7 +79,7 @@ const Navbar = () => {
             className="hidden sm:flex flex-col items-center justify-center gap-1 px-5 text-background/90 hover:text-brand transition-colors"
           >
             <Phone className="w-4 h-4" />
-            <span className="text-[11px] font-medium tracking-wide">{t("nav.call", { defaultValue: "Ring" })}</span>
+            <span className="text-[11px] font-medium tracking-wide uppercase">{t("nav.call", { defaultValue: "Ring" })}</span>
           </a>
 
           <div className="hidden sm:flex items-center px-3 border-l border-background/10">
