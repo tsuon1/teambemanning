@@ -223,7 +223,7 @@ const HowItWorks = () => {
           preserveAspectRatio="none"
           className="block w-full h-[clamp(80px,18vw,320px)]"
         >
-          <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(var(--secondary))" />
+          <path d="M0,320 Q720,-90 1440,320 Z" fill="hsl(0 0% 77%)" />
         </svg>
       </div>
 
