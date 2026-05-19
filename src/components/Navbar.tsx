@@ -46,9 +46,9 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10"
-      style={{ backgroundColor: "#17292e" }}
+      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-surface"
     >
+
 
 
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
