@@ -106,16 +106,14 @@ export default {
         },
         "bubble-retract": {
           "0%":   { transform: "scaleY(1) scaleX(1)" },
-          "22%":  { transform: "scaleY(1.05) scaleX(1.008)" },
-          "55%":  { transform: "scaleY(0.5) scaleX(0.99)" },
-          "78%":  { transform: "scaleY(0.22) scaleX(0.96)" },
+          "85%":  { transform: "scaleY(0.02) scaleX(0.93)" },
+          "92%":  { transform: "scaleY(0.12) scaleX(0.95)" },
           "100%": { transform: "scaleY(0.04) scaleX(0.93)" },
         },
         "bubble-extend": {
           "0%":   { transform: "scaleY(0.04) scaleX(0.93)" },
-          "45%":  { transform: "scaleY(0.75) scaleX(0.99)" },
-          "72%":  { transform: "scaleY(1.04) scaleX(1.006)" },
-          "88%":  { transform: "scaleY(0.99) scaleX(0.999)" },
+          "85%":  { transform: "scaleY(1.05) scaleX(1.008)" },
+          "93%":  { transform: "scaleY(0.97) scaleX(0.996)" },
           "100%": { transform: "scaleY(1) scaleX(1)" },
         },
       },
@@ -124,9 +122,10 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "bubble-retract": "bubble-retract 850ms cubic-bezier(0.33, 1, 0.68, 1) forwards",
-        "bubble-extend": "bubble-extend 850ms cubic-bezier(0.33, 1, 0.68, 1) forwards",
+        "bubble-retract": "bubble-retract 750ms cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "bubble-extend": "bubble-extend 750ms cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
+
 
 
 
