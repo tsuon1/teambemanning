@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_85%_50%,rgba(0,0,0,0.23)_0%,rgba(0,0,0,0)_55%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,transparent_25%,rgba(0,0,0,0.75)_100%)] md:bg-none" />
 
-      <div className="relative z-10 min-h-[78vh] md:min-h-screen flex flex-col container-wide">
+      <div className="relative z-10 min-h-[68vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-end md:items-center pb-[80px] md:pb-[100px]" style={{ paddingTop: 'calc(var(--nav-h) + clamp(16px, 3vw, 88px))' }}>
           <div className="max-w-[680px] hero-content-in">
             <p
