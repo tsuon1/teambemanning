@@ -97,12 +97,11 @@ const Navbar = () => {
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
         <div
-          className="flex items-center transition-[margin] duration-700 ease-out"
-          style={{ marginLeft: scrolled ? (isMobile ? "-1%" : "0%") : isMobile ? "0%" : "2%" }}
+          className="flex items-center"
         >
           <Link
             to={home}
-            className="flex items-center origin-bottom transition-transform duration-700 ease-out"
+            className="flex items-center origin-bottom-left transition-transform duration-700 ease-out"
             style={{ transform: scrolled ? "translateY(0) scale(1)" : `translateY(24px) scale(${isMobile ? 1.2 : 1.5})` }}
           >
             <img
