@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className="flex-1 flex items-center pb-[80px] md:pb-[100px]" style={{ paddingTop: 'calc(var(--nav-h) + clamp(48px, 6vw, 88px))' }}>
           <div className="max-w-[680px] hero-content-in">
             <p
-              className="text-white/90 font-semibold uppercase mb-7 tracking-[0.18em] inline-flex items-center"
+              className="text-white/90 font-semibold uppercase mb-4 md:mb-7 tracking-[0.18em] inline-flex items-center"
               style={{ fontSize: 'var(--h5-size)' }}
             >
               <span className="inline-block w-8 h-px bg-brand mr-3" />
@@ -42,7 +42,7 @@ const HeroSection = () => {
             </p>
 
             <h1
-              className="text-white mb-8 font-bold normal-case"
+              className="text-white mb-5 md:mb-8 font-bold normal-case"
               style={{
                 fontSize: 'var(--h1-size)',
                 lineHeight: 1.08,
@@ -51,22 +51,23 @@ const HeroSection = () => {
               }}
             >
               <span className="block uppercase">Rätt personal.</span>
-              <span className="block text-white/85 font-normal normal-case mt-2" style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}>
+              <span className="block text-white/85 font-normal normal-case mt-1 md:mt-2" style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}>
                 När arbetet inte får stanna.
               </span>
             </h1>
 
             <p
-              className="text-white/75 font-normal mb-10 normal-case max-w-[580px]"
-              style={{ fontSize: 'var(--p-size)', lineHeight: 1.65 }}
+              className="text-white/75 font-normal mb-6 md:mb-10 normal-case max-w-[580px]"
+              style={{ fontSize: 'var(--p-size)', lineHeight: 1.55 }}
             >
-              Vi hjälper företag inom industri, lager, bygg, administration, restaurang och vård &amp; omsorg att snabbt hitta pålitlig personal — med rätt kompetens, tydlig uppföljning och trygg leverans.
+              <span className="md:hidden">Vi hjälper företag att snabbt hitta rätt personal — med trygg leverans och tydlig uppföljning.</span>
+              <span className="hidden md:inline">Vi hjälper företag inom industri, lager, bygg, administration, restaurang och vård &amp; omsorg att snabbt hitta pålitlig personal — med rätt kompetens, tydlig uppföljning och trygg leverans.</span>
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-7 gap-y-4 mb-10">
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-3 mb-6 md:mb-10">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-brand text-white font-semibold text-sm px-[30px] py-[17px] rounded-none hover:scale-[1.03] hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.6)] transition-all"
+                className="inline-flex items-center gap-2 bg-brand text-white font-semibold text-sm px-[26px] py-[14px] md:px-[30px] md:py-[17px] rounded-none hover:scale-[1.03] hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.6)] transition-all"
               >
                 Kontakta oss <ArrowUpRight className="w-4 h-4" />
               </Link>
