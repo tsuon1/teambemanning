@@ -35,7 +35,7 @@ const HeroSection = () => {
               style={{ fontSize: 'var(--h5-size)' }}
             >
               <span className="inline-block w-8 h-px bg-brand align-middle mr-3" />
-              <span className="text-brand">HITTA</span> RÄTT PERSONAL
+              <span className="text-brand">HITTA</span> RÄTT
             </p>
 
             <h1
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 textShadow: '0 2px 12px rgba(0,0,0,0.4)',
               }}
             >
-              <span className="block uppercase">Rätt personal.</span>
+              <span className="block uppercase">Personal.</span>
               <span className="block text-white/85 font-normal normal-case mt-2" style={{ fontFamily: "'Instrument Serif', serif", letterSpacing: '-0.01em' }}>
                 När arbetet inte får stanna.
               </span>
