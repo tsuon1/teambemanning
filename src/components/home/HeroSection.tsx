@@ -20,7 +20,7 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[72%_15%] md:object-[68%_22%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[72%_15%] md:object-[40%_22%] lg:object-[68%_22%] hero-img-fade"
         style={{ filter: "brightness(1.1) contrast(1.05) saturate(1.02)" }}
       />
       {/* Dark gradient overlay — strong on the left for text legibility, fully clear on the right */}
