@@ -94,7 +94,11 @@ const Navbar = () => {
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
         <div className="flex items-center ml-[3.5%]">
-          <Link to={home} className="flex items-center">
+          <Link
+            to={home}
+            className="flex items-center transition-transform duration-700 ease-out"
+            style={{ transform: scrolled ? "translateY(0)" : "translateY(18px)" }}
+          >
             <img
               src={sercoLogo}
               alt="Teambemanning"
@@ -102,6 +106,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
+
 
         {/* Right: action tiles */}
         <div className="flex items-stretch">
