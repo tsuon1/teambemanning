@@ -21,10 +21,10 @@ const HeroSection = () => {
         fetchPriority="high"
         decoding="sync"
         className="absolute inset-0 w-full h-full object-cover object-[72%_25%] md:object-[68%_22%] hero-img-fade"
-        style={{ filter: "brightness(1.05) contrast(1.02)" }}
+        style={{ filter: "brightness(1.18) contrast(1.04)" }}
       />
-      {/* Dark gradient overlay — stronger on the left for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/15" />
+      {/* Dark gradient overlay — strong on the left for text legibility, fully clear on the right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/45 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 md:bg-none" />
 
       <div className="relative z-10 min-h-[88vh] md:min-h-screen flex flex-col container-wide">
