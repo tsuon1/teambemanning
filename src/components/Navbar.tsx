@@ -93,12 +93,14 @@ const Navbar = () => {
 
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
-        <div className="flex items-center ml-[3.5%]">
+        <div
+          className="flex items-center transition-[margin] duration-700 ease-out"
+          style={{ marginLeft: scrolled ? "0%" : "6%" }}
+        >
           <Link
             to={home}
-            className="flex items-center origin-bottom-left transition-transform duration-700 ease-out"
+            className="flex items-center origin-bottom transition-transform duration-700 ease-out"
             style={{ transform: scrolled ? "translateY(0) scale(1)" : "translateY(18px) scale(1.2)" }}
-
           >
             <img
               src={sercoLogo}
@@ -107,6 +109,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
+
 
 
         {/* Right: action tiles */}
