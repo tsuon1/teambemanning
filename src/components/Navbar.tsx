@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, MessageCircle, Plus, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import sercoLogo from "@/assets/teambemanning-logo.png";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { ROUTES, LangCode, resolveRoute, detectLangFromPath } from "@/i18n/routes";
