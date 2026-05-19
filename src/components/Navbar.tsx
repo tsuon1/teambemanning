@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, MessageCircle, Plus } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle, Plus, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import sercoLogo from "@/assets/teambemanning-logo.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -74,13 +74,13 @@ const Navbar = () => {
             <span className="text-[11px] font-medium tracking-wide">{t("nav.menu", { defaultValue: "Meny" })}</span>
           </button>
 
-          <Link
-            to={link("contact")}
+          <a
+            href="tel:+4687585607"
             className="hidden sm:flex flex-col items-center justify-center gap-1 px-5 text-background/90 hover:text-brand transition-colors"
           >
-            <MessageCircle className="w-5 h-5" />
-            <span className="text-[11px] font-medium tracking-wide">{t("nav.contact", { defaultValue: "Kontakt" })}</span>
-          </Link>
+            <Phone className="w-5 h-5" />
+            <span className="text-[11px] font-medium tracking-wide">{t("nav.call", { defaultValue: "Ring" })}</span>
+          </a>
 
           <div className="hidden sm:flex items-center px-3 border-l border-background/10">
             <LanguageSwitcher />
