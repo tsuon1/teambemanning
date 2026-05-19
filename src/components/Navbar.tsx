@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, MessageCircle, Plus, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import sercoLogo from "@/assets/teambemanning-logo.png";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { ROUTES, LangCode, resolveRoute, detectLangFromPath } from "@/i18n/routes";
@@ -12,6 +13,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
+
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -95,12 +98,12 @@ const Navbar = () => {
         {/* Left: Meny + Logo */}
         <div
           className="flex items-center transition-[margin] duration-700 ease-out"
-          style={{ marginLeft: scrolled ? "0%" : "3.5%" }}
+          style={{ marginLeft: scrolled ? "0%" : isMobile ? "1%" : "3.5%" }}
         >
           <Link
             to={home}
             className="flex items-center origin-bottom transition-transform duration-700 ease-out"
-            style={{ transform: scrolled ? "translateY(0) scale(1)" : "translateY(24px) scale(1.3)" }}
+            style={{ transform: scrolled ? "translateY(0) scale(1)" : `translateY(24px) scale(${isMobile ? 1.1 : 1.3})` }}
           >
             <img
               src={sercoLogo}
