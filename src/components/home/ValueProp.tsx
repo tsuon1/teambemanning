@@ -5,7 +5,7 @@ const ValueProp = () => {
   return (
     <section className="bg-background" style={{ paddingBlock: 'clamp(124px, 8vw, 172px)' }}>
       <div className="container-wide">
-        <div className="text-center max-w-[980px] mx-auto">
+        <div className="text-center max-w-[760px] mx-auto">
           <h2 className="font-black leading-[1.2] text-foreground uppercase" style={{ fontSize: 'var(--h2-size)' }}>
             {t("valueProp.title")}
           </h2>
