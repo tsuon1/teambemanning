@@ -170,9 +170,9 @@ const ServicesOverview = () => {
                   key={key}
                   to={href}
                   aria-label={`${title} — ${readMore}`}
-                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
+                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px]"
                 >
-                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[12px]">
+                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
                     <img
                       src={image}
                       alt=""
@@ -181,7 +181,7 @@ const ServicesOverview = () => {
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                     />
                   </div>
-                  <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm">
+                  <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm">
                     <h3 className="font-display font-black text-background text-xl leading-tight">
                       {title}
                     </h3>
@@ -229,14 +229,14 @@ const ServicesOverview = () => {
                 key={key}
                 to={href}
                 aria-label={`${title} — ${readMore}`}
-                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md ${
+                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
                   transitionDelay: gridVisible ? `${idx * 100}ms` : "0ms",
                 }}
               >
-                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[12px]">
+                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
                   <img
                     src={image}
                     alt=""
@@ -245,7 +245,7 @@ const ServicesOverview = () => {
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />
                 </div>
-                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-lg backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
+                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
                   <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
                   </h3>
