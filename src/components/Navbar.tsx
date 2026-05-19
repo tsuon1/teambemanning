@@ -78,7 +78,7 @@ const Navbar = () => {
             href="tel:+4687585607"
             className="hidden sm:flex flex-col items-center justify-center gap-1 px-5 text-background/90 hover:text-brand transition-colors"
           >
-            <Phone className="w-5 h-5" />
+            <Phone className="w-4 h-4" />
             <span className="text-[11px] font-medium tracking-wide">{t("nav.call", { defaultValue: "Ring" })}</span>
           </a>
 
