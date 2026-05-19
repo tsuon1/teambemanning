@@ -45,7 +45,14 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 bg-gradient-to-r from-surface/70 from-50% via-surface/50 via-75% to-transparent backdrop-blur-md">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 text-background border-b border-background/10 backdrop-blur-md"
+      style={{
+        backgroundImage:
+          "linear-gradient(to right, rgba(23,41,46,0.7) 0%, rgba(23,41,46,0.7) 50%, rgba(23,41,46,0.5) 75%, rgba(23,41,46,0) 100%)",
+      }}
+    >
+
       <div className="container-wide flex items-stretch justify-between min-h-[76px] sm:min-h-[89px]">
         {/* Left: Meny + Logo */}
         <div className="flex items-center">
