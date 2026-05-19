@@ -30,15 +30,6 @@ const HeroSection = () => {
       <div className="relative z-10 min-h-[88vh] md:min-h-screen flex flex-col container-wide">
         <div className="flex-1 flex items-center pt-[120px] pb-[80px] md:pt-[140px] md:pb-[100px]">
           <div className="max-w-[680px] hero-content-in">
-            <p
-              className="text-white/90 font-semibold uppercase mb-7 tracking-[0.18em] inline-flex items-center"
-              style={{ fontSize: 'var(--h5-size)' }}
-            >
-              <span className="inline-block w-8 h-px bg-brand mr-3" />
-              <span className="text-brand">HITTA</span>
-              <span className="inline-block w-8 h-px bg-brand ml-3" />
-            </p>
-
             <h1
               className="text-white mb-8 font-bold normal-case"
               style={{
@@ -61,16 +52,26 @@ const HeroSection = () => {
               Vi hjälper företag inom industri, lager, bygg, administration, restaurang och vård &amp; omsorg att snabbt hitta pålitlig personal — med rätt kompetens, tydlig uppföljning och trygg leverans.
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-7 gap-y-4 mb-10">
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-2 bg-brand text-white font-semibold text-sm px-[30px] py-[17px] rounded-none hover:scale-[1.03] hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.6)] transition-all"
-              >
-                Kontakta oss <ArrowUpRight className="w-4 h-4" />
-              </Link>
+            <div className="flex flex-wrap items-end gap-x-7 gap-y-4 mb-10">
+              <div className="flex flex-col items-center">
+                <p
+                  className="text-white/90 font-semibold uppercase mb-3 tracking-[0.18em] inline-flex items-center"
+                  style={{ fontSize: 'var(--h5-size)' }}
+                >
+                  <span className="inline-block w-6 h-px bg-brand mr-2" />
+                  <span className="text-brand">HITTA</span>
+                  <span className="inline-block w-6 h-px bg-brand ml-2" />
+                </p>
+                <Link
+                  to="/kontakt"
+                  className="inline-flex items-center gap-2 bg-brand text-white font-semibold text-sm px-[30px] py-[17px] rounded-none hover:scale-[1.03] hover:shadow-[0_10px_30px_-8px_hsl(var(--brand)/0.6)] transition-all"
+                >
+                  Kontakta oss <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
               <Link
                 to="/tjanster"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-white/85 hover:text-white underline underline-offset-[6px] decoration-white/30 hover:decoration-brand transition-colors normal-case"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-white/85 hover:text-white underline underline-offset-[6px] decoration-white/30 hover:decoration-brand transition-colors normal-case pb-[18px]"
               >
                 Se våra tjänster <ArrowUpRight className="w-4 h-4" />
               </Link>
