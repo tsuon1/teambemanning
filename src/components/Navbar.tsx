@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, MessageCircle, Plus, Phone } from "lucide-react";
@@ -11,6 +11,15 @@ import { ROUTES, LangCode, resolveRoute, detectLangFromPath } from "@/i18n/route
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const location = useLocation();
   const { t } = useTranslation();
 
@@ -49,7 +58,11 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 text-background bg-surface"
     >
       {/* Decorative curve hanging from the navbar */}
-      <div aria-hidden className="pointer-events-none absolute left-0 right-0 top-full -mt-px" style={{ lineHeight: 0 }}>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-0 right-0 top-full -mt-px overflow-hidden transition-all duration-500 ease-out"
+        style={{ lineHeight: 0, maxHeight: scrolled ? 0 : 64, opacity: scrolled ? 0 : 1 }}
+      >
         <svg
           viewBox="0 0 1440 80"
           preserveAspectRatio="none"
@@ -58,6 +71,7 @@ const Navbar = () => {
           <path d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 L1440,0 Z" fill="hsl(var(--surface))" />
         </svg>
       </div>
+
 
 
 
