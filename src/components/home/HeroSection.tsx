@@ -20,7 +20,7 @@ const HeroSection = () => {
         alt=""
         fetchPriority="high"
         decoding="sync"
-        className="absolute inset-0 w-full h-full object-cover object-[72%_25%] md:object-[68%_22%] hero-img-fade"
+        className="absolute inset-0 w-full h-full object-cover object-[72%_12%] md:object-[68%_22%] hero-img-fade"
         style={{ filter: "brightness(1.1) contrast(1.05) saturate(1.02)" }}
       />
       {/* Dark gradient overlay — strong on the left for text legibility, fully clear on the right */}
@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 md:bg-none" />
 
       <div className="relative z-10 min-h-[88vh] md:min-h-screen flex flex-col container-wide">
-        <div className="flex-1 flex items-center pb-[80px] md:pb-[100px]" style={{ paddingTop: 'calc(var(--nav-h) + clamp(48px, 6vw, 88px))' }}>
+        <div className="flex-1 flex items-end md:items-center pb-[60px] md:pb-[100px]" style={{ paddingTop: 'calc(var(--nav-h) + clamp(48px, 6vw, 88px))' }}>
           <div className="max-w-[680px] hero-content-in">
             <p
               className="text-white/90 font-semibold uppercase mb-4 md:mb-7 tracking-[0.18em] inline-flex items-center"
