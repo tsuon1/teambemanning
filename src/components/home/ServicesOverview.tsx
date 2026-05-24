@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  Factory,
+  Truck,
+  HardHat,
+  Briefcase,
+  UtensilsCrossed,
+  HeartPulse,
+  type LucideIcon,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRef, useState, useEffect } from "react";
-import industriImg from "@/assets/service-industri.png";
-import logistikImg from "@/assets/service-logistik.png";
-import byggImg from "@/assets/service-bygg.jpg";
-import adminImg from "@/assets/service-admin.jpg";
-import restaurangImg from "@/assets/service-restaurang.jpg";
-import vardImg from "@/assets/service-vard.jpg";
 
 type Service = {
   key: string;
   title: string;
   desc: string;
-  image: string;
+  Icon: LucideIcon;
   href: string;
 };
 
