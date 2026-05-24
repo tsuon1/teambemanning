@@ -1,21 +1,80 @@
 import { Link } from "react-router-dom";
-import {
-  Factory,
-  Truck,
-  HardHat,
-  Briefcase,
-  UtensilsCrossed,
-  HeartPulse,
-  type LucideIcon,
-} from "lucide-react";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, type SVGProps } from "react";
 
+type IconCmp = (props: SVGProps<SVGSVGElement>) => JSX.Element;
+
+// Shared sharp/angular SVG defaults: square caps, miter joins, thin stroke
+const baseSvg = {
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1,
+  strokeLinecap: "square" as const,
+  strokeLinejoin: "miter" as const,
+};
+
+// Angular factory: stepped roofline + chimney
+const FactoryAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M3 21 V11 L9 14 V11 L15 14 V8 L21 8 V21 Z" />
+    <path d="M17 4 H20 V8" />
+    <path d="M7 17 H9 M12 17 H14 M17 17 H19" />
+  </svg>
+);
+
+// Angular truck: boxy cab + container
+const TruckAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M2 6 H15 V17 H2 Z" />
+    <path d="M15 9 H19 L22 12 V17 H15 Z" />
+    <circle cx="6.5" cy="18.5" r="1.5" />
+    <circle cx="17.5" cy="18.5" r="1.5" />
+  </svg>
+);
+
+// Angular hard hat: trapezoid dome + flat brim
+const HardHatAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M6 14 V10 L9 6 H15 L18 10 V14 Z" />
+    <path d="M3 14 H21 V17 H3 Z" />
+    <path d="M12 6 V14" />
+  </svg>
+);
+
+// Briefcase – squared
+const BriefcaseAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M3 8 H21 V20 H3 Z" />
+    <path d="M9 8 V5 H15 V8" />
+    <path d="M3 13 H21" />
+  </svg>
+);
+
+// Service – chef hat / fork+knife geometric
+const ServiceAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M8 3 V13" />
+    <path d="M6 3 V7 H10 V3" />
+    <path d="M8 13 L8 21" />
+    <path d="M16 3 V13 H18 V21" />
+    <path d="M16 13 H18" />
+  </svg>
+);
+
+// Care – angular cross + heart (diamond)
+const CareAngular: IconCmp = (p) => (
+  <svg {...baseSvg} {...p}>
+    <path d="M12 4 L20 12 L12 20 L4 12 Z" />
+    <path d="M12 8 V16" />
+    <path d="M8 12 H16" />
+  </svg>
+);
 
 type Service = {
   key: string;
   title: string;
   desc: string;
-  Icon: LucideIcon;
+  Icon: IconCmp;
   href: string;
 };
 
@@ -27,42 +86,42 @@ const ServicesOverview = () => {
       key: "industri",
       title: "Industri",
       desc: "Vi hjälper företag med kompetent personal inom industri, produktion, montering, maskinoperatörer, svetsare och andra praktiska yrkesroller.",
-      Icon: Factory,
+      Icon: FactoryAngular,
       href: "/kontakt",
     },
     {
       key: "lager",
       title: "Logistik",
       desc: "Bemanning för lager, truck, orderplock, materialhantering, distribution och logistikflöden.",
-      Icon: Truck,
+      Icon: TruckAngular,
       href: "/kontakt",
     },
     {
       key: "bygg",
       title: "Bygg",
       desc: "Vi bemannar med yrkeskunnig personal inom bygg, snickeri, plattsättning och andra hantverksnära uppdrag.",
-      Icon: HardHat,
+      Icon: HardHatAngular,
       href: "/kontakt",
     },
     {
       key: "admin",
       title: "Kontor",
       desc: "Stöd inom administrativa roller, kontor, kundservice och enklare tjänstemannauppdrag.",
-      Icon: Briefcase,
+      Icon: BriefcaseAngular,
       href: "/kontakt",
     },
     {
       key: "restaurang",
       title: "Service",
       desc: "Personal till hotell, restaurang, kök, service och andra kundnära uppdrag.",
-      Icon: UtensilsCrossed,
+      Icon: ServiceAngular,
       href: "/kontakt",
     },
     {
       key: "vard",
       title: "Vård",
       desc: "Bemanning inom vård och omsorg när verksamheter behöver trygg och pålitlig personal.",
-      Icon: HeartPulse,
+      Icon: CareAngular,
       href: "/kontakt",
     },
   ];
