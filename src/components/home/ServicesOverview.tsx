@@ -229,7 +229,7 @@ const ServicesOverview = () => {
 
           {/* Desktop / tablet grid: 3 columns × 2 rows */}
           <div ref={gridRef} className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {services.map(({ key, title, desc, image, href }, idx) => (
+            {services.map(({ key, title, desc, Icon, href }, idx) => (
               <Link
                 key={key}
                 to={href}
@@ -241,15 +241,10 @@ const ServicesOverview = () => {
                   transitionDelay: gridVisible ? `${idx * 100}ms` : "0ms",
                 }}
               >
-                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
-                  <img
-                    src={image}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
-                  />
+                <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6 md:pb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                  <Icon className="w-14 h-14 md:w-16 md:h-16 text-white transition-transform duration-500 group-hover:-translate-y-1" strokeWidth={1.5} aria-hidden="true" />
                 </div>
+
                 <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
                   <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
