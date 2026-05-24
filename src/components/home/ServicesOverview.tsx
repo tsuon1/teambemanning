@@ -126,28 +126,41 @@ const ServicesOverview = () => {
 
           <div
             ref={gridRef}
-            className="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-6"
+            className="relative grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-6"
           >
+            {/* Smooth connecting wave behind icons (desktop) */}
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="hidden sm:block pointer-events-none absolute left-0 right-0 top-2 md:top-3 h-12 md:h-14 w-full text-brand/40"
+            >
+              <path
+                d="M 0 60 C 50 60, 75 20, 100 20 C 125 20, 150 100, 200 100 C 250 100, 275 20, 300 20 C 325 20, 350 100, 400 100 C 450 100, 475 20, 500 20 C 525 20, 550 100, 600 100 C 650 100, 675 20, 700 20 C 725 20, 750 100, 800 100 C 850 100, 875 20, 900 20 C 925 20, 950 100, 1000 100 C 1050 100, 1075 20, 1100 20 C 1125 20, 1150 60, 1200 60"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+
             {services.map(({ key, title, Icon, href }, idx) => (
               <Link
                 key={key}
                 to={href}
                 aria-label={title}
-                className={`group flex flex-col items-center text-center gap-3 transition-all duration-700 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
+                className={`group relative flex flex-col items-center text-center gap-3 transition-all duration-700 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
                   gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
                 style={{
                   transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
                 }}
               >
-                <div className="relative w-16 h-8 md:w-20 md:h-10 flex items-end justify-center overflow-hidden">
-                  <div className="absolute inset-x-0 bottom-0 h-16 md:h-20 rounded-t-full bg-brand/15 ring-1 ring-brand/30 transition-colors duration-300 group-hover:bg-brand/25" aria-hidden="true" />
-                  <Icon
-                    className="relative w-6 h-6 md:w-7 md:h-7 text-background/90 mb-1 transition-colors duration-300 group-hover:text-brand"
-                    strokeWidth={1.5}
-                    aria-hidden="true"
-                  />
-                </div>
+                <Icon
+                  className="relative w-7 h-7 md:w-8 md:h-8 text-background/90 transition-colors duration-300 group-hover:text-brand"
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                />
 
                 <span className="text-xs md:text-sm font-medium text-background/80 leading-tight transition-colors duration-300 group-hover:text-background">
                   {title}
@@ -155,6 +168,7 @@ const ServicesOverview = () => {
               </Link>
             ))}
           </div>
+
 
         </div>
       </div>
