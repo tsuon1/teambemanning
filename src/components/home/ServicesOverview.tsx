@@ -95,16 +95,8 @@ const ServicesOverview = () => {
 
   return (
     <section className="bg-background">
-      <div aria-hidden style={{ lineHeight: 0 }}>
-        <svg
-          viewBox="0 0 1440 200"
-          preserveAspectRatio="none"
-          className="block w-full h-[clamp(60px,11vw,200px)]"
-        >
-          <path d="M0,200 Q720,-60 1440,200 Z" fill="#284953" />
-        </svg>
-      </div>
       <div style={{ backgroundColor: "#284953" }}>
+
 
         <div className="container-wide pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16">
