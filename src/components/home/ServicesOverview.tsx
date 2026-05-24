@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import {
-  ArrowUpRight,
   Factory,
   Truck,
   HardHat,
@@ -9,8 +8,8 @@ import {
   HeartPulse,
   type LucideIcon,
 } from "lucide-react";
-import { useTranslation } from "react-i18next";
 import { useRef, useState, useEffect } from "react";
+
 
 type Service = {
   key: string;
