@@ -67,10 +67,7 @@ const ServicesOverview = () => {
     },
   ];
 
-  const trackRef = useRef<HTMLDivElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const [gridVisible, setGridVisible] = useState(false);
 
   useEffect(() => {
@@ -94,46 +91,7 @@ const ServicesOverview = () => {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    const onScroll = () => {
-      const slide = el.clientWidth;
-      if (slide <= 0) return;
-      const idx = Math.round(el.scrollLeft / slide);
-      setActiveIndex(Math.max(0, Math.min(services.length - 1, idx)));
-    };
-    el.addEventListener("scroll", onScroll, { passive: true });
-    return () => el.removeEventListener("scroll", onScroll);
-  }, [services.length]);
 
-  const scrollToIndex = (idx: number) => {
-    const el = trackRef.current;
-    if (!el) return;
-    const total = services.length;
-    const wrapped = ((idx % total) + total) % total;
-    el.scrollTo({ left: wrapped * el.clientWidth, behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    if (isPaused) return;
-    const reduce =
-      typeof window !== "undefined" &&
-      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
-    const id = window.setInterval(() => {
-      const el = trackRef.current;
-      if (!el) return;
-      const slide = el.clientWidth;
-      if (slide <= 0) return;
-      const current = Math.round(el.scrollLeft / slide);
-      const next = (current + 1) % services.length;
-      el.scrollTo({ left: next * slide, behavior: "smooth" });
-    }, 4000);
-    return () => window.clearInterval(id);
-  }, [isPaused, services.length]);
-
-  const readMore = t("services.readMore", { defaultValue: "Läs mer" }).replace(/\s*→\s*$/, "");
 
   return (
     <section className="bg-background">
