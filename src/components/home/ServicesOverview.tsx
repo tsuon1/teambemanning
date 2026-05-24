@@ -138,11 +138,13 @@ const ServicesOverview = () => {
                   transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
                 }}
               >
-                <Icon
-                  className="w-7 h-7 md:w-8 md:h-8 text-background/70 transition-colors duration-300 group-hover:text-brand"
-                  strokeWidth={1}
-                  aria-hidden="true"
-                />
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-background/20 flex items-center justify-center transition-colors duration-300 group-hover:border-brand/40 group-hover:bg-brand/10">
+                  <Icon
+                    className="w-5 h-5 md:w-6 md:h-6 text-background/70 transition-colors duration-300 group-hover:text-brand"
+                    strokeWidth={1}
+                    aria-hidden="true"
+                  />
+                </div>
                 <span className="text-[11px] md:text-xs font-medium text-background/60 leading-tight transition-colors duration-300 group-hover:text-background/90">
                   {title}
                 </span>
