@@ -175,22 +175,17 @@ const ServicesOverview = () => {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              {services.map(({ key, title, desc, image, href }) => (
+              {services.map(({ key, title, desc, Icon, href }) => (
                 <Link
                   key={key}
                   to={href}
                   aria-label={`${title} — ${readMore}`}
                   className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px]"
                 >
-                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
-                    <img
-                      src={image}
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                    />
+                  <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6">
+                    <Icon className="w-12 h-12 text-white" strokeWidth={1.5} aria-hidden="true" />
                   </div>
+
                   <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm">
                     <h3 className="font-display font-black text-background text-xl leading-tight">
                       {title}
