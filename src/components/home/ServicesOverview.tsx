@@ -139,11 +139,11 @@ const ServicesOverview = () => {
                 }}
               >
                 <Icon
-                  className="w-8 h-8 md:w-9 md:h-9 text-background/80 transition-colors duration-300 group-hover:text-brand"
-                  strokeWidth={1.5}
+                  className="w-7 h-7 md:w-8 md:h-8 text-background/70 transition-colors duration-300 group-hover:text-brand"
+                  strokeWidth={1}
                   aria-hidden="true"
                 />
-                <span className="text-xs md:text-sm font-medium text-background/80 leading-tight transition-colors duration-300 group-hover:text-background">
+                <span className="text-[11px] md:text-xs font-medium text-background/60 leading-tight transition-colors duration-300 group-hover:text-background/90">
                   {title}
                 </span>
               </Link>
