@@ -165,107 +165,34 @@ const ServicesOverview = () => {
           </div>
 
 
-          {/* Mobile carousel */}
-          <div className="sm:hidden">
-            <div
-              ref={trackRef}
-              className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-4 px-4 gap-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-              onPointerDown={() => setIsPaused(true)}
-              onTouchStart={() => setIsPaused(true)}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              {services.map(({ key, title, desc, Icon, href }) => (
-                <Link
-                  key={key}
-                  to={href}
-                  aria-label={`${title} — ${readMore}`}
-                  className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px]"
-                >
-                  <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6">
-                    <Icon className="w-12 h-12 text-white" strokeWidth={1.5} aria-hidden="true" />
-                  </div>
-
-                  <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm">
-                    <h3 className="font-display font-black text-background text-xl leading-tight">
-                      {title}
-                    </h3>
-                    <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
-                      {desc}
-                    </p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-1">
-                      {readMore}
-                      <ArrowUpRight className="w-4 h-4" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="mt-6 flex items-center justify-center gap-2" role="tablist">
-              {services.map((s, i) => {
-                const isActive = i === activeIndex;
-                return (
-                  <button
-                    key={s.key}
-                    type="button"
-                    role="tab"
-                    aria-selected={isActive}
-                    aria-label={s.title}
-                    onClick={() => {
-                      setIsPaused(true);
-                      scrollToIndex(i);
-                    }}
-                    className={`rounded-full transition-all duration-300 ${
-                      isActive
-                        ? "bg-brand w-6 h-2"
-                        : "bg-background/30 hover:bg-background/60 w-2 h-2"
-                    }`}
-                  />
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Desktop / tablet grid: 3 columns × 2 rows */}
-          <div ref={gridRef} className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {services.map(({ key, title, desc, Icon, href }, idx) => (
+          <div
+            ref={gridRef}
+            className="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-6"
+          >
+            {services.map(({ key, title, Icon, href }, idx) => (
               <Link
                 key={key}
                 to={href}
-                aria-label={`${title} — ${readMore}`}
-                className={`group relative overflow-hidden bg-transparent flex flex-col h-full transition-all duration-700 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
-                  gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                aria-label={title}
+                className={`group flex flex-col items-center text-center gap-3 transition-all duration-700 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
+                  gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
                 style={{
-                  transitionDelay: gridVisible ? `${idx * 100}ms` : "0ms",
+                  transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
                 }}
               >
-                <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6 md:pb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
-                  <Icon className="w-14 h-14 md:w-16 md:h-16 text-white transition-transform duration-500 group-hover:-translate-y-1" strokeWidth={1.5} aria-hidden="true" />
-                </div>
-
-                <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
-                  <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
-                    {title}
-                  </h3>
-                  <p className="text-sm text-background/70 leading-relaxed normal-case line-clamp-3">
-                    {desc}
-                  </p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-background mt-auto pt-2 transition-all duration-500 group-hover:gap-2.5 group-hover:text-brand">
-                    <span className="relative">
-                      {readMore}
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-brand transition-all duration-500"
-                      />
-                    </span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </span>
-                </div>
+                <Icon
+                  className="w-8 h-8 md:w-9 md:h-9 text-background/80 transition-colors duration-300 group-hover:text-brand"
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                />
+                <span className="text-xs md:text-sm font-medium text-background/80 leading-tight transition-colors duration-300 group-hover:text-background">
+                  {title}
+                </span>
               </Link>
             ))}
           </div>
+
         </div>
       </div>
 
