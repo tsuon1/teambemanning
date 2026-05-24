@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  Factory,
+  Truck,
+  HardHat,
+  Briefcase,
+  UtensilsCrossed,
+  HeartPulse,
+  type LucideIcon,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRef, useState, useEffect } from "react";
-import industriImg from "@/assets/service-industri.png";
-import logistikImg from "@/assets/service-logistik.png";
-import byggImg from "@/assets/service-bygg.jpg";
-import adminImg from "@/assets/service-admin.jpg";
-import restaurangImg from "@/assets/service-restaurang.jpg";
-import vardImg from "@/assets/service-vard.jpg";
 
 type Service = {
   key: string;
   title: string;
   desc: string;
-  image: string;
+  Icon: LucideIcon;
   href: string;
 };
 
@@ -25,42 +28,42 @@ const ServicesOverview = () => {
       key: "industri",
       title: "Industri & produktion",
       desc: "Vi hjälper företag med kompetent personal inom industri, produktion, montering, maskinoperatörer, svetsare och andra praktiska yrkesroller.",
-      image: industriImg,
+      Icon: Factory,
       href: "/kontakt",
     },
     {
       key: "lager",
       title: "Lager & logistik",
       desc: "Bemanning för lager, truck, orderplock, materialhantering, distribution och logistikflöden.",
-      image: logistikImg,
+      Icon: Truck,
       href: "/kontakt",
     },
     {
       key: "bygg",
       title: "Bygg & hantverk",
       desc: "Vi bemannar med yrkeskunnig personal inom bygg, snickeri, plattsättning och andra hantverksnära uppdrag.",
-      image: byggImg,
+      Icon: HardHat,
       href: "/kontakt",
     },
     {
       key: "admin",
       title: "Administration",
       desc: "Stöd inom administrativa roller, kontor, kundservice och enklare tjänstemannauppdrag.",
-      image: adminImg,
+      Icon: Briefcase,
       href: "/kontakt",
     },
     {
       key: "restaurang",
       title: "Restaurang & service",
       desc: "Personal till hotell, restaurang, kök, service och andra kundnära uppdrag.",
-      image: restaurangImg,
+      Icon: UtensilsCrossed,
       href: "/kontakt",
     },
     {
       key: "vard",
       title: "Vård & omsorg",
       desc: "Bemanning inom vård och omsorg när verksamheter behöver trygg och pålitlig personal.",
-      image: vardImg,
+      Icon: HeartPulse,
       href: "/kontakt",
     },
   ];
@@ -172,22 +175,17 @@ const ServicesOverview = () => {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              {services.map(({ key, title, desc, image, href }) => (
+              {services.map(({ key, title, desc, Icon, href }) => (
                 <Link
                   key={key}
                   to={href}
                   aria-label={`${title} — ${readMore}`}
                   className="group relative shrink-0 w-full snap-center overflow-hidden bg-transparent flex flex-col transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px]"
                 >
-                  <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
-                    <img
-                      src={image}
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                    />
+                  <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6">
+                    <Icon className="w-12 h-12 text-white" strokeWidth={1.5} aria-hidden="true" />
                   </div>
+
                   <div className="p-5 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm">
                     <h3 className="font-display font-black text-background text-xl leading-tight">
                       {title}
@@ -231,7 +229,7 @@ const ServicesOverview = () => {
 
           {/* Desktop / tablet grid: 3 columns × 2 rows */}
           <div ref={gridRef} className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {services.map(({ key, title, desc, image, href }, idx) => (
+            {services.map(({ key, title, desc, Icon, href }, idx) => (
               <Link
                 key={key}
                 to={href}
@@ -243,15 +241,10 @@ const ServicesOverview = () => {
                   transitionDelay: gridVisible ? `${idx * 100}ms` : "0ms",
                 }}
               >
-                <div className="relative aspect-square overflow-hidden bg-transparent rounded-t-[2px]">
-                  <img
-                    src={image}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
-                  />
+                <div className="relative aspect-[2/1] overflow-hidden rounded-t-full bg-brand flex items-end justify-center pb-6 md:pb-8 transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                  <Icon className="w-14 h-14 md:w-16 md:h-16 text-white transition-transform duration-500 group-hover:-translate-y-1" strokeWidth={1.5} aria-hidden="true" />
                 </div>
+
                 <div className="p-5 md:p-6 flex flex-col gap-2 bg-background/5 ring-1 ring-background/10 rounded-[2px] backdrop-blur-sm transition-colors duration-500 group-hover:bg-background/10 flex-1">
                   <h3 className="font-display font-black text-background text-xl md:text-2xl leading-tight">
                     {title}
