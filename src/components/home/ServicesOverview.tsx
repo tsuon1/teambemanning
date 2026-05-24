@@ -20,7 +20,7 @@ type Service = {
 };
 
 const ServicesOverview = () => {
-  const { t } = useTranslation();
+
 
   const services: Service[] = [
     {
