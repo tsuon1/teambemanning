@@ -140,7 +140,7 @@ const ServicesOverview = () => {
                     transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
                   }}
                 >
-                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center transition-all duration-300 ${
                     isIndustry
                       ? "bg-background/10 border border-brand/40 group-hover:bg-brand/20 group-hover:border-brand/70"
                       : "border border-background/20 group-hover:border-brand/40 group-hover:bg-brand/10"
