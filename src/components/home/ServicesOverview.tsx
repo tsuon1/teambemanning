@@ -126,30 +126,45 @@ const ServicesOverview = () => {
             ref={gridRef}
             className="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-6"
           >
-            {services.map(({ key, title, Icon, href }, idx) => (
-              <Link
-                key={key}
-                to={href}
-                aria-label={title}
-                className={`group flex flex-col items-center text-center gap-3 transition-all duration-700 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
-                  gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
-                style={{
-                  transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
-                }}
-              >
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-background/20 flex items-center justify-center transition-colors duration-300 group-hover:border-brand/40 group-hover:bg-brand/10">
-                  <Icon
-                    className="w-5 h-5 md:w-6 md:h-6 text-background/70 transition-colors duration-300 group-hover:text-brand"
-                    strokeWidth={1}
-                    aria-hidden="true"
-                  />
-                </div>
-                <span className="text-[11px] md:text-xs font-medium text-background/60 leading-tight transition-colors duration-300 group-hover:text-background/90">
-                  {title}
-                </span>
-              </Link>
-            ))}
+            {services.map(({ key, title, Icon, href }, idx) => {
+              const isIndustry = key === "industri";
+              return (
+                <Link
+                  key={key}
+                  to={href}
+                  aria-label={title}
+                  className={`group flex flex-col items-center text-center gap-3 transition-all duration-700 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-[2px] ${
+                    gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
+                  style={{
+                    transitionDelay: gridVisible ? `${idx * 60}ms` : "0ms",
+                  }}
+                >
+                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    isIndustry
+                      ? "bg-background/10 border border-brand/40 group-hover:bg-brand/20 group-hover:border-brand/70"
+                      : "border border-background/20 group-hover:border-brand/40 group-hover:bg-brand/10"
+                  }`}>
+                    <Icon
+                      className={`w-5 h-5 md:w-6 md:h-6 transition-colors duration-300 ${
+                        isIndustry
+                          ? "text-brand group-hover:text-brand"
+                          : "text-background/70 group-hover:text-brand"
+                      }`}
+                      strokeWidth={1}
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <span className={`text-[11px] md:text-xs font-medium leading-tight transition-colors duration-300 ${
+                    isIndustry
+                      ? "text-background/90 group-hover:text-background"
+                      : "text-background/60 group-hover:text-background/90"
+                  }`}>
+                    {title}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
 
         </div>
