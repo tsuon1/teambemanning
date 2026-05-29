@@ -60,32 +60,28 @@ const Navbar = () => {
     <header
       className="fixed top-0 left-0 right-0 z-50 text-background bg-surface"
     >
-      {/* Decorative curve hanging from the navbar */}
+      {/* Decorative curve hanging from the navbar — anchored under the logo */}
       <div
         aria-hidden
         className="pointer-events-none absolute left-0 right-0 top-full -mt-[3px]"
-        style={{
-          lineHeight: 0,
-          perspective: "600px",
-          transformStyle: "preserve-3d",
-        }}
+        style={{ lineHeight: 0, perspective: "600px", transformStyle: "preserve-3d" }}
       >
-        <div
-          className={scrolled ? "animate-bubble-retract" : "animate-bubble-extend"}
-          style={{
-            transformOrigin: "50% 0%",
-            willChange: "transform",
-          }}
-        >
-
-
-          <svg
-            viewBox="0 0 1440 80"
-            preserveAspectRatio="none"
-            className="block w-full h-[56px] sm:h-[72px]"
+        <div className="container-wide">
+          <div
+            className={scrolled ? "animate-bubble-retract" : "animate-bubble-extend"}
+            style={{ transformOrigin: "0% 0%", willChange: "transform" }}
           >
-            <path d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 L1440,0 Z" fill="hsl(var(--surface))" />
-          </svg>
+            <svg
+              viewBox="0 0 640 80"
+              preserveAspectRatio="xMinYMin meet"
+              className="block h-[56px] sm:h-[72px] w-[240px] sm:w-[340px] md:w-[420px]"
+            >
+              <path
+                d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 Z"
+                fill="hsl(var(--surface))"
+              />
+            </svg>
+          </div>
         </div>
       </div>
 
