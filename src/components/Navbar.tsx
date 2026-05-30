@@ -71,16 +71,23 @@ const Navbar = () => {
             className={scrolled ? "animate-bubble-retract" : "animate-bubble-extend"}
             style={{ transformOrigin: "0% 0%", willChange: "transform" }}
           >
-            <svg
-              viewBox="0 0 640 80"
-              preserveAspectRatio="xMinYMin meet"
-              className="block h-[56px] sm:h-[72px] w-[240px] sm:w-[340px] md:w-[420px]"
-            >
-              <path
-                d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 Z"
-                fill="hsl(var(--surface))"
+            <div className="relative w-[240px] sm:w-[340px] md:w-[420px] h-[56px] sm:h-[72px]">
+              {/* Left filler so the surface extends to the viewport edge */}
+              <div
+                className="absolute top-0 bottom-0 right-full w-screen bg-surface"
+                aria-hidden
               />
-            </svg>
+              <svg
+                viewBox="0 0 640 80"
+                preserveAspectRatio="xMinYMin meet"
+                className="block h-full w-full"
+              >
+                <path
+                  d="M0,0 L0,30 C100,58 240,60 380,32 C460,16 520,4 640,0 Z"
+                  fill="hsl(var(--surface))"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
